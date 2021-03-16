@@ -1,0 +1,18 @@
+/* color */
+/*font-size */
+/* font-family */
+/* font query */
+@font-face {
+  font-family: "shrikhand";
+  src: url(../font/shrikhand/shrikhand.eot), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2"), url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../font/roboto/roboto.eot), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2"), url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype");
+}
+
+h1 {
+  font-family: "shrikhand", serif, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

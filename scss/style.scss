@@ -1,0 +1,11 @@
+@import "variables";
+@include getFont($font-shrikhand);
+@include getFont($font-roboto);
+
+h1
+{
+    font-family: $police-shrikhand;
+}
+
+
+
