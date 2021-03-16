@@ -1,11 +1,52 @@
 @import "variables";
+@import "mixin";
+
 @include getFont($font-shrikhand);
 @include getFont($font-roboto);
 
-h1
+
+*
 {
-    font-family: $police-shrikhand;
+    margin: 0;
+    padding: 0;
 }
+
+.center-text
+{
+    text-align: $text-center;
+}
+
+header
+{    
+    @extend .center-text;
+    .logo { font-family: $font-logo; }
+
+    margin-bottom:20px; 
+
+}
+
+#search
+{
+    .field
+    {
+
+        @extend .center-text;
+        background-color: $color-search-field;
+        width: $width-max;
+        height: $height-search-field;
+        border: none;
+        outline: none;
+        box-shadow: $shadow;
+
+    }
+
+}
+
+
+
+
+
+
 
 
 

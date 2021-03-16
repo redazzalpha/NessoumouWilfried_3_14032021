@@ -1,6 +1,4 @@
 
-/* color */
-
 $primary: #FF79DA;
 $secondary: #9356DC;
 $tertiary: #99E2D0;
@@ -9,34 +7,22 @@ $color-background: #ffffff;
 $color-search-field: #dddddd;
 $color-button: linear-gradient($primary, $secondary);
 
-
-/*font-size */
-
-$font-size-header: 10px;
-
-/* font-family */
-
 $police-shrikhand: "shrikhand", serif, sans-serif;
 $police-roboto: "roboto", serif, sans-serif;
+
 $font-shrikhand: "shrikhand";
 $font-roboto: "roboto"; 
 
-/* font query */
+$font-logo: $font-shrikhand;
+$font-title: $font-shrikhand;
+$font-text: $font-roboto;
 
-@mixin getFont($font)
-{
-    @font-face
-    {
-        font-family: $font;
-        src: url(../font/#{$font}/#{$font}.eot),
-        url(../font/#{$font}/#{$font}.ttf) format("truetype"),
-        url(../font/#{$font}/#{$font}.svg) format("svg"),
-        url(../font/#{$font}/#{$font}.woff) format("woff"),
-        url(../font/#{$font}/#{$font}.woff2) format("woff2"),
-        url(../font/#{$font}/#{$font}.eot?#iefix) format("embedded-opentype");
-    }   
+$font-size-header: 10px;
 
-}
+$text-center: center;
 
+$width-max: 100%;
+$height-search-field: 50px;
 
+$shadow: 0px 7px 7px gray inset;
 

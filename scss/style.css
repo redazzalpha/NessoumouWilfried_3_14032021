@@ -1,7 +1,3 @@
-/* color */
-/*font-size */
-/* font-family */
-/* font query */
 @font-face {
   font-family: "shrikhand";
   src: url(../font/shrikhand/shrikhand.eot), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2"), url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype");
@@ -12,7 +8,30 @@
   src: url(../font/roboto/roboto.eot), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2"), url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype");
 }
 
-h1 {
-  font-family: "shrikhand", serif, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center-text, header, #search .field {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header .logo {
+  font-family: "shrikhand";
+}
+
+#search .field {
+  background-color: #dddddd;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 7px 7px gray inset;
+          box-shadow: 0px 7px 7px gray inset;
 }
 /*# sourceMappingURL=style.css.map */
