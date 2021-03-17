@@ -1,27 +1,26 @@
 @font-face {
   font-family: "shrikhand";
-  src: url(../font/shrikhand/shrikhand.eot), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2"), url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype");
+  src: url(../font/shrikhand/shrikhand.eot), url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "roboto";
-  src: url(../font/roboto/roboto.eot), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2"), url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype");
+  src: url(../font/roboto/roboto.eot), url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype"), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2");
 }
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "roboto";
 }
 
-.center-text, header, #search .field {
+.center-text, header, #search .field, #explore, #functioning nav ul li a .button {
   text-align: center;
 }
 
-header {
-  margin-bottom: 20px;
-}
-
-header .logo {
+header .logo_header {
   font-family: "shrikhand";
 }
 
@@ -31,7 +30,98 @@ header .logo {
   height: 50px;
   border: none;
   outline: none;
-  -webkit-box-shadow: 0px 7px 7px gray inset;
-          box-shadow: 0px 7px 7px gray inset;
+  -webkit-box-shadow: 0px 5px 5px gray inset;
+          box-shadow: 0px 5px 5px gray inset;
+}
+
+#explore {
+  background-color: #f6f6f6;
+  padding: 60px;
+}
+
+#explore p {
+  color: gray;
+}
+
+#explore .button {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 40px;
+  width: 250px;
+  padding: 20px;
+  margin: auto;
+  font-weight: bold;
+}
+
+#functioning {
+  margin: 60px 0;
+}
+
+#functioning nav ul li {
+  list-style-type: none;
+}
+
+#functioning nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#functioning nav ul li a .button {
+  padding: 15px;
+  color: black;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  width: 250px;
+  -webkit-box-shadow: 7px 7px 7px gray;
+          box-shadow: 7px 7px 7px gray;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+}
+
+#restaurants a.card {
+  display: inline-block;
+  border-radius: 20px;
+  width: 100%;
+  height: 250px;
+  text-decoration: none;
+  margin: 50px;
+  -webkit-box-shadow: 7px 7px 7px gray;
+          box-shadow: 7px 7px 7px gray;
+}
+
+#restaurants a.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 71%;
+}
+
+#restaurants a.card .caption {
+  color: #000000;
+}
+
+footer {
+  background-color: #353535;
+  padding: 30px 0;
+}
+
+footer .logo_footer {
+  font-family: "shrikhand";
+  color: white;
+}
+
+footer nav ul li {
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

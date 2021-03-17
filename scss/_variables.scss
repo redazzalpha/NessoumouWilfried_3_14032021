@@ -1,11 +1,14 @@
 
-$primary: #FF79DA;
-$secondary: #9356DC;
-$tertiary: #99E2D0;
-$color-footer: #353535;
-$color-background: #ffffff;
+$color-primary: #FF79DA;
+$color-secondary: #9356DC;
+$color-tertiary: #99E2D0;
 $color-search-field: #dddddd;
-$color-button: linear-gradient($primary, $secondary);
+$color-explore-text: lighten(#000000, 50%);
+$color-explore-button: #ffffff;
+$color-background-explore: #f6f6f6;
+$color-background-restaurant: #f6f6f6;
+$color-background-footer: #353535;
+$color-background-explore-button: linear-gradient($color-primary, $color-secondary);
 
 $police-shrikhand: "shrikhand", serif, sans-serif;
 $police-roboto: "roboto", serif, sans-serif;
@@ -18,11 +21,27 @@ $font-title: $font-shrikhand;
 $font-text: $font-roboto;
 
 $font-size-header: 10px;
+$font-size-explore-title: 10px;
+$font-size-explore-text: 10px;
+
+$font-weight-explore-button: bold;
 
 $text-center: center;
 
 $width-max: 100%;
+$width-explore-button: 250px; 
+
 $height-search-field: 50px;
+$height-explore-button: 50px; 
 
-$shadow: 0px 7px 7px gray inset;
+$shadow-search-field: 0px 5px 5px gray inset;
 
+$border-field-search: none;
+$border-radius-explore-button: 40px; 
+
+$outline-field-search: none;
+
+$padding-explore: 60px;
+$padding-explore-button: 20px;
+
+$margin-explore-button: auto;
