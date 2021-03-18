@@ -45,7 +45,7 @@ h1, p, div {
   list-style-type: none;
 }
 
-.--unlink, .functioning_link, .restaurants_card {
+.--unlink, .functioning_link, .restaurants_card, .footer_link {
   display: inline-block;
   text-decoration: none;
 }
@@ -152,15 +152,19 @@ h1, p, div {
   border-radius: 15px 15px 0 0;
 }
 
-footer {
+.footer {
   background-color: #353535;
 }
 
-footer .footer_logo {
+.footer_logo {
   font-size: 15px;
 }
 
-footer .footer_logo--white {
+.footer_logo--white {
+  color: #ffffff;
+}
+
+.footer_link {
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

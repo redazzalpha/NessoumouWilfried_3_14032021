@@ -185,17 +185,35 @@ h1, p, div
     }
 }
 
-footer
+.footer
 {
     background-color: $color-black-dark;
 
-    .footer_logo
+    &_logo
     {
         font-size: 15px;
+
         &--white
         {
             color: $color-white;
         }
+    }
+    &_nav
+    {
+
+    }
+    &_elem
+    {
+    }
+    &_link
+    {
+        @extend .--unlink;
+        color: $color-white;
+
+    }
+    &icon
+    {
+
     }
 }
 
