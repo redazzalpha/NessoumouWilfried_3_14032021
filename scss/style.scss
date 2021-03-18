@@ -181,7 +181,9 @@ h1, p, div
     }
     &_caption
     {
-
+    }
+    &_icon
+    {
     }
 }
 
@@ -209,11 +211,11 @@ h1, p, div
     {
         @extend .--unlink;
         color: $color-white;
-
     }
-    &icon
+    &_icon
     {
 
+        margin-right: 5px;
     }
 }
 
