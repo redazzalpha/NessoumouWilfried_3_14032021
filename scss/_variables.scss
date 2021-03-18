@@ -1,47 +1,24 @@
 
+$font-list: "shrikhand" "roboto";
+$font-logo: shrikhand, serif, sans-serif;
+$font-text: roboto, serif, sans-serif;
+
+$color-gray-light: #dddddd;
+$color-gray: #7f7f7f;;
+$color-white: #ffffff;
+$color-white-dirty: #f6f6f6;
+$color-black: #000000;
+$color-black-light: lighten(#000000, 50%);
+$color-black-dark: #353535;
 $color-primary: #FF79DA;
 $color-secondary: #9356DC;
 $color-tertiary: #99E2D0;
-$color-search-field: #dddddd;
-$color-explore-text: lighten(#000000, 50%);
-$color-explore-button: #ffffff;
+$color-gradient: linear-gradient($color-primary, $color-secondary);
+
 $color-background-explore: #f6f6f6;
-$color-background-restaurant: #f6f6f6;
-$color-background-footer: #353535;
-$color-background-explore-button: linear-gradient($color-primary, $color-secondary);
 
 $police-shrikhand: "shrikhand", serif, sans-serif;
 $police-roboto: "roboto", serif, sans-serif;
 
 $font-shrikhand: "shrikhand";
 $font-roboto: "roboto"; 
-
-$font-logo: $font-shrikhand;
-$font-title: $font-shrikhand;
-$font-text: $font-roboto;
-
-$font-size-header: 10px;
-$font-size-explore-title: 10px;
-$font-size-explore-text: 10px;
-
-$font-weight-explore-button: bold;
-
-$text-center: center;
-
-$width-max: 100%;
-$width-explore-button: 250px; 
-
-$height-search-field: 50px;
-$height-explore-button: 50px; 
-
-$shadow-search-field: 0px 5px 5px gray inset;
-
-$border-field-search: none;
-$border-radius-explore-button: 40px; 
-
-$outline-field-search: none;
-
-$padding-explore: 60px;
-$padding-explore-button: 20px;
-
-$margin-explore-button: auto;

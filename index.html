@@ -1,91 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="font/css/all.min.css">
-    <title>homyfood website</title>
-</head>
-<body>
 
-    <!-- wrapper -->
-    <div class="wrapper">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="scss/style.css">
+        <link rel="stylesheet" href="font/css/all.min.css">
+        <title>homyfood website</title>
+    </head>
 
-        <!-- header -->
-        <header>
-            <h1 class="logo_header">ohmyfood</h1>
-        </header>
-    
-        <!-- search -->
-        <div id="search">
-            <input type="text" name="field" id="searchField" class="field"  />
-        </div>
+    <body>
 
-        <!-- explore -->
-        <section id="explore">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez les restaurants d'exceptions, sélectionnés par nos soins.</p>
-            <div class="button">Explorer nos restaurants</div>
-        </section>
+        <!-- wrapper -->
+        <div class="wrapper">
 
-        <!-- functioning -->
-        <section id="functioning">
-            <h1>Fonctionnement</h1>
-            <nav>
-                <ul>
-                    <li><a href="#"><div class="button">choisissez un restaurant</div></a></li>
-                    <li><a href="#"><div class="button">Composez votre menu</div></a></li>
-                    <li><a href="#"><div class="button">Dégustez au restaurant</div></a></li>
-                </ul>
-            </nav>
-        </section>
+            <!-- header -->
+            <header class="header">
+                <h1 class="header_logo header_logo--black">ohmyfood</h1>
+            </header>
+        
+            <!-- search -->
+            <div class="search">
+                <input type="text" name="field" id="searchField" class="search_field"  />
+            </div>
 
-        <!-- restaurant -->
-        <section id="restaurants">
-            <h1>Restaurants</h1>
-            <!-- cards restaurant -->
-            <a href="#" class="card">
-                <img src="img/restaurants/laPaletteDeGout.jpg"alt="laPaletteDeGout.jpg" />
-                <div class="caption">
-                    <p>La palette du goût<br />Ménilmontant</p>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/restaurants/laNoteEnchantee.jpg"alt="laNoteEnchantee.jpg" />
-                <div class="caption">
-                    <p>La note enchantée<br />Charonne</p>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/restaurants/aLaFrancaise.jpg"alt="aLaFrancaise.jpg" />
-                <div class="caption">
-                    <p>A la Française<br />Cité Rouge</p>
-                </div>
-            </a>
-            <a href="#" class="card">
-                <img src="img/restaurants/leDeliceDesSens.jpg"alt="leDeliceDesSens.jpg" />
-                <div class="caption">
-                    <p>Le délice des sens<br />Folie Méricourt</p>
-                </div>
-            </a>
-        </section>
+            <!-- explore -->
+            <section class="explore">
+                <h1 class="explore_title">Réservez le menu qui vous convient</h1>
+                <p class="explore_text">Découvrez les restaurants d'exceptions, sélectionnés par nos soins.</p>
+                <div class="explore_button">Explorer nos restaurants</div>
+            </section>
 
-        <!-- footer  -->
-        <footer>
-            <h1 class="logo_footer">ohmyfood</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Proposer un restaurant</a></li>
-                    <li><a href="#">Devenir partenaire</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </footer>
+            <!-- functioning -->
+            <section class="functioning">
+                <h1 class="functioning_title">Fonctionnement</h1>
+                <nav class="functioning_nav">
+                    <ul>
 
-    <script src="js/app.js"></script>
-</body>
+
+
+                        <li class="functioning_elem --unlist">     
+                            <a href="#" class="functioning_link --unlink" >    
+                                <div class="functioning_button">
+                                    <i class="fas fa-mobile-alt fa-fw functioning_icon"></i>
+                                    <span class="functioning_sticker">1</span>
+                                    <p class="functioning_text">choisissez un restaurant</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="functioning_elem --unlist">     
+                            <a href="#" class="functioning_link --unlink" >    
+                                <div class="functioning_button">
+                                    <i class="fas fa-mobile-alt fa-fw functioning_icon"></i>
+                                    <span class="functioning_sticker">2</span>
+                                    <p class="functioning_text">Composez votre menu</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="functioning_elem --unlist">     
+                            <a href="#" class="functioning_link --unlink" >    
+                                <div class="functioning_button">
+                                    <i class="fas fa-mobile-alt fa-fw functioning_icon"></i>
+                                    <span class="functioning_sticker">3</span>
+                                    <p class="functioning_text">Dégustez au restaurant</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- restaurant -->
+            <section class="restaurants">
+                <h1>Restaurants</h1>
+                <!-- cards restaurant -->
+                <a href="#" class="restaurants_card">
+                    <img src="img/restaurants/laPaletteDeGout.jpg"alt="laPaletteDeGout.jpg" class="card_img"/>
+                    <div class="card_caption">
+                        <p>La palette du goût<br />Ménilmontant</p>
+                    </div>
+                </a>
+                <a href="#" class="restaurants_card">
+                    <img src="img/restaurants/laPaletteDeGout.jpg"alt="laPaletteDeGout.jpg" class="card_img"/>
+                    <div class="card_caption">
+                        <p>La palette du goût<br />Ménilmontant</p>
+                    </div>
+                </a>
+                <a href="#" class="restaurants_card">
+                    <img src="img/restaurants/laPaletteDeGout.jpg"alt="laPaletteDeGout.jpg" class="card_img"/>
+                    <div class="card_caption">
+                        <p>La palette du goût<br />Ménilmontant</p>
+                    </div>
+                </a>
+                <a href="#" class="restaurants_card">
+                    <img src="img/restaurants/laPaletteDeGout.jpg"alt="laPaletteDeGout.jpg" class="card_img"/>
+                    <div class="card_caption">
+                        <p>La palette du goût<br />Ménilmontant</p>
+                    </div>
+                </a>
+            </section>
+
+            <!-- footer  -->
+            <footer>
+                <h1 class="footer_logo footer_logo--white">ohmyfood</h1>
+                <nav class="footer_nav">
+                    <ul class="nav_list">
+                        <li class="list_elem"><a href="#" class="elem_link">Proposer un restaurant</a></li>
+                        <li><a href="#">Devenir partenaire</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        <script src="js/app.js"></script>
+    </body>
+
 </html>

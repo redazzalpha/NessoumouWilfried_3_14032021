@@ -3,8 +3,7 @@
     @font-face
     {
         font-family: $font;
-        src: url(../font/#{$font}/#{$font}.eot),
-        url(../font/#{$font}/#{$font}.eot?#iefix) format("embedded-opentype"),
+        src:url(../font/#{$font}/#{$font}.eot?#iefix) format("embedded-opentype"),
         url(../font/#{$font}/#{$font}.ttf) format("truetype"),
         url(../font/#{$font}/#{$font}.svg) format("svg"),
         url(../font/#{$font}/#{$font}.woff) format("woff"),
