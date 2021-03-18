@@ -23,7 +23,7 @@ h1, p, div {
   font-family: roboto, serif, sans-serif;
 }
 
-.--center, .header_logo, .search_field, .explore, .functioning_elem {
+.--center, .header_logo, .search_field, .explore, .functioning_elem, .restaurants {
   width: 100%;
   margin: auto;
   text-align: center;
@@ -41,11 +41,11 @@ h1, p, div {
   border-radius: 20px;
 }
 
-.--unlist {
+.--unlist, .functioning_elem {
   list-style-type: none;
 }
 
-.--unlink {
+.--unlink, .functioning_link, .restaurants_card {
   display: inline-block;
   text-decoration: none;
 }
@@ -97,12 +97,12 @@ h1, p, div {
   background-color: #f6f6f6;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-  margin: 20px;
+  margin: 15px;
 }
 
 .functioning_button {
   position: relative;
-  padding: 20px;
+  padding: 25px;
   color: #000000;
 }
 
@@ -112,7 +112,7 @@ h1, p, div {
   border-radius: 50%;
   padding: 4px 10px;
   background-color: #9356DC;
-  top: 16px;
+  top: 21px;
   left: -17px;
 }
 
@@ -120,8 +120,36 @@ h1, p, div {
   position: absolute;
   color: #7f7f7f;
   font-size: 23px;
-  top: 19px;
+  top: 25px;
   left: 23px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.restaurants_title {
+  text-align: start;
+}
+
+.restaurants_card {
+  width: 90%;
+  height: 250px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 20px;
+  color: #000000;
+  text-align: start;
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+}
+
+.restaurants_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
 }
 
 footer {
