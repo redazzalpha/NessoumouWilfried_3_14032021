@@ -95,8 +95,8 @@ h1, p, div {
 .functioning_link {
   width: 300px;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 4px 4px 4px gray;
-          box-shadow: 4px 4px 4px gray;
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   margin: 20px;
 }
 
