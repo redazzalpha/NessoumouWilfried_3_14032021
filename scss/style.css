@@ -23,7 +23,7 @@ h1, p, div {
   font-family: roboto, serif, sans-serif;
 }
 
-.--center, .header_logo, .search_field, .explore, .functioning_elem {
+.--center, .header_logo, .search_field, .explore, .functioning nav ul li {
   width: 100%;
   margin: auto;
   text-align: center;
@@ -33,19 +33,19 @@ h1, p, div {
   border-radius: 40px;
 }
 
-.--rounded-max {
+.--circle {
   border-radius: 50px;
 }
 
-.--rectangular, .functioning_link, .functioning_button {
+.--rectangular, .functioning nav ul li a, .functioning nav ul li a .button {
   border-radius: 15px;
 }
 
-.--unlist, .functioning_elem {
+.--unlist, .functioning nav ul li, .footer nav ul li {
   list-style-type: none;
 }
 
-.--unlink, .functioning_link, .restaurants_card, .restaurants_link, .footer_link {
+.--unlink, .functioning nav ul li a, .restaurants_card, .restaurants_link, .footer nav ul li a {
   display: inline-block;
   text-decoration: none;
   color: #000000;
@@ -131,7 +131,7 @@ h1, p, div {
   grid-column: 1;
 }
 
-.functioning_nav {
+.functioning nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
@@ -139,14 +139,14 @@ h1, p, div {
   grid-column: 1;
 }
 
-.functioning_list {
+.functioning nav ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
 }
 
-.functioning_link {
+.functioning nav ul li a {
   width: 300px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
@@ -154,13 +154,13 @@ h1, p, div {
   margin: 15px;
 }
 
-.functioning_button {
+.functioning nav ul li a .button {
   position: relative;
   padding: 25px;
   color: #000000;
 }
 
-.functioning_sticker {
+.functioning nav ul li a .button_sticker {
   position: absolute;
   color: #ffffff;
   border-radius: 50px;
@@ -170,7 +170,7 @@ h1, p, div {
   left: -17px;
 }
 
-.functioning_icon {
+.functioning nav ul li a .button_icon {
   position: absolute;
   color: #7f7f7f;
   font-size: 23px;
@@ -262,7 +262,7 @@ h1, p, div {
   color: #ffffff;
 }
 
-.footer_nav {
+.footer nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
@@ -272,7 +272,7 @@ h1, p, div {
   grid-column: 1;
 }
 
-.footer_list {
+.footer nav ul {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "proposition"  "partner" "mentions" "contact";
@@ -280,17 +280,7 @@ h1, p, div {
       grid-template-columns: 100%;
 }
 
-.footer_proposition {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: proposition;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-}
-
-.footer_partner {
+.footer nav ul li a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: partner;
@@ -298,33 +288,50 @@ h1, p, div {
   grid-row: 2;
   -ms-grid-column: 1;
   grid-column: 1;
-}
-
-.footer_mentions {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: mentions;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
-}
-
-.footer_contact {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: contact;
-  -ms-grid-row: 4;
-  grid-row: 4;
-  -ms-grid-column: 1;
-  grid-column: 1;
-}
-
-.footer_link {
   color: #ffffff;
 }
 
-.footer_icon {
+.footer nav ul li a .text_icon {
   margin-right: 5px;
+}
+
+.footer nav ul li a .proposition {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: proposition;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer nav ul li a .partner {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mentions;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.footer nav ul li a .mentions {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.footer nav ul li a .contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contact;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 4;
+  grid-row: 4;
 }
 /*# sourceMappingURL=style.css.map */

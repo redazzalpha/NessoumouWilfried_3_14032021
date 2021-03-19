@@ -13,12 +13,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 [class*=_logo]
 {
     font-family: $font-logo;
 }
-
 h1, p, div
 {
     font-family: $font-text;
@@ -35,7 +33,7 @@ h1, p, div
 {
     border-radius: $border-rounded;
 }
-.--rounded-max
+.--circle
 {
     border-radius: $border-circle;
 }
@@ -68,7 +66,6 @@ h1, p, div
         }
     }
 }
-
 .search
 {
     &_field
@@ -81,7 +78,6 @@ h1, p, div
         height: 50px;
     }
 }
-
 .explore
 {
     @extend .--center;
@@ -123,7 +119,6 @@ h1, p, div
         font-weight: bold;
     }
 }
-
 .functioning
 {
     display: grid;
@@ -137,58 +132,66 @@ h1, p, div
         grid-row: 1;
         grid-column: 1;      
     }
-    &_nav
+    nav
     {
         grid-area: nav;
         grid-row: 2;
-        grid-column: 1;      
-    }
-    &_list
-    {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-    &_elem
-    {
-        @extend .--center;
-        @extend .--unlist;
-    }
-    &_link
-    {
-        @extend .--rectangular;
-        @extend .--unlink;
-        width: 300px;
-        background-color: $color-white-dirty;
-        box-shadow: $shadow-regular;
-        margin: 15px;
-    }
-    &_button
-    {
-        @extend .--rectangular;
-        position: relative;
-        padding: 25px;
-        color: $color-black;
-    }
-    &_sticker
-    {
-        position : absolute;
-        color: $color-white;
-        border-radius: $border-circle;
-        padding: 4px 10px;
-        background-color: $color-secondary;
-        top: 21px;
-        left: -17px;
-    }
-    &_icon
-    {
-        position : absolute;
-        color: $color-gray;
-        font-size: 23px;
-        top: 25px;
-        left: 23px;
+        grid-column: 1;     
+        
+        ul
+        {
+            display: grid;
+            grid-template-columns: 100%;
+
+            li
+            {
+                @extend .--center;
+                @extend .--unlist;
+
+                a
+                {
+                    @extend .--rectangular;
+                    @extend .--unlink;
+                    width: 300px;
+                    background-color: $color-white-dirty;
+                    box-shadow: $shadow-regular;
+                    margin: 15px;
+
+                    .button
+                    {
+                        @extend .--rectangular;
+                        position: relative;
+                        padding: 25px;
+                        color: $color-black;
+
+                        &_sticker
+                        {
+                            position : absolute;
+                            color: $color-white;
+                            border-radius: $border-circle;
+                            padding: 4px 10px;
+                            background-color: $color-secondary;
+                            top: 21px;
+                            left: -17px;
+                        }
+                        &_icon
+                        {
+                            position : absolute;
+                            color: $color-gray;
+                            font-size: 23px;
+                            top: 25px;
+                            left: 23px;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 }
-
 .restaurants
 {
     display: grid;
@@ -242,7 +245,6 @@ h1, p, div
         font-size: 30px;
     }
 }
-
 .footer
 {
     display: grid;
@@ -264,58 +266,73 @@ h1, p, div
             color: $color-white;
         }
     }
-    &_nav
+    nav
     {
         grid-area: nav;
         grid-row: 2;
-        grid-column: 1;      
-    }
-    &_list
-    {
-        display: grid;
-        grid-template-areas: 
-        "proposition" 
-        "partner"
-        "mentions"
-        "contact";
-        grid-template-columns: 100%;
-    }
-    &_proposition
-    {
-        grid-area: proposition;
-        grid-row: 1;
-        grid-column: 1;
-      
+        grid-column: 1;  
+        
+        ul
+        {
+            display: grid;
+            grid-template-areas: 
+            "proposition" 
+            "partner"
+            "mentions"
+            "contact";
+            grid-template-columns: 100%;
 
-    }
-    &_partner
-    {
-        grid-area: partner;
-        grid-row: 2;
-        grid-column: 1;      
-    }
-    &_mentions
-    {
-        grid-area: mentions;
-        grid-row: 3;
-        grid-column: 1;
-      
-    }
-    &_contact
-    {
-        grid-area: contact;
-        grid-row: 4;
-        grid-column: 1;    
-    }
-    &_link
-    {
-        @extend .--unlink;
-        color: $color-white;
-    }
-    &_icon
-    {
-
-        margin-right: 5px;
+            li
+            {
+                @extend .--unlist;
+                a
+                {
+                    @extend .--unlink;
+                    grid-area: partner;
+                    grid-row: 2;
+                    grid-column: 1;    
+                    color: $color-white;
+                     
+                    .text
+                    {
+                        &_icon
+                        {
+                            margin-right: 5px;
+                        } 
+                    }
+                    .proposition
+                    {
+                        grid-area: proposition;
+                        grid-column: 1;
+                        grid-row: 1;
+        
+                    }
+                    .partner
+                    {
+                        grid-area: mentions;
+                        grid-column: 1;
+                        grid-row: 2;
+                    
+                    }
+                    .mentions
+                    {
+                        grid-area: contact;
+                        grid-column: 1;    
+                        grid-row: 3;
+                    }
+                    .contact
+                    {
+                        grid-area: contact;
+                        grid-column: 1;    
+                        grid-row: 4;
+                    }
+                }
+            }
+            
+        }
+    
     }
 }
+
+
 
