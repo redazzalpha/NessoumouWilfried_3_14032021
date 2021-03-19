@@ -181,10 +181,10 @@ h1, p, div
 .restaurants
 {
     display: grid;
-    grid-template-columns:  minmax(0,1fr);
+    grid-template-columns:  minmax(0,100%);
     justify-content: center;
     background-color: $color-white-dirty;
-    
+
     &_title
     {
         text-align: start;
@@ -207,6 +207,22 @@ h1, p, div
         height: 70%;
         border-radius: 15px 15px 0 0;
     }
+    &_caption
+    {
+        display: grid;
+        grid-template-areas: "text icon";
+        grid-template-columns: 80%;
+        padding: 10px;
+    }
+    &_text
+    {
+        grid-area: text;
+    }
+    &_icon
+    {
+        grid-area: icon;
+        font-size: 30px;
+    }
 }
 
 .footer
@@ -216,6 +232,7 @@ h1, p, div
     "logo"
     "nav";
     background-color: $color-black-dark;
+    padding: 20px;
 
     &_logo
     {
@@ -244,6 +261,7 @@ h1, p, div
     &_proposition
     {
         grid-area: proposition;
+
     }
     &_partner
     {

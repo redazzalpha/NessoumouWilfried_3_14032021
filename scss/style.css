@@ -83,7 +83,7 @@ h1, p, div {
 }
 
 .explore_text {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
   margin: 5px 5px 20px 5px;
@@ -164,8 +164,8 @@ h1, p, div {
 .restaurants {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 1fr);
-      grid-template-columns: minmax(0, 1fr);
+  -ms-grid-columns: minmax(0, 100%);
+      grid-template-columns: minmax(0, 100%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -195,11 +195,34 @@ h1, p, div {
   border-radius: 15px 15px 0 0;
 }
 
+.restaurants_caption {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text icon";
+  -ms-grid-columns: 80%;
+      grid-template-columns: 80%;
+  padding: 10px;
+}
+
+.restaurants_text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.restaurants_icon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon;
+  font-size: 30px;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo" "nav";
   background-color: #353535;
+  padding: 20px;
 }
 
 .footer_logo {
