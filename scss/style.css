@@ -45,7 +45,7 @@ h1, p, div {
   list-style-type: none;
 }
 
-.--unlink, .functioning nav ul li a, .restaurants_card, .restaurants_link, .footer nav ul li a {
+.--unlink, .functioning nav ul li a, .restaurants .card, .restaurants .card_link, .footer nav ul li a {
   display: inline-block;
   text-decoration: none;
   color: #000000;
@@ -53,9 +53,6 @@ h1, p, div {
 
 .header_logo {
   font-size: 30px;
-}
-
-.header_logo--black {
   color: #000000;
 }
 
@@ -193,7 +190,7 @@ h1, p, div {
   text-align: start;
 }
 
-.restaurants_card {
+.restaurants .card {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "link";
@@ -207,7 +204,7 @@ h1, p, div {
   position: relative;
 }
 
-.restaurants_link {
+.restaurants .card_link {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: link;
@@ -220,7 +217,7 @@ h1, p, div {
   height: 240px;
 }
 
-.restaurants_img {
+.restaurants .card_link_img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -228,11 +225,11 @@ h1, p, div {
   border-radius: 15px 15px 0 0;
 }
 
-.restaurants_caption {
+.restaurants .card_link_caption {
   padding: 10px;
 }
 
-.restaurants_icon {
+.restaurants .card_icon {
   position: absolute;
   top: 79%;
   left: 80%;
@@ -256,9 +253,6 @@ h1, p, div {
   -ms-grid-column: 1;
   grid-column: 1;
   font-size: 15px;
-}
-
-.footer_logo--white {
   color: #ffffff;
 }
 
@@ -289,10 +283,6 @@ h1, p, div {
   -ms-grid-column: 1;
   grid-column: 1;
   color: #ffffff;
-}
-
-.footer nav ul li a .text_icon {
-  margin-right: 5px;
 }
 
 .footer nav ul li a .proposition {
@@ -333,5 +323,9 @@ h1, p, div {
   grid-column: 1;
   -ms-grid-row: 4;
   grid-row: 4;
+}
+
+.footer nav ul li a .opt--icon {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
