@@ -23,7 +23,7 @@ h1, p, div {
   font-family: roboto, serif, sans-serif;
 }
 
-.--center, .header_logo, .search_field, .explore, .functioning_elem, .restaurants {
+.--center, .header_logo, .search_field, .explore, .functioning_elem {
   width: 100%;
   margin: auto;
   text-align: center;
@@ -70,7 +70,7 @@ h1, p, div {
 .explore {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "title" "text" "button";
+      grid-template-areas: "title"  "text" "button";
   background-color: #f6f6f6;
   padding: 40px;
 }
@@ -122,6 +122,13 @@ h1, p, div {
   grid-area: nav;
 }
 
+.functioning_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
 .functioning_link {
   width: 300px;
   background-color: #f6f6f6;
@@ -157,6 +164,11 @@ h1, p, div {
 .restaurants {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f6f6f6;
 }
 
@@ -165,7 +177,6 @@ h1, p, div {
 }
 
 .restaurants_card {
-  width: 90%;
   height: 250px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -206,6 +217,38 @@ h1, p, div {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
+}
+
+.footer_list {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "proposition"  "partner" "mentions" "contact";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.footer_proposition {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: proposition;
+}
+
+.footer_partner {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: partner;
+}
+
+.footer_mentions {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mentions;
+}
+
+.footer_contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contact;
 }
 
 .footer_link {

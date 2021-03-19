@@ -24,6 +24,7 @@ h1, p, div
     font-family: $font-text;
 }
 
+
 .--center
 {
     width: 100%;
@@ -51,6 +52,7 @@ h1, p, div
     display: inline-block;
     text-decoration: none;
 }
+
 
 .header
 {
@@ -83,7 +85,10 @@ h1, p, div
 {
     @extend .--center;
     display: grid;
-    grid-template-areas: "title" "text" "button";
+    grid-template-areas: 
+    "title" 
+    "text"
+    "button";
     background-color: $color-white-dirty;
     padding: 40px;
 
@@ -114,9 +119,10 @@ h1, p, div
 
 .functioning
 {
-
     display: grid;
-    grid-template-areas: "title" "nav";
+    grid-template-areas:
+    "title"
+    "nav";
 
     &_title
     {
@@ -125,6 +131,11 @@ h1, p, div
     &_nav
     {
         grid-area: nav;
+    }
+    &_list
+    {
+        display: grid;
+        grid-template-columns: 100%;
     }
     &_elem
     {
@@ -169,8 +180,9 @@ h1, p, div
 
 .restaurants
 {
-    @extend .--center;
     display: grid;
+    grid-template-columns:  minmax(0,1fr);
+    justify-content: center;
     background-color: $color-white-dirty;
     
     &_title
@@ -180,7 +192,6 @@ h1, p, div
     &_card
     {   
         @extend .--unlink;
-        width:90%;
         height: 250px;
         border-radius: 15px;
         background-color: $color-white;
@@ -188,7 +199,6 @@ h1, p, div
         color: $color-black;
         text-align: start;
         box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-
     }
     &_img
     {
@@ -202,7 +212,9 @@ h1, p, div
 .footer
 {
     display: grid;
-    grid-template-areas:  "logo" "nav";
+    grid-template-areas:
+    "logo"
+    "nav";
     background-color: $color-black-dark;
 
     &_logo
@@ -218,6 +230,32 @@ h1, p, div
     &_nav
     {
         grid-area: nav;
+    }
+    &_list
+    {
+        display: grid;
+        grid-template-areas: 
+        "proposition" 
+        "partner"
+        "mentions"
+        "contact";
+        grid-template-columns: 100%;
+    }
+    &_proposition
+    {
+        grid-area: proposition;
+    }
+    &_partner
+    {
+        grid-area: partner;
+    }
+    &_mentions
+    {
+        grid-area: mentions;
+    }
+    &_contact
+    {
+        grid-area: contact;
     }
     &_link
     {
