@@ -3,22 +3,24 @@ $font-list: "shrikhand" "roboto";
 $font-logo: shrikhand, serif, sans-serif;
 $font-text: roboto, serif, sans-serif;
 
-$color-gray-light: #dddddd;
-$color-gray: #7f7f7f;;
 $color-white: #ffffff;
 $color-white-dirty: #f6f6f6;
+$color-gray: #7f7f7f;;
+$color-gray-light: #dddddd;
 $color-black: #000000;
 $color-black-light: lighten(#000000, 50%);
 $color-black-dark: #353535;
+$color-shadow: rgba(128, 128, 128, 0.352);
 $color-primary: #FF79DA;
 $color-secondary: #9356DC;
 $color-tertiary: #99E2D0;
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 
-$color-background-explore: #f6f6f6;
+$shadow-regular: 7px 7px 7px $color-shadow;
+$shadow-light: 0 5px 5px $color-gray;
 
-$police-shrikhand: "shrikhand", serif, sans-serif;
-$police-roboto: "roboto", serif, sans-serif;
+$border-up: 15px 15px 0 0;
+$border-rounded: 40px;
+$border-circle: 50px;
+$border-rectangular: 15px;
 
-$font-shrikhand: "shrikhand";
-$font-roboto: "roboto"; 

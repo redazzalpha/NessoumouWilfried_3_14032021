@@ -34,20 +34,21 @@ h1, p, div {
 }
 
 .--rounded-max {
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 .--rectangular, .functioning_link, .functioning_button {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .--unlist, .functioning_elem {
   list-style-type: none;
 }
 
-.--unlink, .functioning_link, .restaurants_card, .footer_link {
+.--unlink, .functioning_link, .restaurants_card, .restaurants_link, .footer_link {
   display: inline-block;
   text-decoration: none;
+  color: #000000;
 }
 
 .header_logo {
@@ -60,8 +61,8 @@ h1, p, div {
 
 .search_field {
   background-color: #dddddd;
-  -webkit-box-shadow: 0 5px 5px gray inset;
-          box-shadow: 0 5px 5px gray inset;
+  -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
+          box-shadow: 0 5px 5px #7f7f7f inset;
   outline: none;
   border: none;
   height: 50px;
@@ -70,7 +71,7 @@ h1, p, div {
 .explore {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "title"  "text" "button";
+      grid-template-areas: "title"  "text" "button";
   background-color: #f6f6f6;
   padding: 40px;
 }
@@ -78,17 +79,13 @@ h1, p, div {
 .explore_title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
   grid-area: title;
   font-weight: bold;
 }
 
 .explore_text {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
   grid-area: text;
   margin: 5px 5px 20px 5px;
   color: gray;
@@ -97,8 +94,6 @@ h1, p, div {
 .explore_button {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-row: 3;
-  grid-column: 1;
   grid-area: button;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -119,16 +114,12 @@ h1, p, div {
 .functioning_title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
   grid-area: title;
 }
 
 .functioning_nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-row: 2;
-  grid-column: 1;
   grid-area: nav;
 }
 
@@ -156,7 +147,7 @@ h1, p, div {
 .functioning_sticker {
   position: absolute;
   color: #ffffff;
-  border-radius: 50%;
+  border-radius: 50px;
   padding: 4px 10px;
   background-color: #9356DC;
   top: 21px;
@@ -187,14 +178,26 @@ h1, p, div {
 }
 
 .restaurants_card {
-  height: 250px;
-  border-radius: 15px;
-  background-color: #ffffff;
-  margin: 20px;
-  color: #000000;
-  text-align: start;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "link";
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  margin: 20px;
+  text-align: start;
+  position: relative;
+}
+
+.restaurants_link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: link;
+  border-radius: 15px;
+  width: 100%;
+  height: 240px;
 }
 
 .restaurants_img {
@@ -206,28 +209,13 @@ h1, p, div {
 }
 
 .restaurants_caption {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "text icon";
-  -ms-grid-columns: 80%;
-      grid-template-columns: 80%;
   padding: 10px;
 }
 
-.restaurants_text {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
-  grid-area: text;
-}
-
 .restaurants_icon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-row: 1;
-  grid-column: 2;
-  grid-area: icon;
+  position: absolute;
+  top: 79%;
+  left: 80%;
   font-size: 30px;
 }
 
@@ -242,8 +230,6 @@ h1, p, div {
 .footer_logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
   grid-area: logo;
   font-size: 15px;
 }
@@ -255,8 +241,6 @@ h1, p, div {
 .footer_nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-row: 2;
-  grid-column: 1;
   grid-area: nav;
 }
 
@@ -271,32 +255,24 @@ h1, p, div {
 .footer_proposition {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
   grid-area: proposition;
 }
 
 .footer_partner {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-row: 2;
-  grid-column: 1;
   grid-area: partner;
 }
 
 .footer_mentions {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-row: 3;
-  grid-column: 1;
   grid-area: mentions;
 }
 
 .footer_contact {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  grid-row: 4;
-  grid-column: 1;
   grid-area: contact;
 }
 
