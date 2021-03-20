@@ -23,60 +23,81 @@ h1, p, div
 }
 
 
-.--center
+.center
 {
     width: 100%;
     margin: auto;
     text-align: center;
 }   
-.--rounded
+.rounded
 {
     border-radius: $border-rounded;
 }
-.--circle
+.circle
 {
     border-radius: $border-circle;
 }
-.--rectangular
+.rectangular
 {
     border-radius: $border-rectangular;
 }
-.--unlist
+.unlist
 {
     list-style-type: none;;
 }
-.--unlink
+.unlink
 {
     display: inline-block;
     text-decoration: none;
     color: $color-black;
 }
 
+.wrapper
+{
+}
 
 .header
 {
     &_logo
     {
-        @extend .--center;
+        @extend .center;
         font-size: 30px;
         color: $color-black;
     }
 }
 .search
 {
-    &_field
+    @extend .center;
+
+    &_container
     {
-        @extend .--center;
-        background-color: $color-gray-light;
-        box-shadow: $shadow-light inset;
-        outline: none;
-        border: none;
-        height: 50px;
+        display: inline-block;
+        position: relative;
+
+        &_icon
+        {
+            position: absolute;
+            z-index: 3;
+
+            left:26%;
+            top: 24%;
+            font-size: 20px;
+        }
+        &_field
+        {
+            font-size: 20px;
+            padding-left: 155px;
+            background-color: $color-gray-light;
+            box-shadow: $shadow-light inset;
+            outline: none;
+            border: none;
+            height: 50px;
+        }
     }
 }
 .explore
 {
-    @extend .--center;
+    @extend .center;
     display: grid;
     grid-template-areas: 
     "title" 
@@ -102,7 +123,7 @@ h1, p, div
     }
     &_button
     {
-    @extend .--rounded;
+    @extend .rounded;
         grid-area: button;
         grid-row: 3;
         grid-column: 1;      
@@ -141,13 +162,13 @@ h1, p, div
 
             li
             {
-                @extend .--center;
-                @extend .--unlist;
+                @extend .center;
+                @extend .unlist;
 
                 a
                 {
-                    @extend .--rectangular;
-                    @extend .--unlink;
+                    @extend .rectangular;
+                    @extend .unlink;
                     width: 300px;
                     background-color: $color-white-dirty;
                     box-shadow: $shadow-regular;
@@ -155,7 +176,7 @@ h1, p, div
 
                     .button
                     {
-                        @extend .--rectangular;
+                        @extend .rectangular;
                         position: relative;
                         padding: 25px;
                         color: $color-black;
@@ -201,7 +222,7 @@ h1, p, div
     }
     .card
     {
-        @extend .--unlink;
+        @extend .unlink;
         display: grid;
         grid-template-areas: "link";
         box-shadow: $shadow-regular;
@@ -214,7 +235,7 @@ h1, p, div
 
         &_link
         {   
-            @extend .--unlink;
+            @extend .unlink;
             grid-area: link;
             grid-row: 1;
             grid-column: 1;      
@@ -279,10 +300,10 @@ h1, p, div
 
             li
             {
-                @extend .--unlist;
+                @extend .unlist;
                 a
                 {
-                    @extend .--unlink;
+                    @extend .unlink;
                     grid-area: partner;
                     grid-row: 2;
                     grid-column: 1;    

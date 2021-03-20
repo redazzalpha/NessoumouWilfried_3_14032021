@@ -10,10 +10,11 @@ $color-gray-light: #dddddd;
 $color-black: #000000;
 $color-black-light: lighten(#000000, 50%);
 $color-black-dark: #353535;
-$color-shadow: rgba(128, 128, 128, 0.352);
 $color-primary: #FF79DA;
 $color-secondary: #9356DC;
 $color-tertiary: #99E2D0;
+$color-transprent: #00000000;
+$color-shadow: rgba(128, 128, 128, 0.352);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 
 $shadow-regular: 7px 7px 7px $color-shadow;

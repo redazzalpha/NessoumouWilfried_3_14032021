@@ -23,29 +23,29 @@ h1, p, div {
   font-family: roboto, serif, sans-serif;
 }
 
-.--center, .header_logo, .search_field, .explore, .functioning nav ul li {
+.center, .header_logo, .search, .explore, .functioning nav ul li {
   width: 100%;
   margin: auto;
   text-align: center;
 }
 
-.--rounded, .explore_button {
+.rounded, .explore_button {
   border-radius: 40px;
 }
 
-.--circle {
+.circle {
   border-radius: 50px;
 }
 
-.--rectangular, .functioning nav ul li a, .functioning nav ul li a .button {
+.rectangular, .functioning nav ul li a, .functioning nav ul li a .button {
   border-radius: 15px;
 }
 
-.--unlist, .functioning nav ul li, .footer nav ul li {
+.unlist, .functioning nav ul li, .footer nav ul li {
   list-style-type: none;
 }
 
-.--unlink, .functioning nav ul li a, .restaurants .card, .restaurants .card_link, .footer nav ul li a {
+.unlink, .functioning nav ul li a, .restaurants .card, .restaurants .card_link, .footer nav ul li a {
   display: inline-block;
   text-decoration: none;
   color: #000000;
@@ -56,7 +56,22 @@ h1, p, div {
   color: #000000;
 }
 
-.search_field {
+.search_container {
+  display: inline-block;
+  position: relative;
+}
+
+.search_container_icon {
+  position: absolute;
+  z-index: 3;
+  left: 26%;
+  top: 24%;
+  font-size: 20px;
+}
+
+.search_container_field {
+  font-size: 20px;
+  padding-left: 155px;
   background-color: #dddddd;
   -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
           box-shadow: 0 5px 5px #7f7f7f inset;
