@@ -16,6 +16,7 @@ $color-tertiary: #99E2D0;
 $color-transprent: #00000000;
 $color-shadow: rgba(128, 128, 128, 0.352);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
+$color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
 
 $shadow-regular: 7px 7px 7px $color-shadow;
 $shadow-light: 0 5px 5px $color-gray;

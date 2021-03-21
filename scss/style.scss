@@ -203,6 +203,11 @@ h1, p, div
                             top: 24px;
                             left: 30px;
                         }
+                        &:hover .button_icon
+                        {
+                            color: $color-secondary;
+                        }
+    
                     }
 
                 }
@@ -230,8 +235,6 @@ h1, p, div
     .card
     {
         @extend .unlink;
-        display: grid;
-        grid-template-areas: "link";
         box-shadow: $shadow-regular;
         background-color: $color-white;
         color: $color-black;
@@ -242,9 +245,6 @@ h1, p, div
         &_link
         {   
             @extend .unlink;
-            grid-area: link;
-            grid-row: 1;
-            grid-column: 1;      
             border-radius: $border-rectangular;
             width: 100%;
             height: 240px;
@@ -267,10 +267,60 @@ h1, p, div
             top: 79%;
             left: 80%;
             font-size: 30px;
+            &--full
+            {
+                color: $color-transprent; 
+            }
+            &--full:hover
+            {
+                color: $color-secondary;       
+            }
         }
     
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer
 {
     display: grid;
