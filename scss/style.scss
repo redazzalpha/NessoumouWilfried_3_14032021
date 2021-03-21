@@ -52,6 +52,7 @@ h1, p, div
     color: $color-black;
 }
 
+
 .header
 {
     padding: $padding-regular;
@@ -65,7 +66,7 @@ h1, p, div
 .search
 {
     @extend .center;
-
+    
     &_container
     {
         display: inline-block;
@@ -89,6 +90,7 @@ h1, p, div
             border: none;
             height: 50px;
             color: $color-black-gray;
+            width: 100%;
         }
     }
 }
@@ -160,7 +162,7 @@ h1, p, div
         ul
         {
             display: grid;
-            grid-template-columns: 90%;
+            grid-template-columns: 100%;
 
             li
             {
@@ -219,7 +221,7 @@ h1, p, div
     justify-content: center;
     background-color: $color-white-dirty;
     padding: $padding-down;
-    
+
     &_title
     {
         text-align: start;

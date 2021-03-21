@@ -83,6 +83,7 @@ h1, p, div {
   border: none;
   height: 50px;
   color: #353535;
+  width: 100%;
 }
 
 .explore {
@@ -164,8 +165,8 @@ h1, p, div {
 .functioning nav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90%;
-      grid-template-columns: 90%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .functioning nav ul li a {
