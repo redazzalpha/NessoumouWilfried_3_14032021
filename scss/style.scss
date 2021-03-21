@@ -75,15 +75,15 @@ h1, p, div
         &_icon
         {
             position: absolute;
-            left:26%;
-            top: 24%;
+            left:102px;
+            top: 13px;
             font-size: 20px;
             color: $color-black-gray;
         }
         &_field
         {
             font-size: 19px;
-            padding: 0 0 0 150px;
+            padding-left: 135px;
             background-color: $color-gray-light;
             box-shadow: $shadow-light inset;
             outline: none;
@@ -173,7 +173,7 @@ h1, p, div
                 {
                     @extend .rectangular;
                     @extend .unlink;
-                    width: 342px;
+                    width: 325px;
                     background-color: $color-white-dirty;
                     box-shadow: $shadow-regular;
                     margin: 15px;
@@ -182,7 +182,7 @@ h1, p, div
                     {
                         @extend .rectangular;
                         position: relative;
-                        padding: $padding-regular;
+                        padding: 25px;
                         color: $color-black;
 
                         &_sticker
@@ -200,8 +200,8 @@ h1, p, div
                             position : absolute;
                             color: $color-gray;
                             font-size: 23px;
-                            top: 25px;
-                            left: 33px;
+                            top: 24px;
+                            left: 30px;
                         }
                     }
 

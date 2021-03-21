@@ -67,15 +67,15 @@ h1, p, div {
 
 .search_container_icon {
   position: absolute;
-  left: 26%;
-  top: 24%;
+  left: 102px;
+  top: 13px;
   font-size: 20px;
   color: #353535;
 }
 
 .search_container_field {
   font-size: 19px;
-  padding: 0 0 0 150px;
+  padding-left: 135px;
   background-color: #dddddd;
   -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
           box-shadow: 0 5px 5px #7f7f7f inset;
@@ -170,7 +170,7 @@ h1, p, div {
 }
 
 .functioning nav ul li a {
-  width: 342px;
+  width: 325px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
@@ -179,7 +179,7 @@ h1, p, div {
 
 .functioning nav ul li a .button {
   position: relative;
-  padding: 20px;
+  padding: 25px;
   color: #000000;
 }
 
@@ -197,8 +197,8 @@ h1, p, div {
   position: absolute;
   color: #7f7f7f;
   font-size: 23px;
-  top: 25px;
-  left: 33px;
+  top: 24px;
+  left: 30px;
 }
 
 .restaurants {
