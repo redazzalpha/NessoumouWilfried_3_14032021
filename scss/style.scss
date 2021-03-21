@@ -54,7 +54,7 @@ h1, p, div
 
 .header
 {
-    padding: 20px;
+    padding: $padding-regular;
     &_logo
     {
         @extend .center;
@@ -82,7 +82,7 @@ h1, p, div
         &_field
         {
             font-size: 19px;
-            padding-left: 150px;
+            padding: 0 0 0 150px;
             background-color: $color-gray-light;
             box-shadow: $shadow-light inset;
             outline: none;
@@ -101,7 +101,7 @@ h1, p, div
     "text"
     "button";
     background-color: $color-white-dirty;
-    padding: 20px;
+    padding: $padding-regular;
 
     &_title
     {
@@ -142,7 +142,7 @@ h1, p, div
     grid-template-areas:
     "title"
     "nav";
-    padding: 20px 20px 50px 20px;
+    padding: $padding-down;
 
     &_title
     {
@@ -160,7 +160,7 @@ h1, p, div
         ul
         {
             display: grid;
-            grid-template-columns: 100%;
+            grid-template-columns: 90%;
 
             li
             {
@@ -180,7 +180,7 @@ h1, p, div
                     {
                         @extend .rectangular;
                         position: relative;
-                        padding: 25px;
+                        padding: $padding-regular;
                         color: $color-black;
 
                         &_sticker
@@ -218,7 +218,7 @@ h1, p, div
     row-gap: 20px;
     justify-content: center;
     background-color: $color-white-dirty;
-    padding: 20px 20px 60px 20px;
+    padding: $padding-down;
     
     &_title
     {
@@ -276,7 +276,7 @@ h1, p, div
     "logo"
     "nav";
     background-color: $color-black-gray;
-    padding: 20px;
+    padding: $padding-regular;
 
     &_logo
     {
