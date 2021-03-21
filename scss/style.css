@@ -51,6 +51,10 @@ h1, p, div {
   color: #000000;
 }
 
+.header {
+  padding: 20px;
+}
+
 .header_logo {
   font-size: 30px;
   color: #000000;
@@ -63,14 +67,14 @@ h1, p, div {
 
 .search_container_icon {
   position: absolute;
-  z-index: 3;
   left: 26%;
   top: 24%;
   font-size: 20px;
+  color: #353535;
 }
 
 .search_container_field {
-  font-size: 20px;
+  font-size: 19px;
   padding-left: 150px;
   background-color: #dddddd;
   -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
@@ -78,6 +82,7 @@ h1, p, div {
   outline: none;
   border: none;
   height: 50px;
+  color: #353535;
 }
 
 .explore {
@@ -85,7 +90,7 @@ h1, p, div {
   display: grid;
       grid-template-areas: "title"  "text" "button";
   background-color: #f6f6f6;
-  padding: 40px;
+  padding: 20px;
 }
 
 .explore_title {
@@ -125,12 +130,16 @@ h1, p, div {
   width: 220px;
   margin: auto;
   font-weight: bold;
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  margin-bottom: 35px;
 }
 
 .functioning {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title" "nav";
+  padding: 20px 20px 50px 20px;
 }
 
 .functioning_title {
@@ -141,6 +150,7 @@ h1, p, div {
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
+  margin: 30px 0 10px 0;
 }
 
 .functioning nav {
@@ -159,7 +169,7 @@ h1, p, div {
 }
 
 .functioning nav ul li a {
-  width: 300px;
+  width: 342px;
   background-color: #f6f6f6;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
@@ -179,7 +189,7 @@ h1, p, div {
   padding: 4px 10px;
   background-color: #9356DC;
   top: 21px;
-  left: -17px;
+  left: -15px;
 }
 
 .functioning nav ul li a .button_icon {
@@ -187,7 +197,7 @@ h1, p, div {
   color: #7f7f7f;
   font-size: 23px;
   top: 25px;
-  left: 23px;
+  left: 33px;
 }
 
 .restaurants {
@@ -195,14 +205,17 @@ h1, p, div {
   display: grid;
   -ms-grid-columns: minmax(0, 100%);
       grid-template-columns: minmax(0, 100%);
+  row-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #f6f6f6;
+  padding: 20px 20px 60px 20px;
 }
 
 .restaurants_title {
   text-align: start;
+  margin-top: 30px;
 }
 
 .restaurants .card {
@@ -214,7 +227,6 @@ h1, p, div {
   background-color: #ffffff;
   color: #000000;
   border-radius: 15px;
-  margin: 20px;
   text-align: start;
   position: relative;
 }

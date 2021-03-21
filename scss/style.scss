@@ -52,12 +52,9 @@ h1, p, div
     color: $color-black;
 }
 
-.wrapper
-{
-}
-
 .header
 {
+    padding: 20px;
     &_logo
     {
         @extend .center;
@@ -77,21 +74,21 @@ h1, p, div
         &_icon
         {
             position: absolute;
-            z-index: 3;
-
             left:26%;
             top: 24%;
             font-size: 20px;
+            color: $color-black-gray;
         }
         &_field
         {
-            font-size: 20px;
+            font-size: 19px;
             padding-left: 150px;
             background-color: $color-gray-light;
             box-shadow: $shadow-light inset;
             outline: none;
             border: none;
             height: 50px;
+            color: $color-black-gray;
         }
     }
 }
@@ -104,7 +101,7 @@ h1, p, div
     "text"
     "button";
     background-color: $color-white-dirty;
-    padding: 40px;
+    padding: 20px;
 
     &_title
     {
@@ -123,7 +120,7 @@ h1, p, div
     }
     &_button
     {
-    @extend .rounded;
+        @extend .rounded;
         grid-area: button;
         grid-row: 3;
         grid-column: 1;      
@@ -134,6 +131,9 @@ h1, p, div
         width: 220px;
         margin: auto;
         font-weight: bold;
+        box-shadow: $shadow-regular;
+        margin-bottom: 35px;
+
     }
 }
 .functioning
@@ -142,12 +142,14 @@ h1, p, div
     grid-template-areas:
     "title"
     "nav";
+    padding: 20px 20px 50px 20px;
 
     &_title
     {
         grid-area: title;
         grid-row: 1;
-        grid-column: 1;      
+        grid-column: 1;     
+        margin: 30px 0 10px 0;
     }
     nav
     {
@@ -169,7 +171,7 @@ h1, p, div
                 {
                     @extend .rectangular;
                     @extend .unlink;
-                    width: 300px;
+                    width: 342px;
                     background-color: $color-white-dirty;
                     box-shadow: $shadow-regular;
                     margin: 15px;
@@ -189,7 +191,7 @@ h1, p, div
                             padding: 4px 10px;
                             background-color: $color-secondary;
                             top: 21px;
-                            left: -17px;
+                            left: -15px;
                         }
                         &_icon
                         {
@@ -197,7 +199,7 @@ h1, p, div
                             color: $color-gray;
                             font-size: 23px;
                             top: 25px;
-                            left: 23px;
+                            left: 33px;
                         }
                     }
 
@@ -213,12 +215,15 @@ h1, p, div
 {
     display: grid;
     grid-template-columns:  minmax(0,100%);
+    row-gap: 20px;
     justify-content: center;
     background-color: $color-white-dirty;
-
+    padding: 20px 20px 60px 20px;
+    
     &_title
     {
         text-align: start;
+        margin-top: 30px;
     }
     .card
     {
@@ -229,7 +234,6 @@ h1, p, div
         background-color: $color-white;
         color: $color-black;
         border-radius: $border-rectangular;
-        margin: 20px;
         text-align: start;
         position: relative;
 
@@ -271,7 +275,7 @@ h1, p, div
     grid-template-areas:
     "logo"
     "nav";
-    background-color: $color-black-dark;
+    background-color: $color-black-gray;
     padding: 20px;
 
     &_logo
