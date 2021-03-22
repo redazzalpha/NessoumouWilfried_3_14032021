@@ -2,6 +2,7 @@
 
 @import "variables";
 @import "mixin";
+@import "media";
 
 @each $font in $font-list 
 {@include getFont($font);}

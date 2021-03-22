@@ -1,3 +1,24 @@
+@media screen and (min-width: 1126px) {
+  .wrapper > .functioning nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .wrapper > .restaurants {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    gap: 50px;
+  }
+  .wrapper > .restaurants .restaurants_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2");

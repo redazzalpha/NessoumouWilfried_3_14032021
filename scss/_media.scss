@@ -1,0 +1,44 @@
+
+
+
+
+
+@media screen and (min-width: 1126px)
+{
+    .wrapper > .functioning
+    {
+        nav
+        {
+            ul
+            {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+        }
+    }
+    .wrapper > .restaurants
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 50px;
+
+        & .restaurants_title
+        {
+            grid-column: 1 / span 2;
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
