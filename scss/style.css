@@ -119,6 +119,8 @@ h1, p, div {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header" "search" "explore" "functioning" "restaurants";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .header {
