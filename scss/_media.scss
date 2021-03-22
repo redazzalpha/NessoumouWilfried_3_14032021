@@ -11,10 +11,7 @@
     }
     .wrapper > .header
     {
-        .header_logo
-        {
-            @include uncenter;
-        }
+       & .header_logo { @include uncenter; }
     }
     .wrapper > .search
     {
@@ -23,8 +20,8 @@
     }
     .wrapper > .explore
     {
-        @include uncenter;
-        grid-template-areas: "title text button";
+        grid-template-areas: "text title button";
+        grid-template-columns: repeat(3, 33.3%);
     
         .explore_title
         {
@@ -37,13 +34,16 @@
         .explore_button
         {
             grid-area: button;
-            @include uncenter;
             width: 220px;
 
         }
     }
     .wrapper > .functioning
     {
+        & .functioning_title
+        {
+            text-align: center;
+        }
         nav
         {
             ul
@@ -57,14 +57,15 @@
     .wrapper > .restaurants
     {
         display: grid;
-        grid-template-columns: 48% 48%;
+        grid-template-columns: 38% 38%;
         gap: 50px;
+        
         & .restaurants_title
         {
             grid-column: 1 / span 2;
-
-
+            text-align: center;
         }
+        
     }
 
 }
