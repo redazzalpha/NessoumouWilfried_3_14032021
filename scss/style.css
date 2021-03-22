@@ -17,24 +17,32 @@
   }
   .wrapper > .explore {
         grid-template-areas: "text title button";
-    -ms-grid-columns: (33.3%)[3];
-        grid-template-columns: repeat(3, 33.3%);
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: auto;
   }
   .wrapper > .explore .explore_title {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
+    margin: auto;
   }
   .wrapper > .explore .explore_text {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: text;
+    margin: auto;
   }
   .wrapper > .explore .explore_button {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: button;
-    width: 220px;
+    margin: auto;
+    width: 80%;
   }
   .wrapper > .functioning .functioning_title {
     text-align: center;
@@ -286,6 +294,8 @@ h1, p, div {
   font-size: 23px;
   top: 24px;
   left: 30px;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 
 .functioning nav ul li a .button:hover .button_icon {
@@ -298,8 +308,8 @@ h1, p, div {
   grid-area: restaurants;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(0, 100%);
-      grid-template-columns: minmax(0, 100%);
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   row-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -346,6 +356,8 @@ h1, p, div {
   top: 79%;
   left: 80%;
   font-size: 30px;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 
 .restaurants .card_icon--full {

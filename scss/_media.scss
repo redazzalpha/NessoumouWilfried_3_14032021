@@ -21,21 +21,26 @@
     .wrapper > .explore
     {
         grid-template-areas: "text title button";
-        grid-template-columns: repeat(3, 33.3%);
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
     
         .explore_title
         {
             grid-area: title;
+            margin: auto;
         }
         .explore_text
         {
             grid-area: text;
+            margin : auto;
         }
         .explore_button
         {
             grid-area: button;
-            width: 220px;
-
+            margin: auto;
+            width: 80%;
         }
     }
     .wrapper > .functioning
@@ -59,6 +64,8 @@
         display: grid;
         grid-template-columns: 38% 38%;
         gap: 50px;
+
+
         
         & .restaurants_title
         {

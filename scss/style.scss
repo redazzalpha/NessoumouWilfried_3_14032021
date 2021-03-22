@@ -201,6 +201,7 @@ h1, p, div
                         padding: 25px;
                         color: $color-black;
 
+
                         &_sticker
                         {
                             position : absolute;
@@ -218,6 +219,7 @@ h1, p, div
                             font-size: 23px;
                             top: 24px;
                             left: 30px;
+                            transition: $transition-color;
                         }
                         &:hover .button_icon
                         {
@@ -236,15 +238,15 @@ h1, p, div
 }
 .restaurants
 {
-
     grid-area: restaurants;
     display: grid;
-    grid-template-columns:  minmax(0,100%);
+    grid-template-columns: 100%;
     row-gap: 20px;
     justify-content: center;
     background-color: $color-white-dirty;
     padding: $padding-down;
 
+    
     &_title
     {
         text-align: start;
@@ -284,6 +286,7 @@ h1, p, div
             top: 79%;
             left: 80%;
             font-size: 30px;
+            transition: $transition-color;
             &--full
             {
                 color: $color-transprent; 
