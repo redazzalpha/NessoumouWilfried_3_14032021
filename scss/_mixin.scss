@@ -10,4 +10,10 @@
         url(../font/#{$font}/#{$font}.woff2) format("woff2");
     }   
 }
+@mixin uncenter
+{
+    width: 100%;
+    margin: unset;
+    text-align: unset;
+}
 

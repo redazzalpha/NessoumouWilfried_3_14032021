@@ -1,15 +1,58 @@
 @media screen and (min-width: 1126px) {
+  body > .wrapper {
+        grid-template-areas: "header search" "explore explore" "functioning functioning" "restaurants restaurants";
+    -ms-grid-columns: 20% 80%;
+        grid-template-columns: 20% 80%;
+  }
+  .wrapper > .header .header_logo {
+    width: 100%;
+    margin: unset;
+    text-align: unset;
+  }
+  .wrapper > .search {
+    width: 100%;
+    margin: unset;
+    text-align: unset;
+    padding: 20px;
+  }
+  .wrapper > .explore {
+    width: 100%;
+    margin: unset;
+    text-align: unset;
+        grid-template-areas: "title text button";
+  }
+  .wrapper > .explore .explore_title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .wrapper > .explore .explore_text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: text;
+  }
+  .wrapper > .explore .explore_button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: button;
+    width: 100%;
+    margin: unset;
+    text-align: unset;
+    width: 220px;
+  }
   .wrapper > .functioning nav ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    -webkit-animation: move linear 5s;
+            animation: move linear 5s;
   }
   .wrapper > .restaurants {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
     gap: 50px;
   }
   .wrapper > .restaurants .restaurants_title {
@@ -72,13 +115,28 @@ h1, p, div {
   color: #000000;
 }
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "search" "explore" "functioning" "restaurants";
+}
+
 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
   padding: 20px;
 }
 
 .header_logo {
   font-size: 30px;
   color: #000000;
+}
+
+.search {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: search;
 }
 
 .search_container {
@@ -108,6 +166,9 @@ h1, p, div {
 }
 
 .explore {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: explore;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title"  "text" "button";
@@ -158,6 +219,9 @@ h1, p, div {
 }
 
 .functioning {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: functioning;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title" "nav";
@@ -227,6 +291,9 @@ h1, p, div {
 }
 
 .restaurants {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: restaurants;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(0, 100%);

@@ -1,10 +1,47 @@
-
-
-
-
-
 @media screen and (min-width: 1126px)
 {
+    body > .wrapper
+    {
+        grid-template-areas: 
+        "header search"
+        "explore explore"
+        "functioning functioning"
+        "restaurants restaurants";
+        grid-template-columns: 20% 80%;
+    }
+    .wrapper > .header
+    {
+        .header_logo
+        {
+            @include uncenter;
+        }
+    }
+    .wrapper > .search
+    {
+        @include uncenter;
+        padding: $padding-regular;
+    }
+    .wrapper > .explore
+    {
+        @include uncenter;
+        grid-template-areas: "title text button";
+    
+        .explore_title
+        {
+            grid-area: title;
+        }
+        .explore_text
+        {
+            grid-area: text;
+        }
+        .explore_button
+        {
+            grid-area: button;
+            @include uncenter;
+            width: 220px;
+
+        }
+    }
     .wrapper > .functioning
     {
         nav
@@ -13,23 +50,30 @@
             {
                 display: grid;
                 grid-template-columns: auto auto auto;
+                animation: move linear 5s;
             }
         }
     }
     .wrapper > .restaurants
     {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: 48% 48%;
         gap: 50px;
-
         & .restaurants_title
         {
             grid-column: 1 / span 2;
+
 
         }
     }
 
 }
+
+
+
+
+
+
 
 
 
