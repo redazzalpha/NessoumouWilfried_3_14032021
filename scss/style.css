@@ -1,3 +1,21 @@
+/* font */
+/* color */
+/* shadow */
+/* border */
+/* padding */
+/* transition */
+/* font query */
+@font-face {
+  font-family: "shrikhand";
+  src: url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype"), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2");
+}
+
+/* media query */
 @media screen and (min-width: 1126px) {
   body > .wrapper {
         grid-template-areas: "header search" "explore explore" "functioning functioning" "restaurants restaurants";
@@ -75,16 +93,55 @@
   }
 }
 
-@font-face {
-  font-family: "shrikhand";
-  src: url(../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../font/shrikhand/shrikhand.ttf) format("truetype"), url(../font/shrikhand/shrikhand.svg) format("svg"), url(../font/shrikhand/shrikhand.woff) format("woff"), url(../font/shrikhand/shrikhand.woff2) format("woff2");
+/* modifier */
+.--center, .header_logo, .search, .explore, .functioning nav ul li {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
-@font-face {
-  font-family: "roboto";
-  src: url(../font/roboto/roboto.eot?#iefix) format("embedded-opentype"), url(../font/roboto/roboto.ttf) format("truetype"), url(../font/roboto/roboto.svg) format("svg"), url(../font/roboto/roboto.woff) format("woff"), url(../font/roboto/roboto.woff2) format("woff2");
+.--rounded, .explore_button {
+  border-radius: 40px;
 }
 
+.--circle {
+  border-radius: 50px;
+}
+
+.--rectangular, .functioning nav ul li a, .functioning nav ul li a .button {
+  border-radius: 15px;
+}
+
+.--unlist, .functioning nav ul li, .footer nav ul li {
+  list-style-type: none;
+}
+
+.--unlink, .functioning nav ul li a, .restaurants .card, .restaurants .card_link, .footer nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.--full {
+  color: #00000000;
+}
+
+.--full:hover {
+  color: #9356DC;
+}
+
+.--Tag {
+  display: inline-block;
+  background-color: #99E2D0;
+  font-size: 130%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  padding: 5px;
+}
+
+/* group rules */
 * {
   margin: 0;
   padding: 0;
@@ -100,34 +157,7 @@ h1, p, div {
   font-family: roboto, serif, sans-serif;
 }
 
-.center, .header_logo, .search, .explore, .functioning nav ul li {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-
-.rounded, .explore_button {
-  border-radius: 40px;
-}
-
-.circle {
-  border-radius: 50px;
-}
-
-.rectangular, .functioning nav ul li a, .functioning nav ul li a .button {
-  border-radius: 15px;
-}
-
-.unlist, .functioning nav ul li, .footer nav ul li {
-  list-style-type: none;
-}
-
-.unlink, .functioning nav ul li a, .restaurants .card, .restaurants .card_link, .footer nav ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000000;
-}
-
+/* rules */
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -344,7 +374,7 @@ h1, p, div {
 .restaurants .card_link {
   border-radius: 15px;
   width: 100%;
-  height: 240px;
+  height: 250px;
 }
 
 .restaurants .card_link_img {
@@ -366,14 +396,6 @@ h1, p, div {
   font-size: 30px;
   -webkit-transition: color 2s;
   transition: color 2s;
-}
-
-.restaurants .card_icon--full {
-  color: #00000000;
-}
-
-.restaurants .card_icon--full:hover {
-  color: #9356DC;
 }
 
 .footer {

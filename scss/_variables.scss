@@ -1,7 +1,11 @@
 
+/* font */
+
 $font-list: "shrikhand" "roboto";
 $font-logo: shrikhand, serif, sans-serif;
 $font-text: roboto, serif, sans-serif;
+
+/* color */
 
 $color-white: #ffffff;
 $color-white-dirty: #f6f6f6;
@@ -17,17 +21,25 @@ $color-transprent: #00000000;
 $color-shadow: rgba(128, 128, 128, 0.352);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 $color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
+ 
+/* shadow */
 
 $shadow-regular: 7px 7px 7px $color-shadow;
 $shadow-light: 0 5px 5px $color-gray;
+
+/* border */
 
 $border-up: 15px 15px 0 0;
 $border-rounded: 40px;
 $border-circle: 50px;
 $border-rectangular: 15px;
 
+/* padding */
+
 $padding-regular: 20px;
 $padding-down: 20px 20px 60px 20px;
+
+/* transition */ 
 
 $transition-color: color 2s;
 

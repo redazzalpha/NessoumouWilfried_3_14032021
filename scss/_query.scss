@@ -1,4 +1,11 @@
 
+/* font query */
+
+@each $font in $font-list 
+{@include getFont($font);}
+
+/* media query */
+
 @media screen and (min-width: 1126px)
 {
     body > .wrapper
