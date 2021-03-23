@@ -11,7 +11,8 @@
     body > .wrapper
     {
         grid-template-areas: 
-        "header search"
+        "search header "
+        "intro intro"
         "explore explore"
         "functioning functioning"
         "restaurants restaurants";
@@ -19,14 +20,17 @@
     }
     .wrapper > .header
     {
-        border-bottom: solid $color-gray 2px;
-       & .header_logo { @include uncenter; }
+        width: 50%;
+        margin: auto;
+        text-align: left;
+
     }
     .wrapper > .search
     {
+        position: absolute;
+        
         @include uncenter;
-        padding: $padding-regular;
-        border-bottom: solid $color-gray 2px;
+        padding: $padding-down;
 
     }
     .wrapper > .explore
@@ -35,7 +39,10 @@
         grid-template-columns: 33.3% 33.3% 33.3%;
         justify-content: center;
         width: 100%;
-        margin: auto;
+        margin-top: 18px;
+
+        border-top: solid $color-gray 2px;
+
     
         .explore_title
         {

@@ -18,24 +18,21 @@
 /* media query */
 @media screen and (min-width: 1126px) {
   body > .wrapper {
-        grid-template-areas: "header search" "explore explore" "functioning functioning" "restaurants restaurants";
+        grid-template-areas: "search header " "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
   }
   .wrapper > .header {
-    border-bottom: solid #7f7f7f 2px;
-  }
-  .wrapper > .header .header_logo {
-    width: 100%;
-    margin: unset;
-    text-align: unset;
+    width: 50%;
+    margin: auto;
+    text-align: left;
   }
   .wrapper > .search {
+    position: absolute;
     width: 100%;
     margin: unset;
     text-align: unset;
-    padding: 20px;
-    border-bottom: solid #7f7f7f 2px;
+    padding: 20px 20px 60px 20px;
   }
   .wrapper > .explore {
         grid-template-areas: "text title button";
@@ -45,7 +42,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    margin: auto;
+    margin-top: 18px;
+    border-top: solid #7f7f7f 2px;
   }
   .wrapper > .explore .explore_title {
     -ms-grid-row: 1;
@@ -104,7 +102,7 @@
   border-radius: 40px;
 }
 
-.--circle {
+.--circle, .functioning nav ul li a .button_sticker {
   border-radius: 50px;
 }
 
@@ -138,7 +136,7 @@
   content: "Nouveau";
   display: inline-block;
   background-color: #99E2D0;
-  font-size: 130%;
+  font-size: 120%;
   position: absolute;
   top: 0;
   right: 0;
@@ -166,7 +164,7 @@ h1, p, div {
 .wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "search" "explore" "functioning" "restaurants";
+      grid-template-areas: "header" "search" "intro" "explore" "functioning" "restaurants";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
 }
@@ -176,10 +174,11 @@ h1, p, div {
   -ms-grid-column: 1;
   grid-area: header;
   padding: 20px;
+  margin: unset;
 }
 
 .header_logo {
-  font-size: 30px;
+  font-size: 50px;
   color: #000000;
 }
 
@@ -216,7 +215,7 @@ h1, p, div {
 }
 
 .explore {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: explore;
   display: -ms-grid;
@@ -259,7 +258,7 @@ h1, p, div {
 }
 
 .functioning {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: functioning;
   display: -ms-grid;
@@ -305,7 +304,6 @@ h1, p, div {
 .functioning nav ul li a .button_sticker {
   position: absolute;
   color: #ffffff;
-  border-radius: 50px;
   padding: 4px 10px;
   background-color: #9356DC;
   top: 21px;
@@ -318,8 +316,8 @@ h1, p, div {
   font-size: 23px;
   top: 24px;
   left: 30px;
-  -webkit-transition: color 2s;
-  transition: color 2s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .functioning nav ul li a .button:hover .button_icon {
@@ -327,7 +325,7 @@ h1, p, div {
 }
 
 .restaurants {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: restaurants;
   display: -ms-grid;
@@ -383,8 +381,8 @@ h1, p, div {
   top: 85%;
   left: 82%;
   font-size: 30px;
-  -webkit-transition: color 2s;
-  transition: color 2s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .footer {
@@ -447,5 +445,15 @@ h1, p, div {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: contact;
+}
+
+.intro {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: intro;
+  -webkit-transform: translate(0, 10%);
+          transform: translate(0, 10%);
+  text-align: center;
+  margin: 15px;
 }
 /*# sourceMappingURL=style.css.map */

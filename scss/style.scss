@@ -53,7 +53,7 @@
     content: "Nouveau";
     display: inline-block;
     background-color: $color-tertiary;
-    font-size: 130%;
+    font-size: 120%;
     position: absolute;
     top: 0;                
     right: 0;
@@ -90,29 +90,30 @@ li
     grid-template-areas: 
     "header"
     "search"
+    "intro"
     "explore"
     "functioning"
     "restaurants";
     grid-template-columns: 100%;
 }
 .header
-{
+{    
     @extend .--center;
     grid-area: header;
     padding: $padding-regular;
+    margin: unset;
 
     &_logo
     {
-        font-size: 30px;
+        font-size: 50px;
         color: $color-black;
     }
 }
 .search
 {
-
     @extend .--center;
     grid-area: search;
-    
+
     &_container
     {
         display: inline-block;
@@ -225,9 +226,9 @@ li
 
                         &_sticker
                         {
+                            @extend .--circle;
                             position : absolute;
                             color: $color-white;
-                            border-radius: $border-circle;
                             padding: 4px 10px;
                             background-color: $color-secondary;
                             top: 21px;
@@ -383,7 +384,13 @@ li
 
 
 
-
+.intro
+{
+    grid-area: intro;
+    transform: translate(0, 10%);
+    text-align: center;
+    margin: 15px;;
+}
 
 
 
