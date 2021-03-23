@@ -19,20 +19,25 @@
 @media screen and (min-width: 1126px) {
   body > .wrapper {
         grid-template-areas: "search header " "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
-    -ms-grid-columns: 20% 80%;
-        grid-template-columns: 20% 80%;
+    -ms-grid-columns: 41%;
+        grid-template-columns: 41%;
   }
   .wrapper > .header {
-    width: 50%;
-    margin: auto;
     text-align: left;
+    padding: 20px 20px 20px 0;
+  }
+  .wrapper > .header .header_logo {
+    font-size: 50px;
   }
   .wrapper > .search {
-    position: absolute;
     width: 100%;
     margin: unset;
     text-align: unset;
+    position: absolute;
     padding: 20px 20px 60px 20px;
+  }
+  .wrapper > .search .search_container_field {
+    width: 95%;
   }
   .wrapper > .explore {
         grid-template-areas: "text title button";
@@ -42,7 +47,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    margin-top: 18px;
     border-top: solid #7f7f7f 2px;
   }
   .wrapper > .explore .explore_title {
@@ -178,7 +182,7 @@ h1, p, div {
 }
 
 .header_logo {
-  font-size: 50px;
+  font-size: 35px;
   color: #000000;
 }
 
@@ -212,6 +216,14 @@ h1, p, div {
   height: 50px;
   color: #353535;
   width: 100%;
+}
+
+.introduction {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: intro;
+  text-align: center;
+  padding: 20px;
 }
 
 .explore {
@@ -397,7 +409,7 @@ h1, p, div {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -445,15 +457,5 @@ h1, p, div {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: contact;
-}
-
-.intro {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: intro;
-  -webkit-transform: translate(0, 10%);
-          transform: translate(0, 10%);
-  text-align: center;
-  margin: 15px;
 }
 /*# sourceMappingURL=style.css.map */

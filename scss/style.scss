@@ -77,10 +77,6 @@ h1, p, div
 {
     font-family: $font-text;
 }
-li
-{
-    
-}
 
 /* rules */
 
@@ -105,7 +101,7 @@ li
 
     &_logo
     {
-        font-size: 50px;
+        font-size: 35px;
         color: $color-black;
     }
 }
@@ -140,6 +136,12 @@ li
             width: 100%;
         }
     }
+}
+.introduction
+{
+    grid-area: intro;
+    text-align: center;
+    padding: $padding-regular;
 }
 .explore
 {
@@ -326,7 +328,7 @@ li
     &_logo
     {
         grid-area: logo;
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 20px ;
         color: $color-white;
     }
@@ -384,13 +386,6 @@ li
 
 
 
-.intro
-{
-    grid-area: intro;
-    transform: translate(0, 10%);
-    text-align: center;
-    margin: 15px;;
-}
 
 
 
