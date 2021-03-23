@@ -43,10 +43,14 @@
     {
         color: $color-secondary;       
     }
- 
 }
-.--Tag
+.--spacer-right
 {
+    margin-right: 5px; 
+}
+.--tag::before
+{
+    content: "Nouveau";
     display: inline-block;
     background-color: $color-tertiary;
     font-size: 130%;
@@ -73,6 +77,10 @@ h1, p, div
 {
     font-family: $font-text;
 }
+li
+{
+    
+}
 
 /* rules */
 
@@ -89,12 +97,12 @@ h1, p, div
 }
 .header
 {
+    @extend .--center;
     grid-area: header;
     padding: $padding-regular;
 
     &_logo
     {
-        @extend .--center;
         font-size: 30px;
         color: $color-black;
     }
@@ -102,8 +110,8 @@ h1, p, div
 .search
 {
 
-    grid-area: search;
     @extend .--center;
+    grid-area: search;
     
     &_container
     {
@@ -147,23 +155,17 @@ h1, p, div
     &_title
     {
         grid-area: title;
-        grid-row: 1;
-        grid-column: 1;      
         font-weight: bold;
     }
     &_text
     {
         grid-area: text;
-        grid-row: 2;
-        grid-column: 1;      
         margin: 5px 5px 20px 5px;
         color: $color-black-light;
     }
     &_button
     {
         grid-area: button;
-        grid-row: 3;
-        grid-column: 1;      
         background: $color-gradient;
         color: $color-white;
         margin-bottom: 15px;
@@ -188,16 +190,12 @@ h1, p, div
     &_title
     {
         grid-area: title;
-        grid-row: 1;
-        grid-column: 1;     
         margin: 30px 0 10px 0;
     }
     nav
     {
         grid-area: nav;
-        grid-row: 2;
-        grid-column: 1;     
-        
+
         ul
         {
             display: grid;
@@ -327,8 +325,6 @@ h1, p, div
     &_logo
     {
         grid-area: logo;
-        grid-row: 1;
-        grid-column: 1;      
         font-size: 15px;
         margin-bottom: 20px ;
         color: $color-white;
@@ -336,8 +332,6 @@ h1, p, div
     nav
     {
         grid-area: nav;
-        grid-row: 2;
-        grid-column: 1;  
         
         ul
         {
@@ -357,37 +351,23 @@ h1, p, div
                 {
                     @extend .--unlink;
                     grid-area: partner;
-                    grid-row: 2;
-                    grid-column: 1;    
                     color: $color-white;
 
                     .proposition
                     {
                         grid-area: proposition;
-                        grid-column: 1;
-                        grid-row: 1;
                     }
                     .partner
                     {
                         grid-area: mentions;
-                        grid-column: 1;
-                        grid-row: 2;
                     }
                     .mentions
                     {
                         grid-area: contact;
-                        grid-column: 1;    
-                        grid-row: 3;
                     }
                     .contact
                     {
                         grid-area: contact;
-                        grid-column: 1;    
-                        grid-row: 4;
-                    }
-                    .opt
-                    {
-                        &--icon { margin-right: 5px; } 
                     }
                 }
             }
@@ -396,36 +376,6 @@ h1, p, div
     
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
