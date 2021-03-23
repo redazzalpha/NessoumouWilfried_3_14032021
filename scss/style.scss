@@ -245,8 +245,10 @@ h1, p, div
     justify-content: center;
     background-color: $color-white-dirty;
     padding: $padding-down;
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
 
-    
     &_title
     {
         text-align: start;
@@ -272,7 +274,7 @@ h1, p, div
             {
                 object-fit: cover;
                 width: 100%;
-                height: 70%;
+                height: 100%;
                 border-radius: $border-up;
             }
             &_caption
@@ -283,8 +285,8 @@ h1, p, div
         &_icon
         {
             position: absolute;
-            top: 79%;
-            left: 80%;
+            top: 85%;
+            left: 82%;
             font-size: 30px;
             transition: $transition-color;
             &--full

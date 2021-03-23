@@ -11,12 +11,15 @@
     }
     .wrapper > .header
     {
+        border-bottom: solid $color-gray 2px;
        & .header_logo { @include uncenter; }
     }
     .wrapper > .search
     {
         @include uncenter;
         padding: $padding-regular;
+        border-bottom: solid $color-gray 2px;
+
     }
     .wrapper > .explore
     {
@@ -64,6 +67,7 @@
         display: grid;
         grid-template-columns: 38% 38%;
         gap: 50px;
+        max-width: unset;
 
 
         

@@ -4,6 +4,9 @@
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
   }
+  .wrapper > .header {
+    border-bottom: solid #7f7f7f 2px;
+  }
   .wrapper > .header .header_logo {
     width: 100%;
     margin: unset;
@@ -14,6 +17,7 @@
     margin: unset;
     text-align: unset;
     padding: 20px;
+    border-bottom: solid #7f7f7f 2px;
   }
   .wrapper > .explore {
         grid-template-areas: "text title button";
@@ -61,6 +65,7 @@
     -ms-grid-columns: 38% 38%;
         grid-template-columns: 38% 38%;
     gap: 50px;
+    max-width: unset;
   }
   .wrapper > .restaurants .restaurants_title {
     -ms-grid-column: 1;
@@ -316,6 +321,9 @@ h1, p, div {
           justify-content: center;
   background-color: #f6f6f6;
   padding: 20px 20px 60px 20px;
+  margin: auto;
+  width: 100%;
+  max-width: 750px;
 }
 
 .restaurants_title {
@@ -343,7 +351,7 @@ h1, p, div {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 70%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
 }
 
@@ -353,8 +361,8 @@ h1, p, div {
 
 .restaurants .card_icon {
   position: absolute;
-  top: 79%;
-  left: 80%;
+  top: 85%;
+  left: 82%;
   font-size: 30px;
   -webkit-transition: color 2s;
   transition: color 2s;
