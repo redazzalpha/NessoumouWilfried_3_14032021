@@ -161,7 +161,6 @@ h1, p, div
     }
     &_button
     {
-        @extend .--rounded;
         grid-area: button;
         grid-row: 3;
         grid-column: 1;      

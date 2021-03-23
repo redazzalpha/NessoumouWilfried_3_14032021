@@ -100,7 +100,7 @@
   text-align: center;
 }
 
-.--rounded, .explore_button {
+.--rounded {
   border-radius: 40px;
 }
 
