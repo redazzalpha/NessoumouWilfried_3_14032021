@@ -18,7 +18,7 @@
 /* media query */
 @media screen and (min-width: 1126px) {
   body > .wrapper {
-        grid-template-areas: "search header " "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
+        grid-template-areas: "search header" "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
     -ms-grid-columns: 41%;
         grid-template-columns: 41%;
   }
@@ -30,14 +30,15 @@
     font-size: 50px;
   }
   .wrapper > .search {
-    width: 100%;
     margin: unset;
     text-align: unset;
-    position: absolute;
-    padding: 20px 20px 60px 20px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: search;
+    padding: 20px 0 20px 20px;
   }
   .wrapper > .search .search_container_field {
-    width: 95%;
+    width: 93%;
   }
   .wrapper > .explore {
         grid-template-areas: "text title button";

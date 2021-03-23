@@ -11,7 +11,7 @@
     body > .wrapper
     {
         grid-template-areas: 
-        "search header "
+        "search header"
         "intro intro"
         "explore explore"
         "functioning functioning"
@@ -31,16 +31,15 @@
     .wrapper > .search
     {
         @include uncenter; 
-        position: absolute;
-        padding: $padding-down;
+        grid-area: search;
+        padding: 20px 0 20px 20px;
 
         .search_container
         {
 
             &_field
             { 
-                width: 95%;
-
+                width: 93%;
             }
         }
     }
