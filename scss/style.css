@@ -18,8 +18,9 @@
 /* media query */
 @media screen and (min-width: 1126px) {
   body > .wrapper {
-    grid-template-areas: "search header" "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
-    grid-template-columns: 41%;
+        grid-template-areas: "search header" "intro intro" "explore explore" "functioning functioning" "restaurants restaurants";
+    -ms-grid-columns: 41%;
+        grid-template-columns: 41%;
   }
   .wrapper > .header {
     text-align: left;
@@ -31,6 +32,8 @@
   .wrapper > .search {
     margin: unset;
     text-align: unset;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: search;
     padding: 20px 0 20px 20px;
   }
@@ -38,21 +41,30 @@
     width: 93%;
   }
   .wrapper > .explore {
-    grid-template-areas: "text title button";
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    justify-content: center;
+        grid-template-areas: "text title button";
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     border-top: solid #7f7f7f 2px;
   }
   .wrapper > .explore .explore_title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: title;
     margin: auto;
   }
   .wrapper > .explore .explore_text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: text;
     margin: auto;
   }
   .wrapper > .explore .explore_button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: button;
     margin: auto;
     width: 80%;
@@ -61,17 +73,24 @@
     text-align: center;
   }
   .wrapper > .functioning nav ul {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: auto auto auto;
-    animation: move linear 5s;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -webkit-animation: move linear 5s;
+            animation: move linear 5s;
   }
   .wrapper > .restaurants {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 38% 38%;
+    -ms-grid-columns: 38% 38%;
+        grid-template-columns: 38% 38%;
     gap: 50px;
     max-width: unset;
   }
   .wrapper > .restaurants .restaurants_title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
     text-align: center;
   }
@@ -134,7 +153,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 [class*=_logo] {
@@ -147,12 +167,16 @@ h1, p, div {
 
 /* rules */
 .wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "header" "search" "intro" "explore" "functioning" "restaurants";
-  grid-template-columns: 100%;
+      grid-template-areas: "header" "search" "intro" "explore" "functioning" "restaurants";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: header;
   padding: 20px;
   margin: unset;
@@ -164,6 +188,8 @@ h1, p, div {
 }
 
 .search {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: search;
 }
 
@@ -184,7 +210,8 @@ h1, p, div {
   font-size: 19px;
   padding-left: 135px;
   background-color: #dddddd;
-  box-shadow: 0 5px 5px #7f7f7f inset;
+  -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
+          box-shadow: 0 5px 5px #7f7f7f inset;
   outline: none;
   border: none;
   height: 50px;
@@ -193,32 +220,44 @@ h1, p, div {
 }
 
 .introduction {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: intro;
   text-align: center;
   padding: 20px;
 }
 
 .explore {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: explore;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "title"  "text" "button";
+      grid-template-areas: "title"  "text" "button";
   background-color: #f6f6f6;
   padding: 20px;
 }
 
 .explore_title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: title;
   font-weight: bold;
 }
 
 .explore_text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: text;
   margin: 5px 5px 20px 5px;
   color: gray;
 }
 
 .explore_button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: button;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffffff;
   margin-bottom: 15px;
@@ -226,35 +265,46 @@ h1, p, div {
   width: 220px;
   margin: auto;
   font-weight: bold;
-  box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   margin-bottom: 35px;
 }
 
 .functioning {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: functioning;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "title" "nav";
+      grid-template-areas: "title" "nav";
   padding: 20px 20px 60px 20px;
 }
 
 .functioning_title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: title;
   margin: 30px 0 10px 0;
 }
 
 .functioning nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
 .functioning nav ul {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .functioning nav ul li a {
   width: 325px;
   background-color: #f6f6f6;
-  box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   margin: 15px;
 }
 
@@ -279,6 +329,7 @@ h1, p, div {
   font-size: 23px;
   top: 24px;
   left: 30px;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -287,11 +338,17 @@ h1, p, div {
 }
 
 .restaurants {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
   grid-area: restaurants;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   row-gap: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f6f6f6;
   padding: 20px 20px 60px 20px;
   margin: auto;
@@ -305,7 +362,8 @@ h1, p, div {
 }
 
 .restaurants .card {
-  box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   background-color: #ffffff;
   color: #000000;
   border-radius: 15px;
@@ -320,7 +378,8 @@ h1, p, div {
 }
 
 .restaurants .card_link_img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
@@ -335,17 +394,21 @@ h1, p, div {
   top: 85%;
   left: 82%;
   font-size: 30px;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
 .footer {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "logo" "nav";
+      grid-template-areas: "logo" "nav";
   background-color: #353535;
   padding: 20px;
 }
 
 .footer_logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: logo;
   font-size: 20px;
   margin-bottom: 20px;
@@ -353,33 +416,47 @@ h1, p, div {
 }
 
 .footer nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
 .footer nav ul {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "proposition"  "partner" "mentions" "contact";
-  grid-template-columns: 100%;
+      grid-template-areas: "proposition"  "partner" "mentions" "contact";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .footer nav ul li a {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: partner;
   color: #ffffff;
 }
 
 .footer nav ul li a .proposition {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: proposition;
 }
 
 .footer nav ul li a .partner {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: mentions;
 }
 
 .footer nav ul li a .mentions {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: contact;
 }
 
 .footer nav ul li a .contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: contact;
 }
 /*# sourceMappingURL=style.css.map */
