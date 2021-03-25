@@ -1,7 +1,7 @@
 @charset "utf-8";
 
+@import "variables";
 @import "mixin";
-@import "query";
 
 /* rules */
 
@@ -15,7 +15,8 @@
     "explore"
     "functioning"
     "restaurants";
-    grid-template-columns: 100%;
+    grid-template-columns: $max;
+    width: $max;
 }
 .search
 {
@@ -44,7 +45,7 @@
             border: none;
             height: 50px;
             color: $color-black-gray;
-            width: 100%;
+            width: $max;
         }
     }
 }
@@ -61,9 +62,9 @@
     "title" 
     "text"
     "button";
+    grid-template-columns: $max;
     background-color: $color-white-dirty;
     padding: $padding-regular;
-
     &_title
     {
         grid-area: title;
@@ -79,55 +80,45 @@
 }
 .functioning
 {
-
     grid-area: functioning;
     display: grid;
     grid-template-areas:
     "title"
     "nav";
     padding: $padding-down;
-
     &_title
     {
         grid-area: title;
         margin: 30px 0 10px 0;
     }
-    nav
+    ul
     {
-        grid-area: nav;
-
-        ul
+        display: grid;
+        grid-template-columns: $max;
+        li
         {
-            display: grid;
-            grid-template-columns: 100%;
-
-            li
+            a
             {
-                a
-                {
-                    width: --325px;
-                    background-color: $color-white-dirty;
-                    box-shadow: $shadow-regular;
-                    margin: 15px;
-                }
-
+                width: 85%;
+                max-width: 400px;
+                background-color: $color-white-dirty;
+                box-shadow: $shadow-regular;
+                margin: 15px;
             }
-
         }
-
     }
 }
 .restaurants
 {
     grid-area: restaurants;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: $max;
     row-gap: 20px;
     justify-content: center;
     background-color: $color-white-dirty;
     padding: $padding-down;
     margin: auto;
-    width: 100%;
+    width: $max;
     max-width: 750px;
 
     &_title

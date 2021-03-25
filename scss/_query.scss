@@ -9,6 +9,23 @@
 
 @media screen and (min-width: 1126px)
 {
+    /* item */
+
+    h1.logo
+    {
+        &--header
+        {
+            font-size: 50px;
+        }
+    }
+    div.button
+    {
+        grid-area: button;
+        margin: auto;
+    }
+    
+    /* rules */
+
     body > .wrapper
     {
         grid-template-areas: 
@@ -23,11 +40,6 @@
     {
         text-align: left;
         padding: 20px 20px 20px 0;
-        .header_logo
-        {
-
-            font-size: 50px;
-        }
     }
     .wrapper > .search
     {
@@ -49,9 +61,8 @@
         grid-template-areas: "text title button";
         grid-template-columns: 33.3% 33.3% 33.3%;
         justify-content: center;
-        width: 100%;
+        width: $max;
         border-top: solid $color-gray 2px;
-
         .explore_title
         {
             grid-area: title;
@@ -62,12 +73,6 @@
             grid-area: text;
             margin : auto;
         }
-        .explore_button
-        {
-            grid-area: button;
-            margin: auto;
-            width: 80%;
-        }
     }
     .wrapper > .functioning
     {
@@ -75,13 +80,22 @@
         {
             text-align: center;
         }
-        nav
+        ul
         {
-            ul
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+            div.button-rect
             {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                animation: move linear 5s;
+                padding-left: 60px;
+                .button-rect_sticker
+                {
+                    top: 21px;
+                } 
+                .icon-ftng
+                {
+                    left: 14%;
+                }
             }
         }
     }
@@ -100,8 +114,38 @@
         
     }
 }
-
-
+@media screen and (max-width: 375px)
+{
+    div.button-rect
+    {
+        padding-left: 60px;
+        .button-rect_sticker
+        {
+            top: 20px;
+        } 
+        .icon-ftng
+        {
+            top: 26px;
+            left: 10%;
+        }
+    }
+}
+@media screen and (max-width: 320px)
+{
+    div.button-rect
+    {
+        padding-left: 60px;
+        .button-rect_sticker
+        {
+            top: 32px;
+        } 
+        .icon-ftng
+        {
+            top: 38px;
+            left: 14%;
+        }
+    }
+}
 
 
 

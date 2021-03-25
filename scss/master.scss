@@ -4,13 +4,12 @@
 @import "mixin";
 @import "query";
 
-@include getFont($font-list);
 
  /* modifier */
 
 .center
 {
-    width: 100%;
+    width: $max;
     margin: auto;
     text-align: center;
 }   
@@ -28,7 +27,7 @@
 }
 .unlist
 {
-    list-style-type: none;;
+    list-style-type: none;
 }
 .unlink
 {
@@ -53,9 +52,24 @@
     padding: 5px;
 }
 
-
 /* item */
 
+.logo
+{
+    font-family: $font-logo;
+    &--header
+    {
+        font-size: 35px;
+        color: $color-black;
+    }
+    &--footer
+    {
+        grid-area: logo;
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: $color-white;
+    }
+}
 .button
 {
     grid-area: button;
@@ -75,6 +89,7 @@
     position: relative;
     padding: 25px;
     color: $color-black;
+    width: $max;
     &_sticker
     {
         position : absolute;
@@ -93,17 +108,16 @@
     text-align: start;
     position: relative;
     height: 250px;
-
     &_link
     {   
-        width: 100%;
+        width: $max;
         height: 250px;
         
         &_img
         {
             border-radius: $border-up;
             object-fit: cover;
-            width: 100%;
+            width: $max;
             height: 75%;
         }
         &_caption
@@ -111,6 +125,19 @@
             padding: 10px;
         }
     }
+}
+.icon-ftng
+{
+    color: $color-gray;
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    color: $color-gray;
+    transition: $transition-color;
+}
+a:hover .icon-ftng
+{
+    color: $color-secondary;
 }
 .icon-heart
 {
@@ -120,7 +147,6 @@
     left: 80%;
     color: $color-secondary;
     transition: $transition-color;
-
     &--full
     {
         color: $color-transprent;
@@ -129,9 +155,7 @@
     {
         color: $color-secondary;
     }
-
 }
-
 
 /* group rules */
 
@@ -140,10 +164,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-[class*=_logo]
-{
-    font-family: $font-logo;
 }
 h1,h2, p, div, span
 {
@@ -158,74 +178,46 @@ h1,h2, p, div, span
     grid-area: header;
     padding: $padding-regular;
     margin: unset;
-
-    &_logo
-    {
-        font-size: 35px;
-        color: $color-black;
-    }
 }
 .footer
 {
     display: grid;
     grid-template-areas:
     "logo"
-    "nav";
+    "container";
     background-color: $color-black-gray;
     padding: $padding-regular;
-
-    &_logo
+    &_container
     {
-        grid-area: logo;
-        font-size: 20px;
-        margin-bottom: 20px ;
-        color: $color-white;
-    }
-    nav
-    {
-        grid-area: nav;
-        
-        ul
+        grid-area: container;
+        display: grid;
+        grid-template-areas: 
+        "proposition" 
+        "partner"
+        "mentions"
+        "contact";
+        grid-template-columns: $max;
+        a
         {
-            display: grid;
-            grid-template-areas: 
-            "proposition" 
-            "partner"
-            "mentions"
-            "contact";
-            grid-template-columns: 100%;
-
-            li
-            {
-                @extend .unlist;
-
-                a
-                {
-                    @extend .unlink;
-                    grid-area: partner;
-                    color: $color-white;
-
-                    .proposition
-                    {
-                        grid-area: proposition;
-                    }
-                    .partner
-                    {
-                        grid-area: mentions;
-                    }
-                    .mentions
-                    {
-                        grid-area: contact;
-                    }
-                    .contact
-                    {
-                        grid-area: contact;
-                    }
-                }
-            }
-            
+            color: $color-white;   
+            margin-bottom: 7px;
         }
-    
+        .proposition
+        {
+            grid-area: proposition;
+        }
+        .partner
+        {
+            grid-area: partner;
+        }
+        .mentions
+        {
+            grid-area: mentions;
+        }
+        .contact
+        {
+            grid-area: contact;
+        }
     }
 }
 
