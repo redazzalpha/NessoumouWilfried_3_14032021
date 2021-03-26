@@ -3,59 +3,13 @@
 @import "variables";
 @import "mixin";
 @import "query";
-
-
- /* modifier */
-
-.center
-{
-    width: $max;
-    margin: auto;
-    text-align: center;
-}   
-.rounded
-{
-    border-radius: $border-rounded;
-}
-.rectangular
-{
-    border-radius: $border-rectangular;
-}
-.circle
-{
-    border-radius: $border-circle;
-}
-.unlist
-{
-    list-style-type: none;
-}
-.unlink
-{
-    display: inline-block;
-    text-decoration: none;
-    color: $color-black;
-}
-.spacer-right
-{
-    margin-right: 5px; 
-}
-.tag::before
-{
-    content: "Nouveau";
-    display: inline-block;
-    background-color: $color-tertiary;
-    font-size: 120%;
-    position: absolute;
-    top: 0;                
-    right: 0;
-    margin: 20px;
-    padding: 5px;
-}
+@import "modifier";
 
 /* item */
 
 .logo
 {
+    grid-area: logo;
     font-family: $font-logo;
     &--header
     {
@@ -126,19 +80,6 @@
         }
     }
 }
-.icon-ftng
-{
-    color: $color-gray;
-    font-size: 20px;
-    position: absolute;
-    left: 10%;
-    color: $color-gray;
-    transition: $transition-color;
-}
-a:hover .icon-ftng
-{
-    color: $color-secondary;
-}
 .icon-heart
 {
     position : absolute;
@@ -155,6 +96,19 @@ a:hover .icon-ftng
     {
         color: $color-secondary;
     }
+}
+.icon-ftng
+{
+    color: $color-gray;
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    color: $color-gray;
+    transition: $transition-color;
+}
+a:hover .icon-ftng
+{
+    color: $color-secondary;
 }
 
 /* group rules */
@@ -174,10 +128,17 @@ h1,h2, p, div, span
 
 .header
 {    
-    @extend .center;
     grid-area: header;
-    padding: $padding-regular;
-    margin: unset;
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "search"
+    "intro";
+    &_intro
+    {
+        grid-area: intro;
+        padding: $padding-regular;
+    }
 }
 .footer
 {

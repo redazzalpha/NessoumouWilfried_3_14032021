@@ -1,34 +1,34 @@
-/* font */
-/* color */
-/* shadow */
-/* border */
-/* padding */
-/* transition */
-/* other */
+/* fonts */
+/* break points */
+/* media query sizes */
+/* colors */
+/* shadows */
+/* borders */
+/* paddings */
+/* margins */
+/* transitions */
+/* others */
 /* rules */
 .wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "search" "intro" "explore" "functioning" "restaurants";
+      grid-template-areas: "header" "explore" "functioning" "restaurants";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   width: 100%;
 }
 
 .search {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: search;
 }
 
 .search_container {
-  display: inline-block;
   position: relative;
 }
 
 .search_container_icon {
   position: absolute;
-  left: 102px;
+  left: 94px;
   top: 13px;
   font-size: 20px;
   color: #353535;
@@ -36,7 +36,7 @@
 
 .search_container_field {
   font-size: 19px;
-  padding-left: 135px;
+  padding-left: 40%;
   background-color: #dddddd;
   -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
           box-shadow: 0 5px 5px #7f7f7f inset;
@@ -47,15 +47,8 @@
   width: 100%;
 }
 
-.introduction {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: intro;
-  padding: 20px;
-}
-
 .explore {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: explore;
   display: -ms-grid;
@@ -63,8 +56,8 @@
       grid-template-areas: "title"  "text" "button";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  background-color: #f6f6f6;
   padding: 20px;
+  background-color: #f6f6f6;
 }
 
 .explore_title {
@@ -83,7 +76,7 @@
 }
 
 .functioning {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: functioning;
   display: -ms-grid;
@@ -116,7 +109,7 @@
 }
 
 .restaurants {
-  -ms-grid-row: 6;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: restaurants;
   display: -ms-grid;

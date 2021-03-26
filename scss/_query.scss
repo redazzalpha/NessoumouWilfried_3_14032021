@@ -7,7 +7,39 @@
 
 /* media query */
 
-@media screen and (min-width: 1126px)
+@media #{$mq-mob-small}
+{
+    div.button-rect
+    {
+        padding-left: 60px;
+        .button-rect_sticker
+        {
+            top: 32px;
+        } 
+        .icon-ftng
+        {
+            top: 38px;
+            left: 14%;
+        }
+    }
+}
+@media #{$mq-mob-medium}
+{
+    div.button-rect
+    {
+        padding-left: 60px;
+        .button-rect_sticker
+        {
+            top: 20px;
+        } 
+        .icon-ftng
+        {
+            top: 26px;
+            left: 10%;
+        }
+    }
+}
+@media #{$mq-lap-medum}
 {
     /* item */
 
@@ -29,7 +61,7 @@
     body > .wrapper
     {
         grid-template-areas: 
-        "search header"
+        "header header"
         "intro intro"
         "explore explore"
         "functioning functioning"
@@ -38,18 +70,18 @@
     }
     .wrapper > .header
     {
-        text-align: left;
-        padding: 20px 20px 20px 0;
+        display: grid;
+        grid-template-areas: 
+        "search logo"
+        "intro intro";
+        width: 100%;
     }
     .wrapper > .search
     {
-        @include uncenter; 
         grid-area: search;
-        padding: 20px 0 20px 20px;
         
         .search_container
         {
-
             &_field
             { 
                 width: 93%;
@@ -114,39 +146,6 @@
         
     }
 }
-@media screen and (max-width: 375px)
-{
-    div.button-rect
-    {
-        padding-left: 60px;
-        .button-rect_sticker
-        {
-            top: 20px;
-        } 
-        .icon-ftng
-        {
-            top: 26px;
-            left: 10%;
-        }
-    }
-}
-@media screen and (max-width: 320px)
-{
-    div.button-rect
-    {
-        padding-left: 60px;
-        .button-rect_sticker
-        {
-            top: 32px;
-        } 
-        .icon-ftng
-        {
-            top: 38px;
-            left: 14%;
-        }
-    }
-}
-
 
 
 

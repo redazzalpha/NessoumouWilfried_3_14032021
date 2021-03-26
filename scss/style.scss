@@ -10,8 +10,6 @@
     display: grid;
     grid-template-areas: 
     "header"
-    "search"
-    "intro"
     "explore"
     "functioning"
     "restaurants";
@@ -21,16 +19,13 @@
 .search
 {
     grid-area: search;
-
     &_container
     {
-        display: inline-block;
         position: relative;
-
         &_icon
         {
             position: absolute;
-            left:102px;
+            left:94px;
             top: 13px;
             font-size: 20px;
             color: $color-black-gray;
@@ -38,7 +33,7 @@
         &_field
         {
             font-size: 19px;
-            padding-left: 135px;
+            padding-left: 40%;
             background-color: $color-gray-light;
             box-shadow: $shadow-light inset;
             outline: none;
@@ -49,11 +44,6 @@
         }
     }
 }
-.introduction
-{
-    grid-area: intro;
-    padding: $padding-regular;
-}
 .explore
 {
     grid-area: explore;
@@ -63,8 +53,8 @@
     "text"
     "button";
     grid-template-columns: $max;
-    background-color: $color-white-dirty;
     padding: $padding-regular;
+    background-color: $color-white-dirty;
     &_title
     {
         grid-area: title;
@@ -73,7 +63,7 @@
     &_text
     {
         grid-area: text;
-        margin: 5px 5px 20px 5px;
+        margin: $margin-down;
         color: $color-black-light;
     }
   
@@ -120,7 +110,6 @@
     margin: auto;
     width: $max;
     max-width: 750px;
-
     &_title
     {
         text-align: start;
