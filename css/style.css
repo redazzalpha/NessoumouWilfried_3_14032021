@@ -28,15 +28,15 @@
 
 .search_container_icon {
   position: absolute;
-  left: 102px;
-  top: 13px;
+  left: 26%;
+  top: 20%;
   font-size: 20px;
   color: #353535;
 }
 
 .search_container_field {
   font-size: 19px;
-  padding-left: 135px;
+  padding-left: 35%;
   background-color: #dddddd;
   -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
           box-shadow: 0 5px 5px #7f7f7f inset;

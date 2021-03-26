@@ -7,6 +7,13 @@
 
 /* media query */
 
+@media screen and (min-width: 2560px)
+{
+    .wrapper
+    {
+        
+    }
+}
 @media screen and (min-width: 1126px)
 {
     /* item */
@@ -49,7 +56,6 @@
         
         .search_container
         {
-
             &_field
             { 
                 width: 93%;
@@ -91,7 +97,7 @@
                 .button-rect_sticker
                 {
                     top: 21px;
-                } 
+                }
                 .icon-ftng
                 {
                     left: 14%;
@@ -114,8 +120,19 @@
         
     }
 }
+@media screen and (max-width: 425px)
+{
+    .search_container
+    {
+        width: $max;
+    }
+}
 @media screen and (max-width: 375px)
 {
+    .search_container
+    {
+        width: $max;
+    }
     div.button-rect
     {
         padding-left: 60px;
@@ -132,6 +149,10 @@
 }
 @media screen and (max-width: 320px)
 {
+    .search_container
+    {
+        width: $max;
+    }
     div.button-rect
     {
         padding-left: 60px;

@@ -112,7 +112,16 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .search_container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 375px) {
+  .search_container {
+    width: 100%;
+  }
   div.button-rect {
     padding-left: 60px;
   }
@@ -126,6 +135,9 @@
 }
 
 @media screen and (max-width: 320px) {
+  .search_container {
+    width: 100%;
+  }
   div.button-rect {
     padding-left: 60px;
   }

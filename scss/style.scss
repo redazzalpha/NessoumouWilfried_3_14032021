@@ -26,19 +26,18 @@
     {
         display: inline-block;
         position: relative;
-
         &_icon
         {
             position: absolute;
-            left:102px;
-            top: 13px;
+            left:26%;
+            top: 20%;
             font-size: 20px;
             color: $color-black-gray;
         }
         &_field
         {
             font-size: 19px;
-            padding-left: 135px;
+            padding-left: 35%;
             background-color: $color-gray-light;
             box-shadow: $shadow-light inset;
             outline: none;
