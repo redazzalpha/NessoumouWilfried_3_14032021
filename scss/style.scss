@@ -15,34 +15,7 @@
     "restaurants";
     grid-template-columns: $max;
     width: $max;
-}
-.search
-{
-    grid-area: search;
-    &_container
-    {
-        position: relative;
-        &_icon
-        {
-            position: absolute;
-            left:26%;
-            top: 20%;
-            font-size: 20px;
-            color: $color-black-gray;
-        }
-        &_field
-        {
-            font-size: 19px;
-            padding-left: 35%;
-            background-color: $color-gray-light;
-            box-shadow: $shadow-light inset;
-            outline: none;
-            border: none;
-            height: 50px;
-            color: $color-black-gray;
-            width: $max;
-        }
-    }
+    
 }
 .explore
 {

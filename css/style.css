@@ -18,35 +18,6 @@
   width: 100%;
 }
 
-.search {
-  grid-area: search;
-}
-
-.search_container {
-  position: relative;
-}
-
-.search_container_icon {
-  position: absolute;
-  left: 26%;
-  top: 20%;
-  font-size: 20px;
-  color: #353535;
-}
-
-.search_container_field {
-  font-size: 19px;
-  padding-left: 35%;
-  background-color: #dddddd;
-  -webkit-box-shadow: 0 5px 5px #7f7f7f inset;
-          box-shadow: 0 5px 5px #7f7f7f inset;
-  outline: none;
-  border: none;
-  height: 50px;
-  color: #353535;
-  width: 100%;
-}
-
 .explore {
   -ms-grid-row: 2;
   -ms-grid-column: 1;

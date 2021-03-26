@@ -134,6 +134,35 @@ h1,h2, p, div, span
     "logo"
     "search"
     "intro";
+    // logo { } _master.scss  
+    &_search
+    {
+        grid-area: search;
+        &_container
+        {
+            position: relative;
+            &_icon
+            {
+                position: absolute;
+                left:26%;
+                top: 20%;
+                font-size: 20px;
+                color: $color-black-gray;
+            }
+            &_field
+            {
+                font-size: 19px;
+                padding-left: 35%;
+                background-color: $color-gray-light;
+                box-shadow: $shadow-light inset;
+                outline: none;
+                border: none;
+                height: 50px;
+                color: $color-black-gray;
+                width: $max;
+            }
+        }
+    }
     &_intro
     {
         grid-area: intro;
@@ -148,6 +177,7 @@ h1,h2, p, div, span
     "container";
     background-color: $color-black-gray;
     padding: $padding-regular;
+    // logo { } _master.scss  
     &_container
     {
         grid-area: container;

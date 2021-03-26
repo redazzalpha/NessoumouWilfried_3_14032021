@@ -38,8 +38,22 @@
             left: 10%;
         }
     }
+
+    .wrapper .header
+    {
+        &_search
+        {
+            &_container
+            {   
+                max-width: 555px;
+                width: 100%;
+                margin: auto;
+            }
+        }    
+    }
+
 }
-@media #{$mq-lap-medum}
+@media #{$mq-tab-medum}
 {
     /* item */
 
@@ -62,31 +76,41 @@
     {
         grid-template-areas: 
         "header header"
-        "intro intro"
         "explore explore"
         "functioning functioning"
         "restaurants restaurants";
         grid-template-columns: 41%;  
     }
-    .wrapper > .header
+    .wrapper .header
     {
         display: grid;
         grid-template-areas: 
         "search logo"
         "intro intro";
+        grid-template-columns: 40% 60%;
         width: 100%;
-    }
-    .wrapper > .search
-    {
-        grid-area: search;
-        
-        .search_container
+        .logo
         {
-            &_field
-            { 
-                width: 93%;
-            }
+            @include uncenter;
         }
+        &_search
+        {
+            grid-area: search;
+            &_container
+            {
+                padding: 10px 20px 0 20px;
+                width: 100%;
+                &_icon
+                {
+                    left: 28%;
+                    top: 35%;                
+                }
+                &_field
+                {
+                    width: 100%;
+                }
+            }
+        }    
     }
     .wrapper > .explore
     {
@@ -147,6 +171,8 @@
     }
 }
 
+
+// #{$mq-lap-medum}
 
 
 
