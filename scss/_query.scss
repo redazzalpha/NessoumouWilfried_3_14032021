@@ -22,6 +22,29 @@
             left: 14%;
         }
     }
+    body > .wrapper
+    {
+        grid-template-areas: 
+        "header header"
+        "explore explore"
+        "functioning functioning"
+        "restaurants restaurants";
+        grid-template-columns: 41%;  
+    }
+    .wrapper .header
+    {
+        &_search
+        {
+            &_container
+            {
+                &_icon
+                {
+                    top: 23%;                
+                }
+            }
+        }    
+    }
+
 }
 @media #{$mq-mob-medium}
 {
@@ -51,7 +74,6 @@
             }
         }    
     }
-
 }
 @media #{$mq-tab-medum}
 {

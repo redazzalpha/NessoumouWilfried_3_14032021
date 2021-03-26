@@ -41,6 +41,14 @@
     top: 38px;
     left: 14%;
   }
+  body > .wrapper {
+        grid-template-areas: "header header" "explore explore" "functioning functioning" "restaurants restaurants";
+    -ms-grid-columns: 41%;
+        grid-template-columns: 41%;
+  }
+  .wrapper .header_search_container_icon {
+    top: 23%;
+  }
 }
 
 @media (min-width: 375px) {
