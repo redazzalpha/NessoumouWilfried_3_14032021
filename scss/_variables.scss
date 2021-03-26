@@ -1,11 +1,31 @@
 
-/* font */
+/* fonts */
 
 $font-list: "shrikhand" "roboto";
 $font-logo: shrikhand, serif, sans-serif;
 $font-text: roboto, serif, sans-serif;
 
-/* color */
+/* break points */
+
+$bp-mob-small: 320px;
+$bp-mob-medium: 375px;
+$bp-mob-large: 425px;
+$bp-tab-medium: 768px;
+$bp-lap-medium: 1024px;
+$bp-lap-large: 1440px;
+$bp-4K-xxlarge: 2560px;
+
+/* media query sizes */
+
+$mq-mob-small:  "(min-width: #{$bp-mob-small})";
+$mq-mob-medium:  "(min-width: #{$bp-mob-medium})";
+$mq-mob-large:  "(min-width: #{$bp-mob-large})";
+$mq-tab-medum:  "(min-width: #{$bp-tab-medium})";
+$mq-lap-medum:  "(min-width: #{$bp-lap-medium})";
+$mq-lap-large:  "(min-width: #{$bp-lap-large})";
+$mq-4K-xxlarge:  "(min-width: #{$bp-4K-xxlarge})";
+
+/* colors */
 
 $color-white: #ffffff;
 $color-white-dirty: #f6f6f6;
@@ -22,27 +42,30 @@ $color-shadow: rgba(128, 128, 128, 0.352);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 $color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
  
-/* shadow */
+/* shadows */
 
 $shadow-regular: 7px 7px 7px $color-shadow;
 $shadow-light: 0 5px 5px $color-gray;
 
-/* border */
+/* borders */
 
 $border-up: 15px 15px 0 0;
 $border-rounded: 40px;
 $border-circle: 50px;
 $border-rectangular: 15px;
 
-/* padding */
+/* paddings */
 
 $padding-regular: 20px;
 $padding-down: 20px 20px 60px 20px;
 
-/* transition */ 
+/* margins */
+
+$margin-down: 5px 5px 20px 5px;
+/* transitions */ 
 
 $transition-color: color 0.5s;
 
-/* other */
+/* others */
 
 $max: 100%;
