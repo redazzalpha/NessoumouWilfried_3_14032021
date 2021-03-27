@@ -1,117 +1,6 @@
 @charset "utf-8";
 
-@import "variables";
-@import "mixin";
-@import "query";
-@import "modifier";
-
-/* item */
-
-.logo
-{
-    grid-area: logo;
-    font-family: $font-logo;
-    &--header
-    {
-        font-size: 35px;
-        color: $color-black;
-    }
-    &--footer
-    {
-        grid-area: logo;
-        font-size: 20px;
-        margin-bottom: 20px;
-        color: $color-white;
-    }
-}
-.button
-{
-    grid-area: button;
-    background: $color-gradient;
-    color: $color-white;
-    margin-bottom: 15px;
-    padding: 15px;
-    width: 220px;
-    margin: auto;
-    font-weight: bold;
-    box-shadow: $shadow-regular;
-    margin-bottom: 35px;
-}
-.button-rect
-{
-    border-radius: $border-rectangular;
-    position: relative;
-    padding: 25px;
-    color: $color-black;
-    width: $max;
-    &_sticker
-    {
-        position : absolute;
-        color: $color-white;
-        padding: 4px 10px;
-        background-color: $color-secondary;
-        top: 21px;
-        left: -15px;
-    } 
-}
-.card
-{
-    box-shadow: $shadow-regular;
-    background-color: $color-white;
-    color: $color-black;
-    text-align: start;
-    position: relative;
-    height: 250px;
-    &_link
-    {   
-        width: $max;
-        height: 250px;
-        
-        &_img
-        {
-            border-radius: $border-up;
-            object-fit: cover;
-            width: $max;
-            height: 75%;
-        }
-        &_caption
-        {
-            padding: 10px;
-        }
-    }
-}
-.icon-heart
-{
-    position : absolute;
-    font-size: 23px;
-    top: 80%;
-    left: 80%;
-    color: $color-secondary;
-    transition: $transition-color;
-    &--full
-    {
-        color: $color-transprent;
-    }    
-    &:hover
-    {
-        color: $color-secondary;
-    }
-}
-.icon-ftng
-{
-    color: $color-gray;
-    font-size: 20px;
-    position: absolute;
-    left: 10%;
-    color: $color-gray;
-    transition: $transition-color;
-}
-a:hover .icon-ftng
-{
-    color: $color-secondary;
-}
-
-/* group rules */
+@import 'variables';
 
 *
 {
@@ -119,98 +8,16 @@ a:hover .icon-ftng
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2, p, div, span
+
+.hdr
 {
-    font-family: $font-text;
-}
-
-/* rules */
-
-.header
-{    
-    grid-area: header;
-    display: grid;
-    grid-template-areas: 
-    "logo"
-    "search"
-    "intro";
-    // logo { } _master.scss  
-    &_search
+    border: solid red 3px;
+    &__logo
     {
-        grid-area: search;
-        &_container
-        {
-            position: relative;
-            &_icon
-            {
-                position: absolute;
-                left:26%;
-                top: 20%;
-                font-size: 20px;
-                color: $color-black-gray;
-            }
-            &_field
-            {
-                font-size: 19px;
-                padding-left: 35%;
-                background-color: $color-gray-light;
-                box-shadow: $shadow-light inset;
-                outline: none;
-                border: none;
-                height: 50px;
-                color: $color-black-gray;
-                width: $max;
-            }
-        }
+        
     }
-    &_intro
+    &__intro
     {
-        grid-area: intro;
-        padding: $padding-regular;
+        font-size: $size-font-text;
     }
 }
-.footer
-{
-    display: grid;
-    grid-template-areas:
-    "logo"
-    "container";
-    background-color: $color-black-gray;
-    padding: $padding-regular;
-    // logo { } _master.scss  
-    &_container
-    {
-        grid-area: container;
-        display: grid;
-        grid-template-areas: 
-        "proposition" 
-        "partner"
-        "mentions"
-        "contact";
-        grid-template-columns: $max;
-        a
-        {
-            color: $color-white;   
-            margin-bottom: 7px;
-        }
-        .proposition
-        {
-            grid-area: proposition;
-        }
-        .partner
-        {
-            grid-area: partner;
-        }
-        .mentions
-        {
-            grid-area: mentions;
-        }
-        .contact
-        {
-            grid-area: contact;
-        }
-    }
-}
-
-
-

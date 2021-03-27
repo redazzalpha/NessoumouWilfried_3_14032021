@@ -13,163 +13,34 @@
 
     <body>
 
-        <!-- wrapper -->
         <div class="wrapper">
 
             <!-- header -->
-            <header class="header ">
-                <h1 class="logo logo--header center">ohmyfood</h1>
-                <!-- search -->
-                <form class="header_search">
-                    <div class="header_search_container">
-                        <i class="fas fa-map-marker-alt fa-fw header_search_container_icon"></i>
-                        <input type="text" name="field" id="search"  placeholder="Paris, Belleville" class="header_search_container_field" />
-                    </div>
-                </form>
-                <!-- introduction -->
-                <p class="header_intro center">
+            <header class="hdr">
+                <h1 class="hdr__logo">homyfood</h1>
+                <p class="hdr__intro">
                     Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux <br />
-                    utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les <br />
+                    utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les <br /> 
                     restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte!
                 </p>
+                <form action="x.php" method="GET">
+                    <i class="fas fa-map-marker-alt fa-fw" ></i>
+                    <input type="text"  placeholder="Paris, Belleville" />
+                </form>
             </header>
+    
+            <h2 class="mn__title">Réservez le menu qui vous convient</h2>
+            <main>
+                <h3>Découvrez des restaurant d'execption, sélectionnez par nos soins</h3>    
+                <h3>Fonctionnement</h3>    
+                <h3>Restaurants</h3>    
+            </main>
 
-            <!-- explore -->
-            <section class="explore center">
-                <h2 class="explore_title">Réservez le menu qui vous convient</h2>
-                <p class="explore_text">Découvrez les restaurants d'exceptions, sélectionnés par nos soins.</p>
-                <a href="#" class="unlink">
-                    <div class="button rounded">
-                        Explorer nos restaurants
-                    </div>
-                </a>
-            </section>
+            <footer>
+                <h2>ohmyfood</h2>
+            </footer>
 
-
-            <!-- functioning -->
-            <nav class="functioning">
-                <h2 class="functioning_title">Fonctionnement</h2>
-                <ul>
-                    <li class="center unlist">     
-                        <a href="#" class="rectangular unlink">    
-                            <div class="button-rect">
-                                <i class="fas fa-mobile-alt fa-fw icon-ftng"></i>
-                                <span class="button-rect_sticker circle">1</span>
-                                <span class="button-rect_text">choisissez un restaurant</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="center unlist">     
-                        <a href="#"  class="rectangular unlink">    
-                            <div class="button-rect">
-                                <i class="fas fa-list-ul fa-fw icon-ftng"></i>
-                                <span class="button-rect_sticker circle">2</span>
-                                <span class="button-rect_text">Composez votre menu</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="center unlist">     
-                        <a href="#"  class="rectangular unlink">    
-                            <div class="button-rect">
-                                <i class="fas fa-store fa-fw icon-ftng"></i>
-                                <span class="button-rect_sticker circle">3</span>
-                                <span class="button-rect_text">Dégustez au restaurant</span>
-                            </div>
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-        
-            <!-- restaurants -->
-            <section class="restaurants">
-                <h2 class="restaurants_title">Restaurants</h2>
-                <!-- cards restaurants -->
-                <div class="card rectangular">
-                    <a href="#" class="card_link rectangular unlink">
-                        <img src="img/restaurants/laPaletteDeGout.jpg" alt="meal la palette di goût" class="card_link_img "/>
-                        <div class="card_link_caption">
-                            <span class="card_link_caption_text"> 
-                                <strong>La palette du goût</strong><br />
-                                Ménilmontant
-                            </span>
-                        </div>
-                        <span class="tag"></span>
-                    </a>
-                    <i class="far fa-heart fa-fw icon-heart"></i>
-                    <i class="fas fa-heart fa-fw icon-heart icon-heart--full"></i>
-                </div>
-                <div class="card rectangular">
-                    <a href="#" class="card_link rectangular unlink">
-                        <img src="img/restaurants/laNoteEnchantee.jpg" alt="meal La note enchantée" class="card_link_img"/>
-                        <div class="card_link_caption">
-                            <span class="card_link_caption_text"> 
-                                <strong>La note enchantée</strong><br />
-                                Charonne
-                            </span>
-                        </div>
-                        <span class="tag"></span>
-                    </a>
-                    <i class="far fa-heart fa-fw icon-heart"></i>
-                    <i class="fas fa-heart fa-fw icon-heart icon-heart--full "></i>
-                </div>
-                <div class="card rectangular">
-                    <a href="#" class="card_link rectangular unlink">
-                        <img src="img/restaurants/aLaFrancaise.jpg" alt="meal à la française" class="card_link_img"/>
-                        <div class="card_link_caption">
-                            <span class="card_link_caption_text"> 
-                                <strong>&Agrave; la française</strong><br />
-                                Cité Rouge
-                            </span>
-                        </div>
-                    </a>
-                    <i class="far fa-heart fa-fw icon-heart"></i>
-                    <i class="fas fa-heart fa-fw icon-heart icon-heart--full"></i>
-                </div>
-                <div class="card rectangular">
-                    <a href="#" class="card_link rectangular unlink">
-                        <img src="img/restaurants/leDeliceDesSens.jpg" alt="meal le delice des sens" class="card_link_img"/>
-                        <div class="card_link_caption">
-                            <span class="card_link_caption_text"> 
-                                <strong>Le délice des sens</strong><br />
-                                Folie-Méricourt
-                            </span>
-                        </div>
-                    </a>
-                    <i class="far fa-heart fa-fw icon-heart"></i>
-                    <i class="fas fa-heart fa-fw icon-heart icon-heart--full"></i>
-                </div>
-            </section>
         </div>
-        
-        <!-- footer -->
-        <footer class="footer">
-            <h1 class="logo logo--footer">ohmyfood</h1>
-            <div class="footer_container">
-                <span class="proposition">
-                    <a href="#" class="unlink"> 
-                        <i class="fas fa-utensils fa-fw spacer-right"></i> 
-                        Proposer un restaurant
-                    </a>
-                </span>
-                <span class="partner">
-                    <a href="#" class="unlink">
-                        <i class="fas fa-hands-helping fa-fw spacer-right"></i> 
-                        Devenir partenaire
-                    </a>
-                </span>
-                <span class="mentions">
-                    <a href="#" class="unlink"> 
-                        Mentions légales
-                    </a>
-                </span>
-                <span class="contact">
-                    <a href="#" class="unlink">
-                        Contact
-                    </a>
-                </span>
-            </div>
-        </footer>
 
         <script src="js/app.js"></script>
     </body>
