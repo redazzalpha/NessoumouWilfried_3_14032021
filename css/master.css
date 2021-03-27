@@ -15,12 +15,4 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-.hdr {
-  border: solid red 3px;
-}
-
-.hdr__logo .hdr__intro {
-  font-size: 20px;
-}
 /*# sourceMappingURL=master.css.map */

@@ -17,27 +17,105 @@
 
             <!-- header -->
             <header class="hdr">
-                <h1 class="hdr__logo">homyfood</h1>
+                <h1 class="hdr__logo">ohmyfood</h1>
                 <p class="hdr__intro">
                     Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux <br />
                     utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les <br /> 
                     restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte!
                 </p>
-                <form action="x.php" method="GET">
-                    <i class="fas fa-map-marker-alt fa-fw" ></i>
-                    <input type="text"  placeholder="Paris, Belleville" />
+                <form action="x.php" method="GET" class="srch">
+                    <i class="fa fa-map-marker-alt fa-fw" class="srch_icon"></i>
+                    <input type="text"  placeholder="Paris, Belleville" class="srh_field"/>
                 </form>
             </header>
     
-            <h2 class="mn__title">Réservez le menu qui vous convient</h2>
             <main>
-                <h3>Découvrez des restaurant d'execption, sélectionnez par nos soins</h3>    
-                <h3>Fonctionnement</h3>    
-                <h3>Restaurants</h3>    
+                <h2 class="mn__title">Réservez le menu qui vous convient</h2>
+
+                <div class="expl">
+                    <h3>Découvrez des restaurant d'execption, sélectionnez par nos soins</h3>    
+                    <div class="btn ">Explorer nos restaurants</div>
+                </div>
+
+                <div class="ftg">
+                    <h3 class="ftg__title">Fonctionnement</h3>
+
+                    <div class="btn">
+                        <div class="btn__sticker">1</div>
+                        <div class="btn__icon"><i class="fa fa-mobile-alt fa-fw"></i></div>
+                        <div class="btn__text">Choisissez un restaurant</div>
+                    </div> 
+                    <div class="btn">
+                        <div class="btn__sticker">2</div>
+                        <div class="btn__icon"><i class="fa fa-list-ul fa-fw"></i></div>
+                        <div class="btn__text">Composez votre menu</div>
+                    </div> 
+                    <div class="btn">
+                        <div class="btn__sticker">3</div>
+                        <div class="btn__icon"><i class="fa fa-store fa-fw"></i></div>
+                        <div class="btn__text">Dégustez au restaurant</div>
+                    </div> 
+                    
+                </div>
+
+                <div class="rst">
+                    <h3 class="rst_title">Restaurants</h3>  
+
+                    <figure class="card">
+                        <img src="img/restaurants/laPaletteDeGout.jp" alt="restaurant's plate" class="card__img" />
+                        <figcaption class="card__caption">
+                            <span class="card__text">
+                                <strong>La palette du goût</strong>
+                                Ménilmontant
+                            </span>
+                            <i class="far fa-heart fa-fw card__icon"></i>
+                            <i class="fa fa-heart fa-fw card__icon"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="img/restaurants/laNoteEnchantee.jp" alt="restaurant's plate" class="card__img" /> 
+                        <figcaption class=card__caption>
+                            <span class="card_text">
+                                <strong>La note enchantée</strong>
+                                Charonne
+                            </span>
+                            <i class="far fa-heart fa-fw card__icon"></i>
+                            <i class="fa fa-heart fa-fw card__icon"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="img/restaurants/aLaFrancaise.jp" alt="restaurant's plate" class="card__img" />
+                        <figcaption class="card__caption">
+                            <span class="card_text">
+                                <strong>&Agrave; la Française</strong>
+                                Cité Rouge
+                            </span>
+                            <i class="far fa-heart fa-fw card__icon"></i>
+                            <i class="fa fa-heart fa-fw card__icon"></i>
+                        </figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="img/restaurants/leDeliceDesSens.jp" alt="restaurant's plate" class="card__img" />
+                        <figcaption class="card__caption">
+                            <span class="card__text">
+                                <strong>Le délice des sens</strong>
+                                Folie-Méricourt
+                            </span>
+                            <i class="far fa-heart fa-fw card__icon"></i>
+                            <i class="fa fa-heart fa-fw card__icon"></i>
+                        </figcaption>
+                    </figure>
+                </div>
             </main>
 
-            <footer>
-                <h2>ohmyfood</h2>
+            <footer class="ftr">
+                <h2 class="ftr__logo">ohmyfood</h2>
+                <ul class="list"> 
+                    <li class="list__itm"><a href="#"><i class="fa fa-utensils"></i> Proposer un restaurant</a></li>
+                    <li class="list__itm"><a href="#"><i class="fa fa-handshake"></i> Devenir partenaire</a></li>
+                    <li class="list__itm"><a href="#">Mentions légales</a></li>
+                    <li class="list__itm"><a href="#">Contact</a></li>
+                </ul>
             </footer>
 
         </div>
