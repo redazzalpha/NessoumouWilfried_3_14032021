@@ -89,15 +89,20 @@
   .wrapper .header {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "search logo" "intro intro";
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
+        grid-template-areas: "logo logo" "intro search";
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
   }
-  .wrapper .header .logo {
-    margin: unset;
-    text-align: unset;
-    width: unset;
+  .wrapper .header_intro {
+    padding: unset;
   }
   .wrapper .header_search {
     -ms-grid-row: 2;
@@ -105,17 +110,17 @@
     grid-area: search;
   }
   .wrapper .header_search_container {
-    padding: 10px 20px 0 20px;
-    width: 100%;
+    width: 95%;
+    border-radius: 15px;
   }
   .wrapper .header_search_container_icon {
-    left: 28%;
-    top: 35%;
+    left: 21%;
+    top: 27%;
   }
   .wrapper .header_search_container_field {
-    width: 100%;
+    border-radius: 15px;
   }
-  .wrapper > .explore {
+  .wrapper .explore {
         grid-template-areas: "text title button";
     -ms-grid-columns: 33.3% 33.3% 33.3%;
         grid-template-columns: 33.3% 33.3% 33.3%;
@@ -125,37 +130,37 @@
     width: 100%;
     border-top: solid #7f7f7f 2px;
   }
-  .wrapper > .explore .explore_title {
+  .wrapper .explore .explore_title {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: title;
     margin: auto;
   }
-  .wrapper > .explore .explore_text {
+  .wrapper .explore .explore_text {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: text;
     margin: auto;
   }
-  .wrapper > .functioning .functioning_title {
+  .wrapper .functioning .functioning_title {
     text-align: center;
   }
-  .wrapper > .functioning ul {
+  .wrapper .functioning ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
   }
-  .wrapper > .functioning ul div.button-rect {
+  .wrapper .functioning ul div.button-rect {
     padding-left: 60px;
   }
-  .wrapper > .functioning ul div.button-rect .button-rect_sticker {
+  .wrapper .functioning ul div.button-rect .button-rect_sticker {
     top: 21px;
   }
-  .wrapper > .functioning ul div.button-rect .icon-ftng {
+  .wrapper .functioning ul div.button-rect .icon-ftng {
     left: 14%;
   }
-  .wrapper > .restaurants {
+  .wrapper .restaurants {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 38% 38%;
@@ -163,7 +168,7 @@
     gap: 50px;
     max-width: unset;
   }
-  .wrapper > .restaurants .restaurants_title {
+  .wrapper .restaurants .restaurants_title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;

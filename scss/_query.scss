@@ -107,34 +107,38 @@
     {
         display: grid;
         grid-template-areas: 
-        "search logo"
-        "intro intro";
-        grid-template-columns: 40% 60%;
+        "logo logo"
+        "intro search";
+        grid-template-columns: 60% 40%;
         width: 100%;
-        .logo
+        justify-content: center;
+        align-items: center;
+        padding: $padding-regular;
+        &_intro
         {
-            @include uncenter;
+            padding: unset;;
         }
+
         &_search
         {
             grid-area: search;
             &_container
             {
-                padding: 10px 20px 0 20px;
-                width: 100%;
+                width: 95%;
+                border-radius: $border-rectangular;
                 &_icon
                 {
-                    left: 28%;
-                    top: 35%;                
+                    left: 21%;
+                    top: 27%;                
                 }
                 &_field
                 {
-                    width: 100%;
+                    border-radius: $border-rectangular;
                 }
             }
         }    
     }
-    .wrapper > .explore
+    .wrapper .explore
     {
         grid-template-areas: "text title button";
         grid-template-columns: 33.3% 33.3% 33.3%;
@@ -152,7 +156,7 @@
             margin : auto;
         }
     }
-    .wrapper > .functioning
+    .wrapper .functioning
     {
         & .functioning_title
         {
@@ -177,7 +181,7 @@
             }
         }
     }
-    .wrapper > .restaurants
+    .wrapper .restaurants
     {
         display: grid;
         grid-template-columns: 38% 38%;
