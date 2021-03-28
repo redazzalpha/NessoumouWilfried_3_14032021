@@ -41,18 +41,22 @@
     .srch
     {
         grid-area: search;
+        background-color: $color-gray-light;
+        text-align: right;
 
+        box-shadow: $shadow-light inset;
         &__icon
         {
             color: $color-black-gray
         }
         &__field
         {
+            background-color: $color-gray-light;
             outline: none;
             border: none;
-            background-color: $color-gray-light;
-            width: $max-perct;
+            width: 53%;
             height: 50px;
+            box-shadow: $shadow-light inset;
         }
     }
 }

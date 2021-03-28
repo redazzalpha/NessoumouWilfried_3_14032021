@@ -57,6 +57,10 @@
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: search;
+  background-color: #dddddd;
+  text-align: right;
+  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
+          box-shadow: 0 20px 10px -20px #7f7f7f inset;
 }
 
 .hdr .srch__icon {
@@ -64,11 +68,13 @@
 }
 
 .hdr .srch__field {
+  background-color: #dddddd;
   outline: none;
   border: none;
-  background-color: #dddddd;
-  width: 100%;
+  width: 53%;
   height: 50px;
+  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
+          box-shadow: 0 20px 10px -20px #7f7f7f inset;
 }
 
 .ftr {
