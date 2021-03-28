@@ -10,6 +10,7 @@ main
     "explore"
     "functioning"
     "restaurants";
+
     &__title
     {
         grid-area: "title";
@@ -22,6 +23,7 @@ main
     grid-template-areas: 
     "title"
     "button";
+
     &__title
     {
         grid-area: title;
@@ -72,6 +74,7 @@ main
 {
     border-radius: $radius-rectangular;
     height: 240px;
+    
     &__img
     {
         border-radius: $radius-rect-up;

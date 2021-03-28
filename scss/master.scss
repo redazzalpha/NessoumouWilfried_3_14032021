@@ -53,15 +53,13 @@
             background-color: $color-gray-light;
             width: $max-perct;
             height: 50px;
-
-
         }
-
     }
 }
 .ftr
 {
     background-color: $color-black-gray;
+    
     &__logo
     {
         color: $color-white;
@@ -75,6 +73,7 @@
     display: inline-block;
     padding: $padding-btn;
     box-shadow: $shadow-regular;
+    
     text-align: center;
     &--round 
     { 
