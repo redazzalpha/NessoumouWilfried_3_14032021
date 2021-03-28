@@ -1,13 +1,98 @@
 @charset "utf-8";
 
 @import 'variables';
+@import 'mixin';
+
+@each $var in $font-list { @include getFont($var); }
+
+/* all */
 
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font-text;
 }
+[class*=__logo] 
+{ 
+    font-family: $font-logo;
+}
+
+/* general */
+
+.hdr
+{
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "intro"
+    "search";
+    text-align: center;
+    &__logo
+    {
+        grid-area: logo;
+    }
+    &__intro
+    {
+        grid-area: intro;
+    }
+    &__srch
+    {
+        grid-area: search;
+    }
+}
+.ftr
+{
+    background-color: $color-black-gray;
+    &__logo
+    {
+        color: $color-white;
+    }
+}
+
+/* item */
+
+.btn
+{
+    display: inline-block;
+    padding: $padding-btn;
+    box-shadow: $shadow-regular;
+    text-align: center;
+    &--round 
+    { 
+        border-radius: $radius-rounded; 
+    }
+    &--rect
+    { 
+        border-radius: $radius-rectangular; 
+    }
+    &--grad 
+    { 
+        background: $color-gradient; color: $color-white;
+    }
+    &--whit
+    {
+        background-color: $color-white-dirty; color: $color-black
+    }
+    &__sticker
+    {
+        display: inline-block;
+        background-color: $color-secondary;
+        border-radius: $radius-circle;
+        padding: $padding-stkr;
+        color: $color-white;
+    }
+    &__icon
+    {
+        color: $color-black-gray;
+    }
+    &__text
+    {
+
+    }
+}
+
 
 
 

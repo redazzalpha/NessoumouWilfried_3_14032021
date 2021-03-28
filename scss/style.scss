@@ -2,3 +2,90 @@
 
 @import "variables";
 
+main
+{
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "explore"
+    "functioning"
+    "restaurants";
+    &__title
+    {
+        grid-area: "title";
+    }   
+}
+.expl
+{
+    grid-area: explore;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "button";
+    &__title
+    {
+        grid-area: title;
+    }
+    .btn
+    {
+        grid-area: button;
+    }
+}
+.ftg
+{
+
+    grid-area: functioning;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "choose"
+    "compose"
+    "eat"; 
+
+    &__title
+    {
+        grid-area: title;
+    }
+    .choose
+    {
+        grid-area: choose;
+    }
+    .compose
+    {
+        grid-area: compose;
+    }
+    .eat
+    {
+        grid-area: eat;
+    }
+}
+.rst
+{
+    grid-area: restaurants;   
+    display: grid;
+    grid-template-columns: $max-perct;
+}
+
+/* items */
+
+.card
+{
+    border-radius: $radius-rectangular;
+    height: 240px;
+    &__img
+    {
+        border-radius: $radius-rect-up;
+        object-fit: cover;
+        width: $max-perct;
+        height: 70%;
+        box-shadow: $shadow-regular;
+    }
+    &__caption
+    {
+        border-radius: $radius-rect-down;
+    }
+}
+
+
+
+

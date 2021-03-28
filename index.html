@@ -14,7 +14,6 @@
     <body>
 
         <div class="wrapper">
-
             <!-- header -->
             <header class="hdr">
                 <h1 class="hdr__logo">ohmyfood</h1>
@@ -24,7 +23,7 @@
                     restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte!
                 </p>
                 <form action="x.php" method="GET" class="srch">
-                    <i class="fa fa-map-marker-alt fa-fw" class="srch_icon"></i>
+                    <i class="fa fa-map-marker-alt fa-fw srch_icon"></i>
                     <input type="text"  placeholder="Paris, Belleville" class="srh_field"/>
                 </form>
             </header>
@@ -34,27 +33,27 @@
             
                 <!-- explore -->
                 <div class="expl">
-                    <h3>Découvrez des restaurant d'execption, sélectionnez par nos soins</h3>    
-                    <div class="btn ">Explorer nos restaurants</div>
+                    <h3 class="expl__title">Découvrez des restaurant d'execption, sélectionnez par nos soins</h3>    
+                    <div class="btn btn--round btn--grad">Explorer nos restaurants</div>
                 </div>
 
                  <!-- functioning -->
                 <div class="ftg">
                     <h3 class="ftg__title">Fonctionnement</h3>
 
-                    <div class="btn">
-                        <div class="btn__sticker">1</div>
-                        <div class="btn__icon"><i class="fa fa-mobile-alt fa-fw"></i></div>
+                    <div class="choose btn btn--rect btn--whit">
+                        <span class="btn__sticker">1</span>
+                        <span class="btn__icon"><i class="fa fa-mobile-alt fa-fw"></i></span>
                         <div class="btn__text">Choisissez un restaurant</div>
                     </div> 
-                    <div class="btn">
-                        <div class="btn__sticker">2</div>
-                        <div class="btn__icon"><i class="fa fa-list-ul fa-fw"></i></div>
+                    <div class="compose btn btn--rect btn--whit">
+                        <span class="btn__sticker">2</span>
+                        <span class="btn__icon"><i class="fa fa-list-ul fa-fw"></i></span>
                         <div class="btn__text">Composez votre menu</div>
                     </div> 
-                    <div class="btn">
-                        <div class="btn__sticker">3</div>
-                        <div class="btn__icon"><i class="fa fa-store fa-fw"></i></div>
+                    <div class="eat btn btn--rect btn--whit">
+                        <span class="btn__sticker">3</span>
+                        <span class="btn__icon"><i class="fa fa-store fa-fw"></i></span>
                         <div class="btn__text">Dégustez au restaurant</div>
                     </div> 
                     
@@ -63,12 +62,11 @@
                 <!-- restaurant -->
                 <div class="rst">
                     <h3 class="rst_title">Restaurants</h3>  
-
                     <figure class="card">
-                        <img src="img/restaurants/laPaletteDeGout.jp" alt="restaurant's plate" class="card__img" />
+                        <img src="img/restaurants/laPaletteDeGout.jpg" alt="restaurant's plate" class="card__img" />
                         <figcaption class="card__caption">
                             <span class="card__text">
-                                <strong>La palette du goût</strong>
+                                <strong>La palette du goût</strong> <br />
                                 Ménilmontant
                             </span>
                             <i class="far fa-heart fa-fw card__icon"></i>
@@ -76,10 +74,10 @@
                         </figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="img/restaurants/laNoteEnchantee.jp" alt="restaurant's plate" class="card__img" /> 
+                        <img src="img/restaurants/laNoteEnchantee.jpg" alt="restaurant's plate" class="card__img" /> 
                         <figcaption class=card__caption>
                             <span class="card_text">
-                                <strong>La note enchantée</strong>
+                                <strong>La note enchantée</strong> <br />
                                 Charonne
                             </span>
                             <i class="far fa-heart fa-fw card__icon"></i>
@@ -87,10 +85,10 @@
                         </figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="img/restaurants/aLaFrancaise.jp" alt="restaurant's plate" class="card__img" />
+                        <img src="img/restaurants/aLaFrancaise.jpg" alt="restaurant's plate" class="card__img" />
                         <figcaption class="card__caption">
                             <span class="card_text">
-                                <strong>&Agrave; la Française</strong>
+                                <strong>&Agrave; la Française</strong> <br />
                                 Cité Rouge
                             </span>
                             <i class="far fa-heart fa-fw card__icon"></i>
@@ -98,10 +96,10 @@
                         </figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="img/restaurants/leDeliceDesSens.jp" alt="restaurant's plate" class="card__img" />
+                        <img src="img/restaurants/leDeliceDesSens.jpg" alt="restaurant's plate" class="card__img" />
                         <figcaption class="card__caption">
                             <span class="card__text">
-                                <strong>Le délice des sens</strong>
+                                <strong>Le délice des sens</strong> <br />
                                 Folie-Méricourt
                             </span>
                             <i class="far fa-heart fa-fw card__icon"></i>
@@ -120,7 +118,6 @@
                     <li class="list__itm"><a href="#">Contact</a></li>
                 </ul>
             </footer>
-
         </div>
 
         <script src="js/app.js"></script>

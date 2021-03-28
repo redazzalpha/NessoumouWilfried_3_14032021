@@ -1,10 +1,3 @@
-
-/* fonts */
-
-$font-list: "shrikhand" "roboto";
-$font-logo: shrikhand, serif, sans-serif;
-$font-text: roboto, serif, sans-serif;
-
 /* break points */
 
 $bp-mob-small: 320px;
@@ -25,38 +18,89 @@ $mq-lap-medum:  "(min-width: #{$bp-lap-medium})";
 $mq-lap-large:  "(min-width: #{$bp-lap-large})";
 $mq-4K-xxlarge:  "(min-width: #{$bp-4K-xxlarge})";
 
+/* fonts */
+
+$font-list: "shrikhand" "roboto";
+$font-logo: shrikhand, serif, sans-serif;
+$font-text: roboto, serif, sans-serif;
+
+/* borders radius*/
+
+$radius-rounded: 40px;
+$radius-circle: 50px;
+$radius-rectangular: 15px;
+$radius-rect-up: 15px 15px 0 0;
+$radius-rect-down: 0 0 15px 15px;
+
+/* paddings */
+
+$padding-blk: 20px;
+$padding-btn: 15px;
+$padding-stkr: 5px 12px;
+$padding-regular: 20px;
+
 /* colors */
 
-$color-white: #ffffff;
-$color-white-dirty: #f6f6f6;
-$color-gray: #7f7f7f;;
-$color-gray-light: #dddddd;
-$color-black: #000000;
-$color-black-light: lighten(#000000, 50%);
-$color-black-gray: #353535;
 $color-primary: #FF79DA;
 $color-secondary: #9356DC;
 $color-tertiary: #99E2D0;
-$color-transprent: #00000000;
-$color-shadow: rgba(128, 128, 128, 0.352);
 $color-gradient: linear-gradient($color-primary, $color-secondary);
 $color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
- 
+$color-white: #ffffff;
+$color-white-dirty: #f6f6f6;
+$color-black: #000000;
+$color-shadow: rgba(128, 128, 128, 0.352);
+$color-gray: #7f7f7f;
+$color-black-light: lighten(#000000, 50%);
+
 /* shadows */
 
 $shadow-regular: 7px 7px 7px $color-shadow;
 $shadow-light: 0 5px 5px $color-gray;
 
-/* borders */
+/* sizes */
 
-$border-up: 15px 15px 0 0;
-$border-rounded: 40px;
-$border-circle: 50px;
-$border-rectangular: 15px;
+$size-font-hdr_logo: 20px;
+$size-font-ftr_logo: 20px;
+$size-font-text: 20px;
+
+/* percent */
+
+$max-perct: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$color-transprent: #00000000;
+
+
+
+$color-gray-light: #dddddd;
+
+
+$color-black-gray: #353535;
+
+
+$padding-down: 20px 20px 60px 20px;
+
+
+
+
+
+ 
+
 
 /* paddings */
 
-$padding-regular: 20px;
 $padding-down: 20px 20px 60px 20px;
 
 /* margins */
@@ -66,15 +110,7 @@ $margin-down: 5px 5px 20px 5px;
 
 $transition-color: color 0.5s;
 
-/* others */
 
-$max: 100%;
-
-/* sizes */
-
-$size-font-hdr_logo: 20px;
-$size-font-ftr_logo: 20px;
-$size-font-text: 20px;
 
 
 
