@@ -51,6 +51,7 @@ $color-white-dirty: #f6f6f6;
 $color-black: #000000;
 $color-shadow: rgba(128, 128, 128, 0.352);
 $color-gray: #7f7f7f;
+$color-gray-light: #dddddd;
 $color-black-light: lighten(#000000, 50%);
 
 /* shadows */
@@ -68,6 +69,11 @@ $size-font-text: 20px;
 
 $max-perct: 100%;
 
+/* transitions */ 
+
+$transition-color: color 0.5s;
+
+
 
 
 
@@ -84,10 +90,9 @@ $color-transprent: #00000000;
 
 
 
-$color-gray-light: #dddddd;
-
 
 $color-black-gray: #353535;
+
 
 
 $padding-down: 20px 20px 60px 20px;
@@ -106,9 +111,7 @@ $padding-down: 20px 20px 60px 20px;
 /* margins */
 
 $margin-down: 5px 5px 20px 5px;
-/* transitions */ 
 
-$transition-color: color 0.5s;
 
 
 

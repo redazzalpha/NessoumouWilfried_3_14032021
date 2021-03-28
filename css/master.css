@@ -7,9 +7,9 @@
 /* shadows */
 /* sizes */
 /* percent */
+/* transitions */
 /* paddings */
 /* margins */
-/* transitions */
 @font-face {
   font-family: "shrikhand";
   src: url(../../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../../font/shrikhand/shrikhand.ttf) format("truetype"), url(../../font/shrikhand/shrikhand.svg) format("svg"), url(../../font/shrikhand/shrikhand.woff) format("woff"), url(../../font/shrikhand/shrikhand.woff2) format("woff2");
@@ -53,10 +53,22 @@
   grid-area: intro;
 }
 
-.hdr__srch {
+.hdr .srch {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: search;
+}
+
+.hdr .srch__icon {
+  color: #353535;
+}
+
+.hdr .srch__field {
+  outline: none;
+  border: none;
+  background-color: #dddddd;
+  width: 100%;
+  height: 50px;
 }
 
 .ftr {

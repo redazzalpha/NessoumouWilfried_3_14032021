@@ -29,6 +29,7 @@
     "intro"
     "search";
     text-align: center;
+    
     &__logo
     {
         grid-area: logo;
@@ -37,9 +38,25 @@
     {
         grid-area: intro;
     }
-    &__srch
+    .srch
     {
         grid-area: search;
+
+        &__icon
+        {
+            color: $color-black-gray
+        }
+        &__field
+        {
+            outline: none;
+            border: none;
+            background-color: $color-gray-light;
+            width: $max-perct;
+            height: 50px;
+
+
+        }
+
     }
 }
 .ftr
