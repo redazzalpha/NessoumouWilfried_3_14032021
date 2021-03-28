@@ -67,6 +67,9 @@
 {
     display: inline-block;
     text-align: center;
+    box-shadow: $shadow-regular;    
+    text-decoration: none;
+    padding: $padding-btn-reglular;
 
     &--round 
     { 

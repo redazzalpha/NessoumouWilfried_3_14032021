@@ -10,7 +10,6 @@
 /* percent */
 /* transitions */
 /* gaps */
-/* margins */
 @font-face {
   font-family: "shrikhand";
   src: url(../../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../../font/shrikhand/shrikhand.ttf) format("truetype"), url(../../font/shrikhand/shrikhand.svg) format("svg"), url(../../font/shrikhand/shrikhand.woff) format("woff"), url(../../font/shrikhand/shrikhand.woff2) format("woff2");
@@ -77,6 +76,10 @@
 .btn {
   display: inline-block;
   text-align: center;
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  text-decoration: none;
+  padding: 15px;
 }
 
 .btn--round {

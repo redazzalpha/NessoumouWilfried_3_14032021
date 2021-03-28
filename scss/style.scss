@@ -10,12 +10,14 @@
     "explore"
     "functioning"
     "restaurants";
-    padding: $padding-regular;
 
     &__title
     {
         grid-area: "title";
         text-align: center;
+        background-color: $color-white-dirty;
+        padding: $padding-regular;
+        padding-bottom: 10px;
     }   
 }
 .srch
@@ -47,20 +49,24 @@
     "title"
     "button";
     text-align: center;
+    padding: $padding-regular;
+    padding-top: 10px;
+    background-color: $color-white-dirty;
+    
     &__title
     {
         grid-area: title;
+        color: $color-gray;
+        font-size: 16px;
+        font-weight: unset;
     }
     .btn
     {
         grid-area: button;
         width: 220px;
-        margin: $margin-btn-top-down;
-        margin-left: auto;
-        margin-right: auto;
-        text-decoration: none;
-        box-shadow: $shadow-regular;    
-        padding: $padding-btn;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: $margin-btn;    
     }
 }
 .ftg
@@ -74,7 +80,9 @@
     "compose"
     "eat"; 
     row-gap: $gap-regular;
-    padding: $padding-top-down;
+    padding: $padding-regular;
+    padding-top: $padding-ftg;
+    padding-bottom: $padding-ftg;
 
     &__title
     {
@@ -107,7 +115,9 @@
     grid-template-columns: $max-perct;
     background-color: $color-white-dirty;
     row-gap: $gap-regular;
-    padding: $padding-top-down;
+    padding: $padding-regular;
+    padding-top: $padding-rst;
+    padding-bottom: $padding-rst;
 
     .card
     {
@@ -115,6 +125,7 @@
         text-decoration: none;
         max-width: 425px;
         margin: auto;
+
         &__caption
         {
             

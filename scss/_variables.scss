@@ -34,20 +34,16 @@ $radius-rect-down: 0 0 15px 15px;
 
 /* paddings */
 
-$padding-blk: 20px;
-$padding-btn: 15px;
-$padding-stkr: 5px 12px;
 $padding-regular: 20px;
-$padding-down: 0 0 60px 0;
-$padding-top: 60px 0 0 0;
-$padding-top-down: 60px 0 60px 0;
+$padding-btn-reglular: 15px;
+$padding-btn: 50px;
+$padding-rst: 50px;
+$padding-ftg: 50px;
+$padding-stkr: 5px 12px;
 
 /* margins */
 
-$margin-btn: 20px;
-$margin-btn-top: 20px 0 0 0;
-$margin-btn-down: 0 0 20px 0;
-$margin-btn-top-down: 20px 0 20px 0;
+$margin-btn: 50px;
 
 /* colors */
 
@@ -63,6 +59,7 @@ $color-shadow: rgba(128, 128, 128, 0.352);
 $color-gray: #7f7f7f;
 $color-gray-light: #dddddd;
 $color-black-light: lighten(#000000, 50%);
+$color-transprent: #00000000;
 
 /* shadows */
 
@@ -85,7 +82,7 @@ $transition-color: color 0.5s;
 
 /* gaps */
 
-$gap-regular: 50px;
+$gap-regular: 30px;
 
 
 
@@ -100,7 +97,6 @@ $gap-regular: 50px;
 
 
 
-$color-transprent: #00000000;
 
 
 
@@ -115,13 +111,6 @@ $color-black-gray: #353535;
 
 
  
-
-
-
-
-/* margins */
-
-$margin-down: 5px 5px 20px 5px;
 
 
 
