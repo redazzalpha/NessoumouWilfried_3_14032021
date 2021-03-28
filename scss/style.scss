@@ -16,17 +16,17 @@
         grid-area: "title";
         text-align: center;
         background-color: $color-white-dirty;
-        padding: $padding-regular;
-        padding-bottom: 10px;
+        padding: $padding-base;
+        padding-bottom: $padding-main-title-down;
     }   
 }
 .srch
 {
     grid-area: search;
     background-color: $color-gray-light;
+    box-shadow: $box-shadow-light-up-inset;
     text-align: right;
 
-    box-shadow: $shadow-light inset;
     &__icon
     {
         color: $color-black-gray;
@@ -36,9 +36,9 @@
         background-color: $color-gray-light;
         outline: none;
         border: none;
-        width: 50%;
-        height: 50px;
-        box-shadow: $shadow-light inset;
+        box-shadow: $box-shadow-light-up-inset ;
+        width: $half-perct;
+        height: $height-srch-field;
     }    
 }
 .expl
@@ -49,24 +49,24 @@
     "title"
     "button";
     text-align: center;
-    padding: $padding-regular;
-    padding-top: 10px;
+    padding: $padding-base;
+    padding-top: $padding-expl-top;
     background-color: $color-white-dirty;
     
     &__title
     {
         grid-area: title;
         color: $color-gray;
-        font-size: 16px;
         font-weight: unset;
+        font-size: $font-size-expl-title;
     }
     .btn
     {
         grid-area: button;
-        width: 220px;
         margin: auto;
-        margin-top: 20px;
-        margin-bottom: $margin-btn;    
+        margin-top: $margin-btn-top;
+        margin-bottom: $margin-btn-down;    
+        width: $width-expl-btn;
     }
 }
 .ftg
@@ -80,9 +80,10 @@
     "compose"
     "eat"; 
     row-gap: $gap-regular;
-    padding: $padding-regular;
-    padding-top: $padding-ftg;
+    padding: $padding-base;
     padding-bottom: $padding-ftg;
+    padding-top: $padding-ftg-top;
+    position: relative;
 
     &__title
     {
@@ -90,10 +91,25 @@
     }
     .btn
     {
-        width: $max-perct;
         text-decoration: none;
-        max-width: 425px;
         margin: auto;
+        position: relative;
+        padding: $padding-base;
+        width: $max-perct;
+        max-width: $max-width-ftg-btn;
+
+        &__sticker
+        {
+            position: absolute;
+            left: $left-btn_stkr;
+            top: $top-btn-stkr;
+        }
+        &__icon
+        {
+            position: absolute;
+            left: $left-btn-icn;
+            top: $top-btn-icn;
+        }
     }
     .choose
     {
@@ -115,7 +131,7 @@
     grid-template-columns: $max-perct;
     background-color: $color-white-dirty;
     row-gap: $gap-regular;
-    padding: $padding-regular;
+    padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
 
@@ -123,17 +139,8 @@
     {
         display: inline-block;
         text-decoration: none;
-        max-width: 425px;
+        max-width: $max-width-rst-card;
         margin: auto;
-
-        &__caption
-        {
-            
-        }
-        &__text
-        {
-
-        }
     }
 
 }
@@ -143,15 +150,15 @@
 .card
 {
     border-radius: $radius-rectangular;
-    height: 240px;
-    box-shadow: $shadow-regular;
+    box-shadow: $box-shadow-regular;
+    height: $height-card;
     
     &__img
     {
-        border-radius: $radius-rect-up;
         object-fit: cover;
+        border-radius: $radius-rect-up;
         width: $max-perct;
-        height: 70%;
+        height: $height-card-img-perct;
     }
     &__caption
     {

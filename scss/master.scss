@@ -28,8 +28,8 @@
     "logo"
     "intro"
     "search";
-    padding: $padding-regular;
     text-align: center;
+    padding: $padding-base;
     
     &__logo
     {
@@ -43,7 +43,7 @@
 .ftr
 {
     background-color: $color-black-gray;
-    padding: $padding-regular;
+    padding: $padding-base;
 
     &__logo
     {
@@ -55,8 +55,8 @@
         
         &__itm
         {
-            color: $color-white;
             text-decoration: none;
+            color: $color-white;
         }
     }
 }
@@ -67,9 +67,9 @@
 {
     display: inline-block;
     text-align: center;
-    box-shadow: $shadow-regular;    
     text-decoration: none;
-    padding: $padding-btn-reglular;
+    box-shadow: $shadow-regular;    
+    padding: $padding-btn-form;
 
     &--round 
     { 
@@ -83,17 +83,18 @@
     { 
         background: $color-gradient; color: $color-white;
     }
-    &--whit
+    &--white
     {
         background-color: $color-white-dirty; color: $color-black
     }
     &__sticker
     {
         display: inline-block;
+        text-align: center;
         background-color: $color-secondary;
-        border-radius: $radius-circle;
-        padding: $padding-stkr;
         color: $color-white;
+        border-radius: $radius-circle;
+        padding: $padding-stkr-form;
     }
     &__icon
     {

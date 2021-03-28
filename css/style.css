@@ -7,9 +7,12 @@
 /* colors */
 /* shadows */
 /* sizes */
-/* percent */
-/* transitions */
+/* widths */
+/*heights */
 /* gaps */
+/* percent */
+/* position */
+/* transitions */
 .main {
   display: -ms-grid;
   display: grid;
@@ -27,9 +30,9 @@
 .srch {
   grid-area: search;
   background-color: #dddddd;
-  text-align: right;
   -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
           box-shadow: 0 20px 10px -20px #7f7f7f inset;
+  text-align: right;
 }
 
 .srch__icon {
@@ -40,10 +43,10 @@
   background-color: #dddddd;
   outline: none;
   border: none;
-  width: 50%;
-  height: 50px;
   -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
           box-shadow: 0 20px 10px -20px #7f7f7f inset;
+  width: 50%;
+  height: 50px;
 }
 
 .expl {
@@ -64,18 +67,18 @@
   -ms-grid-column: 1;
   grid-area: title;
   color: #7f7f7f;
-  font-size: 16px;
   font-weight: unset;
+  font-size: 16px;
 }
 
 .expl .btn {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: button;
-  width: 220px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 50px;
+  width: 220px;
 }
 
 .ftg {
@@ -85,10 +88,11 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title" "choose" "compose" "eat";
-  row-gap: 30px;
+  row-gap: 25px;
   padding: 20px;
-  padding-top: 50px;
   padding-bottom: 50px;
+  padding-top: 40px;
+  position: relative;
 }
 
 .ftg__title {
@@ -98,10 +102,24 @@
 }
 
 .ftg .btn {
-  width: 100%;
   text-decoration: none;
-  max-width: 425px;
   margin: auto;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  max-width: 425px;
+}
+
+.ftg .btn__sticker {
+  position: absolute;
+  left: -3%;
+  top: 31%;
+}
+
+.ftg .btn__icon {
+  position: absolute;
+  left: 10%;
+  top: 28%;
 }
 
 .ftg .choose {
@@ -131,7 +149,7 @@
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   background-color: #f6f6f6;
-  row-gap: 30px;
+  row-gap: 25px;
   padding: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -147,15 +165,15 @@
 /* items */
 .card {
   border-radius: 15px;
-  height: 240px;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  height: 240px;
 }
 
 .card__img {
-  border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px 15px 0 0;
   width: 100%;
   height: 70%;
 }

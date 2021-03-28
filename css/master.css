@@ -7,7 +7,10 @@
 /* colors */
 /* shadows */
 /* sizes */
+/* widths */
+/*heights */
 /* percent */
+/* position */
 /* transitions */
 /* gaps */
 @font-face {
@@ -38,8 +41,8 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo" "intro" "search";
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
 .hdr__logo {
@@ -68,18 +71,18 @@
 }
 
 .ftr .list__itm {
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 }
 
 /* item */
 .btn {
   display: inline-block;
   text-align: center;
+  text-decoration: none;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-  text-decoration: none;
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .btn--round {
@@ -103,10 +106,11 @@
 
 .btn__sticker {
   display: inline-block;
+  text-align: center;
   background-color: #9356DC;
-  border-radius: 50px;
-  padding: 5px 12px;
   color: #ffffff;
+  border-radius: 50px;
+  padding: 4px 10px;
 }
 
 .btn__icon {
