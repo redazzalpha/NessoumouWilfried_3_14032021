@@ -3,12 +3,13 @@
 /* fonts */
 /* borders radius*/
 /* paddings */
+/* margins */
 /* colors */
 /* shadows */
 /* sizes */
 /* percent */
 /* transitions */
-/* paddings */
+/* gaps */
 /* margins */
 @font-face {
   font-family: "shrikhand";
@@ -38,6 +39,7 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo" "intro" "search";
+  padding: 20px;
   text-align: center;
 }
 
@@ -53,44 +55,27 @@
   grid-area: intro;
 }
 
-.hdr .srch {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: search;
-  background-color: #dddddd;
-  text-align: right;
-  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
-          box-shadow: 0 20px 10px -20px #7f7f7f inset;
-}
-
-.hdr .srch__icon {
-  color: #353535;
-}
-
-.hdr .srch__field {
-  background-color: #dddddd;
-  outline: none;
-  border: none;
-  width: 53%;
-  height: 50px;
-  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
-          box-shadow: 0 20px 10px -20px #7f7f7f inset;
-}
-
 .ftr {
   background-color: #353535;
+  padding: 20px;
 }
 
 .ftr__logo {
   color: #ffffff;
 }
 
+.ftr .list {
+  list-style-type: none;
+}
+
+.ftr .list__itm {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* item */
 .btn {
   display: inline-block;
-  padding: 15px;
-  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   text-align: center;
 }
 

@@ -38,6 +38,16 @@ $padding-blk: 20px;
 $padding-btn: 15px;
 $padding-stkr: 5px 12px;
 $padding-regular: 20px;
+$padding-down: 0 0 60px 0;
+$padding-top: 60px 0 0 0;
+$padding-top-down: 60px 0 60px 0;
+
+/* margins */
+
+$margin-btn: 20px;
+$margin-btn-top: 20px 0 0 0;
+$margin-btn-down: 0 0 20px 0;
+$margin-btn-top-down: 20px 0 20px 0;
 
 /* colors */
 
@@ -73,6 +83,10 @@ $max-perct: 100%;
 
 $transition-color: color 0.5s;
 
+/* gaps */
+
+$gap-regular: 50px;
+
 
 
 
@@ -95,7 +109,6 @@ $color-black-gray: #353535;
 
 
 
-$padding-down: 20px 20px 60px 20px;
 
 
 
@@ -104,9 +117,7 @@ $padding-down: 20px 20px 60px 20px;
  
 
 
-/* paddings */
 
-$padding-down: 20px 20px 60px 20px;
 
 /* margins */
 

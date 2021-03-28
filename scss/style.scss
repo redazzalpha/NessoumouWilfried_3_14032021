@@ -2,7 +2,7 @@
 
 @import "variables";
 
-main
+.main
 {
     display: grid;
     grid-template-areas: 
@@ -10,11 +10,34 @@ main
     "explore"
     "functioning"
     "restaurants";
+    padding: $padding-regular;
 
     &__title
     {
         grid-area: "title";
+        text-align: center;
     }   
+}
+.srch
+{
+    grid-area: search;
+    background-color: $color-gray-light;
+    text-align: right;
+
+    box-shadow: $shadow-light inset;
+    &__icon
+    {
+        color: $color-black-gray;
+    }
+    &__field
+    {
+        background-color: $color-gray-light;
+        outline: none;
+        border: none;
+        width: 50%;
+        height: 50px;
+        box-shadow: $shadow-light inset;
+    }    
 }
 .expl
 {
@@ -23,7 +46,7 @@ main
     grid-template-areas: 
     "title"
     "button";
-
+    text-align: center;
     &__title
     {
         grid-area: title;
@@ -31,6 +54,13 @@ main
     .btn
     {
         grid-area: button;
+        width: 220px;
+        margin: $margin-btn-top-down;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+        box-shadow: $shadow-regular;    
+        padding: $padding-btn;
     }
 }
 .ftg
@@ -43,10 +73,19 @@ main
     "choose"
     "compose"
     "eat"; 
+    row-gap: $gap-regular;
+    padding: $padding-top-down;
 
     &__title
     {
         grid-area: title;
+    }
+    .btn
+    {
+        width: $max-perct;
+        text-decoration: none;
+        max-width: 425px;
+        margin: auto;
     }
     .choose
     {
@@ -66,6 +105,26 @@ main
     grid-area: restaurants;   
     display: grid;
     grid-template-columns: $max-perct;
+    background-color: $color-white-dirty;
+    row-gap: $gap-regular;
+    padding: $padding-top-down;
+
+    .card
+    {
+        display: inline-block;
+        text-decoration: none;
+        max-width: 425px;
+        margin: auto;
+        &__caption
+        {
+            
+        }
+        &__text
+        {
+
+        }
+    }
+
 }
 
 /* items */
@@ -74,6 +133,7 @@ main
 {
     border-radius: $radius-rectangular;
     height: 240px;
+    box-shadow: $shadow-regular;
     
     &__img
     {
@@ -81,12 +141,12 @@ main
         object-fit: cover;
         width: $max-perct;
         height: 70%;
-        box-shadow: $shadow-regular;
     }
     &__caption
     {
         border-radius: $radius-rect-down;
-    }
+        color: $color-black;
+    }   
 }
 
 

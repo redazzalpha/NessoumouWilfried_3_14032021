@@ -28,6 +28,7 @@
     "logo"
     "intro"
     "search";
+    padding: $padding-regular;
     text-align: center;
     
     &__logo
@@ -38,35 +39,25 @@
     {
         grid-area: intro;
     }
-    .srch
-    {
-        grid-area: search;
-        background-color: $color-gray-light;
-        text-align: right;
-
-        box-shadow: $shadow-light inset;
-        &__icon
-        {
-            color: $color-black-gray
-        }
-        &__field
-        {
-            background-color: $color-gray-light;
-            outline: none;
-            border: none;
-            width: 53%;
-            height: 50px;
-            box-shadow: $shadow-light inset;
-        }
-    }
 }
 .ftr
 {
     background-color: $color-black-gray;
-    
+    padding: $padding-regular;
+
     &__logo
     {
         color: $color-white;
+    }
+    .list
+    {
+        list-style-type: none;
+        
+        &__itm
+        {
+            color: $color-white;
+            text-decoration: none;
+        }
     }
 }
 
@@ -75,10 +66,8 @@
 .btn
 {
     display: inline-block;
-    padding: $padding-btn;
-    box-shadow: $shadow-regular;
-    
     text-align: center;
+
     &--round 
     { 
         border-radius: $radius-rounded; 
@@ -107,11 +96,9 @@
     {
         color: $color-black-gray;
     }
-    &__text
-    {
-
-    }
 }
+
+
 
 
 
