@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 @import "variables";
-@import "query";
 
 .main
 {
@@ -106,11 +105,8 @@
             {
                 color: $color-secondary;
                 transition: $transition-color;
-
             }
-
         }
-
         &__sticker
         {
             position: absolute;
@@ -184,33 +180,17 @@
                 }
             }
         }
+        &__tag
+        {
+            position: absolute;
+            color: $color-black-gray;
+            left: 64%;
+            bottom: 83%;
+            padding: 1% 5%;
+            font-size: 15px;    
+        }
     }
-}
-
-
-
-
-/* items */
-
-.card
-{
-    border-radius: $radius-rectangular;
-    box-shadow: $box-shadow-regular;
-    height: $height-card;
-    
-    &__img
-    {
-        object-fit: cover;
-        border-radius: $radius-rect-up;
-        width: $max-perct;
-        height: $height-card-img;
-    }
-    &__caption
-    {
-        border-radius: $radius-rect-down;
-        color: $color-black;
-    }   
-}
+} 
 
 
 

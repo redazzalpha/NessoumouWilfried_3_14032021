@@ -1,17 +1,17 @@
 /* break points */
 /* media query sizes */
+/* colors */
 /* fonts */
+/* font sizes */
 /* borders radius*/
 /* paddings */
 /* margins */
-/* colors */
 /* shadows */
-/* font sizes */
 /* widths */
 /*heights */
 /* gaps */
-/* percent */
 /* position */
+/* percent */
 /* transitions */
 .main {
   display: -ms-grid;
@@ -119,7 +119,7 @@
 
 .ftg .btn__sticker {
   position: absolute;
-  left: -4%;
+  left: -3%;
   top: 29%;
   font-size: 15px;
 }
@@ -170,7 +170,7 @@
   display: inline-block;
   margin: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .rst .card__link {
@@ -199,24 +199,12 @@
   transition: color 0.7s;
 }
 
-/* items */
-.card {
-  border-radius: 15px;
-  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
-  height: 240px;
-}
-
-.card__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 70%;
-}
-
-.card__caption {
-  border-radius: 0 0 15px 15px;
-  color: #000000;
+.rst .card__tag {
+  position: absolute;
+  color: #353535;
+  left: 64%;
+  bottom: 83%;
+  padding: 1% 5%;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+@media #{$mq-lap-medum}
+{
+    .main .ftg
+    {
+        grid-template-areas: 
+        "title title title"
+        "choose compose eat";
+        column-gap: $gap-regular;
+        &__title
+        {
+            text-align: center;
+        }
+    }
+    .main .rst
+    {
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+
+        &__title
+        {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+    }
+}

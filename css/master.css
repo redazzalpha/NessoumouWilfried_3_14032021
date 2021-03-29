@@ -1,18 +1,43 @@
 /* break points */
 /* media query sizes */
+/* colors */
 /* fonts */
+/* font sizes */
 /* borders radius*/
 /* paddings */
 /* margins */
-/* colors */
 /* shadows */
-/* font sizes */
 /* widths */
 /*heights */
 /* gaps */
-/* percent */
 /* position */
+/* percent */
 /* transitions */
+@media (min-width: 1024px) {
+  .main .ftg {
+        grid-template-areas: "title title title" "choose compose eat";
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .main .ftg__title {
+    text-align: center;
+  }
+  .main .rst {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .rst__title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url(../../font/shrikhand/shrikhand.eot?#iefix) format("embedded-opentype"), url(../../font/shrikhand/shrikhand.ttf) format("truetype"), url(../../font/shrikhand/shrikhand.svg) format("svg"), url(../../font/shrikhand/shrikhand.woff) format("woff"), url(../../font/shrikhand/shrikhand.woff2) format("woff2");
@@ -49,6 +74,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
+  font-weight: unset;
 }
 
 .hdr__intro {
@@ -58,22 +84,32 @@
 }
 
 .ftr {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo" "list";
   background-color: #353535;
   padding: 20px;
   padding-bottom: 30px;
 }
 
 .ftr__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
   color: #ffffff;
   margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: unset;
 }
 
 .ftr .list {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: list;
   display: -ms-inline-grid;
   display: inline-grid;
       grid-template-areas: "propose" "partner" "mentions" "contact";
   list-style-type: none;
-  row-gap: 6px;
 }
 
 .ftr .list__itm {
@@ -82,7 +118,7 @@
 }
 
 .ftr .list__icon {
-  padding-right: 10px;
+  padding-right: 7px;
 }
 
 .ftr .list .propose {
@@ -149,5 +185,30 @@
 
 .btn__icon {
   color: #353535;
+}
+
+.card {
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+          box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  height: 240px;
+}
+
+.card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 70%;
+}
+
+.card__caption {
+  border-radius: 0 0 15px 15px;
+  color: #000000;
+}
+
+.card__tag {
+  background-color: #99E2D0;
+  color: #000000;
 }
 /*# sourceMappingURL=master.css.map */

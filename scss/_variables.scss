@@ -18,11 +18,37 @@ $mq-lap-medum:  "(min-width: #{$bp-lap-medium})";
 $mq-lap-large:  "(min-width: #{$bp-lap-large})";
 $mq-4K-xxlarge:  "(min-width: #{$bp-4K-xxlarge})";
 
+/* colors */
+
+$color-primary: #FF79DA;
+$color-secondary: #9356DC;
+$color-tertiary: #99E2D0;
+$color-gradient: linear-gradient($color-primary, $color-secondary);
+$color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
+$color-white: #ffffff;
+$color-white-dirty: #f6f6f6;
+$color-black: #000000;
+$color-shadow: rgba(128, 128, 128, 0.352);
+$color-gray: #7f7f7f;
+$color-gray-light: #dddddd;
+$color-black-light: lighten(#000000, 50%);
+$color-transprent: #00000000;
+$color-black-gray: #353535;
+
 /* fonts */
 
 $font-list: "shrikhand" "roboto";
 $font-logo: shrikhand, serif, sans-serif;
 $font-text: roboto, serif, sans-serif;
+
+/* font sizes */
+
+$font-size-hdr_logo: 20px;
+$font-size-ftr_logo: 18px;
+$font-size-text: 20px;
+$font-size-expl-title: 16px;
+$font-size-btn-stkr: 15px; 
+$font-size-btn-icn: 22px; 
 
 /* borders radius*/
 
@@ -44,7 +70,7 @@ $padding-ftg-top: 40px;
 $padding-main-title-down: 10px;
 $padding-expl-top: 10px;
 $padding-ftr-down: 30px;
-$padding-right-ftr-list-icn: 10px;
+$padding-right-ftr-list-icn: 7px;
 
 /* margins */
 
@@ -52,43 +78,18 @@ $margin-btn: 50px;
 $margin-btn-top: 30px;
 $margin-btn-down: 50px;
 $margin-bottom-ftr-logo: 15px;
-/* colors */
-
-$color-primary: #FF79DA;
-$color-secondary: #9356DC;
-$color-tertiary: #99E2D0;
-$color-gradient: linear-gradient($color-primary, $color-secondary);
-$color-gradient-reverse: linear-gradient($color-secondary, $color-primary);
-$color-white: #ffffff;
-$color-white-dirty: #f6f6f6;
-$color-black: #000000;
-$color-shadow: rgba(128, 128, 128, 0.352);
-$color-gray: #7f7f7f;
-$color-gray-light: #dddddd;
-$color-black-light: lighten(#000000, 50%);
-$color-transprent: #00000000;
-$color-black-gray: #353535;
 
 /* shadows */
 
 $box-shadow-regular: 7px 7px 7px $color-shadow;
 $box-shadow-light-up-inset: 0 20px 10px -20px $color-gray inset;
 
-/* font sizes */
-
-$font-size-hdr_logo: 20px;
-$font-size-ftr_logo: 20px;
-$font-size-text: 20px;
-$font-size-expl-title: 16px;
-$font-size-btn-stkr: 15px; 
-$font-size-btn-icn: 22px; 
-
 /* widths */
 
 $width-expl-btn: 220px;
 $max-width-ftg-btn: 425px;
 $width-rst-card: 100%;
-$max-width-rst-card: 800px;
+$max-width-rst-card: 600px;
 
 /*heights */
 
@@ -99,19 +100,18 @@ $height-card-img: 70%;
 /* gaps */
 
 $gap-regular: 25px;
-$gap-ftr-list-itm: 6px;
+
+/* position */
+
+$left-btn-stkr: -3%; 
+$top-btn-stkr: 29%; 
+$left-btn-icn: 9%; 
+$top-btn-icn: 23%; 
 
 /* percent */
 
 $max-perct: 100%;
 $half-perct: $max-perct / 2;
-
-/* position */
-
-$left-btn-stkr: -4%; 
-$top-btn-stkr: 29%; 
-$left-btn-icn: 9%; 
-$top-btn-icn: 23%; 
 
 /* transitions */ 
 

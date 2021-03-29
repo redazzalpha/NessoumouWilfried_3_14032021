@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 @import 'variables';
+@import "query";
 @import 'mixin';
+
 
 @each $var in $font-list { @include getFont($var); }
 
@@ -34,6 +36,7 @@
     &__logo
     {
         grid-area: logo;
+        font-weight: unset;
     }
     &__intro
     {
@@ -42,17 +45,26 @@
 }
 .ftr
 {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "list";
     background-color: $color-black-gray;
     padding: $padding-base;
     padding-bottom: $padding-ftr-down;
 
     &__logo
     {
+
+        grid-area: logo;
         color: $color-white;
         margin-bottom: $margin-bottom-ftr-logo;
+        font-size: $font-size-ftr_logo;
+        font-weight: unset;
     }
     .list
     {
+        grid-area: list;
         display: inline-grid;
         grid-template-areas: 
         "propose"
@@ -60,7 +72,6 @@
         "mentions"
         "contact";
         list-style-type: none;
-        row-gap: $gap-ftr-list-itm;
         
         &__itm
         {
@@ -133,7 +144,31 @@
         color: $color-black-gray;
     }
 }
+.card
+{
+    border-radius: $radius-rectangular;
+    box-shadow: $box-shadow-regular;
+    height: $height-card;
+    
+    &__img
+    {
+        object-fit: cover;
+        border-radius: $radius-rect-up;
+        width: $max-perct;
+        height: $height-card-img;
+    }
+    &__caption
+    {
+        border-radius: $radius-rect-down;
+        color: $color-black;
+    } 
 
+    &__tag
+    {
+        background-color: $color-tertiary;
+        color: $color-black;    
+    }
+}
 
 
 
