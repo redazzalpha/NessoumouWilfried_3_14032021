@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "variables";
+@import "query";
 
 .main
 {
@@ -97,18 +98,33 @@
         padding: $padding-base;
         width: $max-perct;
         max-width: $max-width-ftg-btn;
+        background-color: $color-white-dirty;
+
+        &:hover
+        {
+            .btn__icon
+            {
+                color: $color-secondary;
+                transition: $transition-color;
+
+            }
+
+        }
 
         &__sticker
         {
             position: absolute;
             left: $left-btn_stkr;
             top: $top-btn-stkr;
+            font-size: $font-size-btn-stkr;
         }
         &__icon
         {
             position: absolute;
             left: $left-btn-icn;
             top: $top-btn-icn;
+            color: $color-gray;
+            font-size: $font-size-btn-icn;
         }
     }
     .choose
@@ -134,16 +150,45 @@
     padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
-
+    
     .card
     {
+        position: relative;
         display: inline-block;
-        text-decoration: none;
-        max-width: $max-width-rst-card;
         margin: auto;
-    }
+        width: $width-rst-card;
+        max-width: $max-width-rst-card;
+        &__link
+        {
+            text-decoration: none;
+        }
+        &__caption
+        {
+            padding: 10px;
+        }
+        &__icon
+        {
+            font-size: 27px;
+            position: absolute;
+            left: 75%;
+            top: 78%;
+            color: $color-secondary;
+            &--hidden
+            {
+                color: $color-transprent;
 
+                &:hover
+                {
+                    color: $color-secondary;
+                    transition: $transition-color;
+                }
+            }
+        }
+    }
 }
+
+
+
 
 /* items */
 
@@ -158,7 +203,7 @@
         object-fit: cover;
         border-radius: $radius-rect-up;
         width: $max-perct;
-        height: $height-card-img-perct;
+        height: $height-card-img;
     }
     &__caption
     {

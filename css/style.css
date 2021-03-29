@@ -6,7 +6,7 @@
 /* margins */
 /* colors */
 /* shadows */
-/* sizes */
+/* font sizes */
 /* widths */
 /*heights */
 /* gaps */
@@ -108,18 +108,28 @@
   padding: 20px;
   width: 100%;
   max-width: 425px;
+  background-color: #f6f6f6;
+}
+
+.ftg .btn:hover .btn__icon {
+  color: #9356DC;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 .ftg .btn__sticker {
   position: absolute;
-  left: -3%;
-  top: 31%;
+  left: -4%;
+  top: 29%;
+  font-size: 15px;
 }
 
 .ftg .btn__icon {
   position: absolute;
-  left: 10%;
-  top: 28%;
+  left: 9%;
+  top: 23%;
+  color: #7f7f7f;
+  font-size: 22px;
 }
 
 .ftg .choose {
@@ -156,10 +166,37 @@
 }
 
 .rst .card {
+  position: relative;
   display: inline-block;
-  text-decoration: none;
-  max-width: 425px;
   margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.rst .card__link {
+  text-decoration: none;
+}
+
+.rst .card__caption {
+  padding: 10px;
+}
+
+.rst .card__icon {
+  font-size: 27px;
+  position: absolute;
+  left: 75%;
+  top: 78%;
+  color: #9356DC;
+}
+
+.rst .card__icon--hidden {
+  color: #00000000;
+}
+
+.rst .card__icon--hidden:hover {
+  color: #9356DC;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 /* items */

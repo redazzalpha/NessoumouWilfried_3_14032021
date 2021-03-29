@@ -35,7 +35,7 @@ $radius-rect-down: 0 0 15px 15px;
 /* paddings */
 
 $padding-btn-form: 15px 15px 15px 15px;
-$padding-stkr-form: 4px 10px;
+$padding-stkr-form: 2px 8px;
 $padding-base: 20px;
 $padding-btn: 50px;
 $padding-rst: 50px;
@@ -43,13 +43,15 @@ $padding-ftg: 50px;
 $padding-ftg-top: 40px;
 $padding-main-title-down: 10px;
 $padding-expl-top: 10px;
+$padding-ftr-down: 30px;
+$padding-right-ftr-list-icn: 10px;
 
 /* margins */
 
 $margin-btn: 50px;
 $margin-btn-top: 30px;
 $margin-btn-down: 50px;
-
+$margin-bottom-ftr-logo: 15px;
 /* colors */
 
 $color-primary: #FF79DA;
@@ -72,28 +74,32 @@ $color-black-gray: #353535;
 $box-shadow-regular: 7px 7px 7px $color-shadow;
 $box-shadow-light-up-inset: 0 20px 10px -20px $color-gray inset;
 
-/* sizes */
+/* font sizes */
 
 $font-size-hdr_logo: 20px;
 $font-size-ftr_logo: 20px;
 $font-size-text: 20px;
 $font-size-expl-title: 16px;
+$font-size-btn-stkr: 15px; 
+$font-size-btn-icn: 22px; 
 
 /* widths */
 
 $width-expl-btn: 220px;
 $max-width-ftg-btn: 425px;
-$max-width-rst-card: 425px;
+$width-rst-card: 100%;
+$max-width-rst-card: 800px;
 
 /*heights */
 
 $height-srch-field: 50px;
 $height-card: 240px;
-$height-card-img-perct: 70%;
+$height-card-img: 70%;
 
 /* gaps */
 
 $gap-regular: 25px;
+$gap-ftr-list-itm: 6px;
 
 /* percent */
 
@@ -102,14 +108,14 @@ $half-perct: $max-perct / 2;
 
 /* position */
 
-$left-btn-stkr: -3%; 
-$top-btn-stkr: 31%; 
-$left-btn-icn: 10%; 
-$top-btn-icn: 28%; 
+$left-btn-stkr: -4%; 
+$top-btn-stkr: 29%; 
+$left-btn-icn: 9%; 
+$top-btn-icn: 23%; 
 
 /* transitions */ 
 
-$transition-color: color 0.5s;
+$transition-color: color 0.7s;
 
 
 

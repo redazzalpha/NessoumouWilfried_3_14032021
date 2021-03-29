@@ -44,19 +44,51 @@
 {
     background-color: $color-black-gray;
     padding: $padding-base;
+    padding-bottom: $padding-ftr-down;
 
     &__logo
     {
         color: $color-white;
+        margin-bottom: $margin-bottom-ftr-logo;
     }
     .list
     {
+        display: inline-grid;
+        grid-template-areas: 
+        "propose"
+        "partner"
+        "mentions"
+        "contact";
         list-style-type: none;
+        row-gap: $gap-ftr-list-itm;
         
         &__itm
         {
             text-decoration: none;
-            color: $color-white;
+            color: $color-white;         
+        }
+        &__icon
+        {
+            padding-right: $padding-right-ftr-list-icn;
+        }
+        .propose
+        {
+            grid-area: propose;
+        }
+        .partner
+        {
+            grid-area: partner;
+            
+        }
+        .mentions
+        {
+            grid-area: mentions;
+            
+        }
+        .contact
+        {
+            grid-area: contact;
+            
         }
     }
 }
@@ -68,7 +100,7 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    box-shadow: $shadow-regular;    
+    box-shadow: $box-shadow-regular;    
     padding: $padding-btn-form;
 
     &--round 
