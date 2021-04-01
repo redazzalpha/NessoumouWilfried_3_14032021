@@ -148,14 +148,27 @@
 {
     border-radius: $radius-rectangular;
     box-shadow: $box-shadow-regular;
-    height: $height-card;
+
+        width: 100%;
+        height: 100%;
+
+
+    &__link
+    {
+
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
     
     &__img
     {
         object-fit: cover;
         border-radius: $radius-rect-up;
-        width: $max-perct;
-        height: $height-card-img;
+
+        width: 100%;
+        height: 70%;
     }
     &__caption
     {

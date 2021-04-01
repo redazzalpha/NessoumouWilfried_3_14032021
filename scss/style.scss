@@ -146,17 +146,24 @@
     padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
-    
+
+
+    width: 100%;
+    height: 100%;
+        
     .card
     {
         position: relative;
         display: inline-block;
         margin: auto;
-        width: $width-rst-card;
-        max-width: $max-width-rst-card;
+
         &__link
         {
             text-decoration: none;
+        }
+        &__img
+        {
+
         }
         &__caption
         {
