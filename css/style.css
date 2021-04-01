@@ -30,8 +30,7 @@
 .srch {
   grid-area: search;
   background-color: #dddddd;
-  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
-          box-shadow: 0 20px 10px -20px #7f7f7f inset;
+  border-top: solid rgba(128, 128, 128, 0.07) 3px;
   text-align: right;
 }
 
@@ -43,8 +42,6 @@
   background-color: #dddddd;
   outline: none;
   border: none;
-  -webkit-box-shadow: 0 20px 10px -20px #7f7f7f inset;
-          box-shadow: 0 20px 10px -20px #7f7f7f inset;
   width: 50%;
   height: 50px;
 }
@@ -158,8 +155,8 @@
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  background-color: #f6f6f6;
   row-gap: 25px;
+  background-color: #f6f6f6;
   padding: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -173,16 +170,8 @@
   margin: auto;
 }
 
-.rst .card__link {
-  text-decoration: none;
-}
-
-.rst .card__caption {
-  padding: 10px;
-}
-
 .rst .card__icon {
-  font-size: 27px;
+  font-size: calc(100vw /11);
   position: absolute;
   left: 75%;
   top: 78%;
@@ -201,10 +190,11 @@
 
 .rst .card__tag {
   position: absolute;
+  background-color: #99E2D0;
   color: #353535;
-  left: 64%;
+  left: 65%;
   bottom: 83%;
   padding: 1% 5%;
-  font-size: 15px;
+  font-size: calc(100vw /20);
 }
 /*# sourceMappingURL=style.css.map */

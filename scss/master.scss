@@ -152,11 +152,11 @@
         width: 100%;
         height: 100%;
 
-
     &__link
     {
 
         display: inline-block;
+        text-decoration: none;
         width: 100%;
         height: 100%;
         border-radius: 15px;
@@ -174,13 +174,10 @@
     {
         border-radius: $radius-rect-down;
         color: $color-black;
+        padding: 10px;
+        font-size: calc(100vw /20);
     } 
 
-    &__tag
-    {
-        background-color: $color-tertiary;
-        color: $color-black;    
-    }
 }
 
 

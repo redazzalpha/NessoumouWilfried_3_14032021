@@ -24,8 +24,9 @@
 {
     grid-area: search;
     background-color: $color-gray-light;
-    box-shadow: $box-shadow-light-up-inset;
+    border-top: solid rgba(128, 128, 128, 0.070) 3px;
     text-align: right;
+
 
     &__icon
     {
@@ -36,9 +37,9 @@
         background-color: $color-gray-light;
         outline: none;
         border: none;
-        box-shadow: $box-shadow-light-up-inset ;
         width: $half-perct;
         height: $height-srch-field;
+
     }    
 }
 .expl
@@ -141,8 +142,8 @@
     grid-area: restaurants;   
     display: grid;
     grid-template-columns: $max-perct;
-    background-color: $color-white-dirty;
     row-gap: $gap-regular;
+    background-color: $color-white-dirty;
     padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
@@ -157,21 +158,9 @@
         display: inline-block;
         margin: auto;
 
-        &__link
-        {
-            text-decoration: none;
-        }
-        &__img
-        {
-
-        }
-        &__caption
-        {
-            padding: 10px;
-        }
         &__icon
         {
-            font-size: 27px;
+            font-size: calc(100vw /11);
             position: absolute;
             left: 75%;
             top: 78%;
@@ -190,11 +179,12 @@
         &__tag
         {
             position: absolute;
+            background-color: $color-tertiary;    
             color: $color-black-gray;
-            left: 64%;
+            left: 65%;
             bottom: 83%;
             padding: 1% 5%;
-            font-size: 15px;    
+            font-size: calc(100vw /20);
         }
     }
 } 
