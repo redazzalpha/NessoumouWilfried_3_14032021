@@ -2,7 +2,7 @@
 
 @import "variables";
 
-.main
+section
 {
     display: grid;
     grid-template-areas: 
@@ -17,7 +17,7 @@
         text-align: center;
         background-color: $color-white-dirty;
         padding: $padding-base;
-        padding-bottom: $padding-main-title-down;
+        padding-bottom: $padding-section-title-down;
     }   
 }
 .srch
@@ -142,13 +142,10 @@
     grid-area: restaurants;   
     display: grid;
     grid-template-columns: $max-perct;
-    row-gap: $gap-regular;
     background-color: $color-white-dirty;
     padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
-
-
     width: 100%;
     height: 100%;
         
@@ -160,10 +157,10 @@
 
         &__icon
         {
-            font-size: calc(100vw /11);
+            font-size: 165%;
             position: absolute;
             left: 75%;
-            top: 78%;
+            top: 77%;
             color: $color-secondary;
             &--hidden
             {
@@ -181,10 +178,10 @@
             position: absolute;
             background-color: $color-tertiary;    
             color: $color-black-gray;
-            left: 65%;
+            left: 61%;
             bottom: 83%;
             padding: 1% 5%;
-            font-size: calc(100vw /20);
+            font-size: 100%;
         }
     }
 } 

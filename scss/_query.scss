@@ -1,6 +1,21 @@
+@media #{$mq-tab-medium}
+{
+    section .rst
+    {
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: space-around   ;
+
+        &__title
+        {
+            grid-column: 1 / span 2;
+            text-align: center;
+        }
+    }
+}
 @media #{$mq-lap-medum}
 {
-    .main .ftg
+    section .ftg
     {
         grid-template-areas: 
         "title title title"
@@ -11,16 +26,32 @@
             text-align: center;
         }
     }
-    .main .rst
-    {
-        grid-template-columns: auto auto;
-        gap: 50px;
-        justify-content: center;
-
-        &__title
-        {
-            grid-column: 1 / span 2;
-            text-align: center;
-        }
-    }
 }
+@media #{$mq-lap-large}
+{
+    section
+    {
+        position: relative;
+
+    }
+    .vl
+    {
+        border-left: solid $color-gray-light 6px;
+
+        height: 57%;
+        position: absolute;
+        top: 39%;
+        left: 50%;
+    }
+    .hl
+    {
+        border-top: solid $color-gray-light 6px;
+        width: 90%;
+        position: absolute;
+        top: 68%;
+        left: 5%;
+
+    }
+
+}
+

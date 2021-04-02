@@ -13,13 +13,13 @@
 /* position */
 /* percent */
 /* transitions */
-.main {
+section {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title" "explore" "functioning" "restaurants";
 }
 
-.main__title {
+section__title {
   grid-area: "title";
   text-align: center;
   background-color: #f6f6f6;
@@ -155,7 +155,6 @@
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  row-gap: 25px;
   background-color: #f6f6f6;
   padding: 20px;
   padding-top: 50px;
@@ -171,10 +170,10 @@
 }
 
 .rst .card__icon {
-  font-size: calc(100vw /11);
+  font-size: 165%;
   position: absolute;
   left: 75%;
-  top: 78%;
+  top: 77%;
   color: #9356DC;
 }
 
@@ -192,9 +191,9 @@
   position: absolute;
   background-color: #99E2D0;
   color: #353535;
-  left: 65%;
+  left: 61%;
   bottom: 83%;
   padding: 1% 5%;
-  font-size: calc(100vw /20);
+  font-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */
