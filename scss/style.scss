@@ -24,6 +24,7 @@
         background-color: $color-white-dirty;
         padding: $padding-base;
         padding-bottom: $padding-section-title-down;
+        font-size: $font-size-title;
     }   
 }
 .srch
@@ -64,7 +65,6 @@
         grid-area: title;
         color: $color-gray;
         font-weight: unset;
-        font-size: $font-size-expl-title;
     }
     @include button;
     .btn
@@ -95,6 +95,7 @@
     &__title
     {
         grid-area: title;
+        font-size: $font-size-title;
     }
     @include button;
     .btn
@@ -118,15 +119,15 @@
         &__sticker
         {
             position: absolute;
-            left: $left-btn-stkr;
-            top: $top-btn-stkr;
+            left: $left-ftg-btn-stkr;
+            top: $top-ftg-btn-stkr;
             font-size: $font-size-btn-stkr;
         }
         &__icon
         {
             position: absolute;
-            left: $left-btn-icn;
-            top: $top-btn-icn;
+            left: $left-ftg-btn-icn;
+            top: $top-ftg-btn-icn;
             color: $color-gray;
             font-size: $font-size-btn-icn;
         }
@@ -153,8 +154,13 @@
     padding: $padding-base;
     padding-top: $padding-rst;
     padding-bottom: $padding-rst;
-    width: 100%;
-    height: 100%;
+    width: $width-rst;
+    height: $height-rst;
+
+    &__title
+    {
+        font-size: $font-size-title;
+    }
         
     @include card;
     .card
@@ -165,10 +171,10 @@
 
         &__icon
         {
-            font-size: 165%;
+            font-size: $font-size-rst-card-icn;
             position: absolute;
-            left: 75%;
-            top: 77%;
+            left: $left-rst-card-icn;
+            top: $top-rst-card-icn;
             color: $color-secondary;
             &--hidden
             {
@@ -185,11 +191,11 @@
         {
             position: absolute;
             background-color: $color-tertiary;    
-            color: $color-                          black-gray;
-            left: 61%;
-            bottom: 83%;
-            padding: 1% 5%;
-            font-size: 100%;
+            color: $color-black-gray;
+            font-size: $font-size-rst-card-tag;
+            padding: $padding-rst-card-tag;
+            left: $left-rst-card-tag;
+            bottom: $bottom-rst-card-tag;
         }
     }
 } 

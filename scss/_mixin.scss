@@ -44,7 +44,6 @@
             &__title
             {
                 grid-column: 1 / span 2;
-                text-align: center;
             }
         }
     }    
@@ -64,6 +63,10 @@
                 text-align: center;
             }
         }
+        .section .rst
+        {
+            text-align: center;
+        }
     }
 }
 @mixin mq-lap-large
@@ -79,18 +82,18 @@
         {
             border-left: solid $color-gray-light 6px;
     
-            height: 57%;
+            height: $height-vl;
             position: absolute;
-            top: 39%;
-            left: 50%;
+            top: $top-vl;
+            left: $left-vl;
         }
         .hl
         {
             border-top: solid $color-gray-light 6px;
-            width: 90%;
+            width: $width-hl;
             position: absolute;
-            top: 68%;
-            left: 5%;
+            top: $top-hl;
+            left: $left-hl;
     
         }
     }
@@ -154,7 +157,8 @@
             &__itm
             {
                 text-decoration: none;
-                color: $color-white;         
+                color: $color-white;      
+                font-size: $font-size-ftr-list-item;   
             }
             &__icon
             {

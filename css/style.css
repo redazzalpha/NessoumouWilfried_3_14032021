@@ -25,7 +25,6 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
-    text-align: center;
   }
 }
 
@@ -36,6 +35,9 @@
             column-gap: 25px;
   }
   .section .ftg__title {
+    text-align: center;
+  }
+  .section .rst {
     text-align: center;
   }
 }
@@ -53,7 +55,7 @@
   }
   .hl {
     border-top: solid #dddddd 6px;
-    width: 90%;
+    width: 80%;
     position: absolute;
     top: 68%;
     left: 5%;
@@ -96,6 +98,7 @@
   -ms-grid-column: 1;
   grid-area: logo;
   font-weight: unset;
+  font-size: 33px;
 }
 
 .hdr__intro {
@@ -119,7 +122,7 @@
   grid-area: logo;
   color: #ffffff;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: unset;
 }
 
@@ -136,6 +139,7 @@
 .ftr .list__itm {
   text-decoration: none;
   color: #ffffff;
+  font-size: 14px;
 }
 
 .ftr .list__icon {
@@ -180,6 +184,7 @@
   background-color: #f6f6f6;
   padding: 20px;
   padding-bottom: 10px;
+  font-size: 24px;
 }
 
 .srch {
@@ -223,7 +228,6 @@
   grid-area: title;
   color: #7f7f7f;
   font-weight: unset;
-  font-size: 16px;
 }
 
 .expl .btn {
@@ -295,6 +299,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
+  font-size: 24px;
 }
 
 .ftg .btn {
@@ -403,13 +408,17 @@
   height: 100%;
 }
 
+.rst__title {
+  font-size: 24px;
+}
+
 .rst .card {
   border-radius: 15px;
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
+  max-width: 500px;
   width: 100%;
   height: 81%;
-  max-width: 500px;
 }
 
 .rst .card__link {
@@ -431,8 +440,8 @@
 .rst .card__caption {
   border-radius: 0 0 15px 15px;
   color: #000000;
-  padding: 10px;
   font-size: 90%;
+  padding: 10px;
 }
 
 .rst .card {
@@ -442,7 +451,7 @@
 }
 
 .rst .card__icon {
-  font-size: 165%;
+  font-size: 160%;
   position: absolute;
   left: 75%;
   top: 77%;
@@ -463,9 +472,9 @@
   position: absolute;
   background-color: #99E2D0;
   color: #353535;
+  font-size: 100%;
+  padding: 1% 5%;
   left: 61%;
   bottom: 83%;
-  padding: 1% 5%;
-  font-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */
