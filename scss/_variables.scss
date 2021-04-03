@@ -61,6 +61,10 @@ $radius-rectangular: 15px;
 $radius-rect-up: 15px 15px 0 0; 
 $radius-rect-down: 0 0 15px 15px; 
 
+/* borders */
+
+$border-vh-lines: solid $color-gray-light 6px;
+
 /* paddings */
 
 $padding-base: 20px; 
@@ -96,7 +100,7 @@ $widh-rst-card-img: 100%;
 $max-width-rst-card: 500px; 
 $max-width-ftg-btn: 425px; 
 $width-expl-btn: 220px; 
-$width-hl: 80%; 
+$width-hl:90%; 
 
 /* heights */
 
@@ -135,6 +139,14 @@ $half-perct: $max-perct / 2;
 
 $transition-color: color 0.7s;  
 
+/* animations */
+
+$animation-vl: vl_animate  linear 2s;
+$animation-hl: hl_animate linear 2s;
+
+/* list */
+
+$map-vh-line: (vl :(height: $height-vl), hl :(width: $width-hl));
 
 
 

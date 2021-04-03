@@ -66,6 +66,12 @@
         .section .rst
         {
             text-align: center;
+
+            & .card__caption
+            {
+                text-align: left;
+            }
+
         }
     }
 }
@@ -76,25 +82,22 @@
         .section
         {
             position: relative;
-    
         }
         .vl
         {
-            border-left: solid $color-gray-light 6px;
-    
-            height: $height-vl;
             position: absolute;
+            border-left: $border-vh-lines;
+            height: $height-vl;
             top: $top-vl;
             left: $left-vl;
         }
         .hl
         {
-            border-top: solid $color-gray-light 6px;
-            width: $width-hl;
             position: absolute;
+            border-top: $border-vh-lines;
+            width: $width-hl;
             top: $top-hl;
             left: $left-hl;
-    
         }
     }
 }
@@ -262,5 +265,26 @@
         }
     }    
 }
+@mixin vh-line-animate($class, $property, $size)
+{
+    @media (min-width: 1440px)
+    {
+        @keyframes #{$class}-animate
+        {
+            0%{#{$property} : 0%;}
+            100%{#{$property}: $size;}
+        }
+        .#{$class}
+        {
+            animation: #{$class}-animate linear 2s;
+        }
+    }
+}
 
-
+@each $class, $property in $map-vh-line
+{
+    @each $property-name, $val in $property
+    {
+        @include vh-line-animate($class, $property-name, $val);
+    }
+}
