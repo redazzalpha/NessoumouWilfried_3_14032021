@@ -1,8 +1,14 @@
 @charset "utf-8";
 
-@import "variables";
+@import "mixin";
 
-section
+@include mq-tab-medium;
+@include mq-lap-medium;
+@include mq-lap-large;
+
+@include origin;
+
+.section
 {
     display: grid;
     grid-template-areas: 
@@ -11,9 +17,9 @@ section
     "functioning"
     "restaurants";
 
-    &__title
+    &__title 
     {
-        grid-area: "title";
+        grid-area: title;
         text-align: center;
         background-color: $color-white-dirty;
         padding: $padding-base;
@@ -26,8 +32,7 @@ section
     background-color: $color-gray-light;
     border-top: solid rgba(128, 128, 128, 0.070) 3px;
     text-align: right;
-
-
+    
     &__icon
     {
         color: $color-black-gray;
@@ -39,7 +44,7 @@ section
         border: none;
         width: $half-perct;
         height: $height-srch-field;
-
+        font-size: 16px;
     }    
 }
 .expl
@@ -61,6 +66,7 @@ section
         font-weight: unset;
         font-size: $font-size-expl-title;
     }
+    @include button;
     .btn
     {
         grid-area: button;
@@ -90,6 +96,7 @@ section
     {
         grid-area: title;
     }
+    @include button;
     .btn
     {
         text-decoration: none;
@@ -111,7 +118,7 @@ section
         &__sticker
         {
             position: absolute;
-            left: $left-btn_stkr;
+            left: $left-btn-stkr;
             top: $top-btn-stkr;
             font-size: $font-size-btn-stkr;
         }
@@ -149,6 +156,7 @@ section
     width: 100%;
     height: 100%;
         
+    @include card;
     .card
     {
         position: relative;
@@ -177,7 +185,7 @@ section
         {
             position: absolute;
             background-color: $color-tertiary;    
-            color: $color-black-gray;
+            color: $color-                          black-gray;
             left: 61%;
             bottom: 83%;
             padding: 1% 5%;

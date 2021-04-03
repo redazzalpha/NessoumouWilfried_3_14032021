@@ -15,7 +15,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: $font-text;
+    font-size: 16px;
 }
+
 [class*=__logo] 
 { 
     font-family: $font-logo;
@@ -175,8 +177,6 @@
         font-size: 90%;
     } 
 }
-
-
 
 
 

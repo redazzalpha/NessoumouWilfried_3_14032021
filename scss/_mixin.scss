@@ -1,3 +1,5 @@
+@import "variables";
+
 @mixin getFont($font)
 {
     @font-face
@@ -9,6 +11,252 @@
         url(../../font/#{$font}/#{$font}.woff) format("woff"),
         url(../../font/#{$font}/#{$font}.woff2) format("woff2");
     }   
+}
+@mixin getfonts($list)
+{
+    @each $font in $list { @include getFont($font); }
+}
+@mixin origin
+{
+    @include getfonts($font-list);
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: $font-text;
+        font-size: $font-size-text;
+    }
+    [class*=__logo] { font-family: $font-logo; }
+    @include header;
+    @include footer;
+}
+@mixin mq-tab-medium
+{
+    @media #{$mq-tab-medium}
+    {
+        .section .rst
+        {
+            grid-template-columns: auto auto;
+            gap: 50px;
+            justify-content: space-around   ;
+    
+            &__title
+            {
+                grid-column: 1 / span 2;
+                text-align: center;
+            }
+        }
+    }    
+}
+@mixin mq-lap-medium
+{
+    @media #{$mq-lap-medum}
+    {
+        .section .ftg
+        {
+            grid-template-areas: 
+            "title title title"
+            "choose compose eat";
+            column-gap: $gap-regular;
+            &__title
+            {
+                text-align: center;
+            }
+        }
+    }
+}
+@mixin mq-lap-large
+{
+    @media #{$mq-lap-large}
+    {
+        .section
+        {
+            position: relative;
+    
+        }
+        .vl
+        {
+            border-left: solid $color-gray-light 6px;
+    
+            height: 57%;
+            position: absolute;
+            top: 39%;
+            left: 50%;
+        }
+        .hl
+        {
+            border-top: solid $color-gray-light 6px;
+            width: 90%;
+            position: absolute;
+            top: 68%;
+            left: 5%;
+    
+        }
+    }
+}
+@mixin header
+{
+    .hdr
+    {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "intro"
+        "search";
+        text-align: center;
+        padding: $padding-base;
+        
+        &__logo
+        {
+            grid-area: logo;
+            font-weight: unset;
+            font-size: $font-size-hdr_logo;
+        }
+        &__intro
+        {
+            grid-area: intro;
+        }
+    }    
+}
+@mixin footer
+{
+    .ftr
+    {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "list";
+        background-color: $color-black-gray;
+        padding: $padding-base;
+        padding-bottom: $padding-ftr-down;
+    
+        &__logo
+        {
+    
+            grid-area: logo;
+            color: $color-white;
+            margin-bottom: $margin-bottom-ftr-logo;
+            font-size: $font-size-ftr_logo;
+            font-weight: unset;
+        }
+        .list
+        {
+            grid-area: list;
+            display: inline-grid;
+            grid-template-areas: 
+            "propose"
+            "partner"
+            "mentions"
+            "contact";
+            list-style-type: none;
+            
+            &__itm
+            {
+                text-decoration: none;
+                color: $color-white;         
+            }
+            &__icon
+            {
+                padding-right: $padding-right-ftr-list-icn;
+            }
+            .propose
+            {
+                grid-area: propose;
+            }
+            .partner
+            {
+                grid-area: partner;
+                
+            }
+            .mentions
+            {
+                grid-area: mentions;
+                
+            }
+            .contact
+            {
+                grid-area: contact;
+                
+            }
+        }
+    }    
+}
+@mixin card
+{
+    .card
+    {
+        border-radius: $radius-rectangular;
+        box-shadow: $box-shadow-regular;
+        max-width: $max-width-rst-card;
+        width: $width-rst-card;
+        height: $height-rst-card;
+    
+        &__link
+        {
+            display: inline-block;
+            text-decoration: none;
+            width: $widh-rst-card-link;
+            height: $height-rst-card-link;
+            border-radius: $radius-rectangular;
+        }
+        &__img
+        {
+            object-fit: cover;
+            border-radius: $radius-rect-up;
+            width: $widh-rst-card-img;
+            height: $height-rst-card-img;        
+        }
+        &__caption
+        {
+            border-radius: $radius-rect-down;
+            color: $color-black;
+            font-size: $font-size-rst-card-cpt;
+            padding: $padding-rst-card-caption;
+        } 
+    }    
+}
+@mixin button
+{
+    .btn
+    {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: $box-shadow-regular;    
+        padding: $padding-btn-form;
+    
+        &--round 
+        { 
+            border-radius: $radius-rounded; 
+        }
+        &--rect
+        { 
+            border-radius: $radius-rectangular; 
+        }
+        &--grad 
+        { 
+            background: $color-gradient; color: $color-white;
+        }
+        &--white
+        {
+            background-color: $color-white-dirty; 
+            color: $color-black
+        }
+        &__sticker
+        {
+            display: inline-block;
+            text-align: center;
+            background-color: $color-secondary;
+            color: $color-white;
+            border-radius: $radius-circle;
+            padding: $padding-stkr-form;
+        }
+        &__icon
+        {
+            color: $color-black-gray;
+        }
+    }    
 }
 
 
