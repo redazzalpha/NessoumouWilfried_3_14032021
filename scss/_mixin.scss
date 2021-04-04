@@ -16,6 +16,99 @@
 {
     @each $font in $list { @include getFont($font); }
 }
+@mixin mq-mob-medium
+{
+    @media #{$mq-mob-medium}
+    {
+        .section 
+        {
+            .ftg .btn
+            {
+                &__icon
+                {
+                    font-size: 200%;
+                    top: 10%;
+                }
+            }
+        }
+    }    
+}
+@mixin mq-tab-medium
+{
+    @media #{$mq-tab-medium}
+    {
+        .section 
+        {
+            .rst
+            {
+                grid-template-columns: auto auto;
+                gap: 50px;
+                justify-content: space-around   ;
+        
+                &__title
+                {
+                    grid-column: 1 / span 2;
+                }
+            }
+        }
+    }    
+}
+@mixin mq-lap-medium
+{
+    @media #{$mq-lap-medum}
+    {
+        .section 
+        {
+            .ftg
+            {
+                grid-template-areas: 
+                "title title title"
+                "choose compose eat";
+                column-gap: $gap-regular;
+                &__title
+                {
+                    text-align: center;
+                }
+            }
+            .rst
+            {
+                text-align: center;
+    
+                & .card__caption
+                {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+@mixin mq-lap-large
+{
+    @media #{$mq-lap-large}
+    {
+        .section
+        {
+            position: relative;
+            
+            .vl
+            {
+                position: absolute;
+                border-left: $border-vh-lines;
+                height: $height-vl;
+                top: $top-vl;
+                left: $left-vl;
+            }
+            .hl
+            {
+                position: absolute;
+                border-top: $border-vh-lines;
+                width: $width-hl;
+                top: $top-hl;
+                left: $left-hl;
+            }
+        }
+    }
+}
 @mixin origin
 {
     @include getfonts($font-list);
@@ -30,76 +123,6 @@
     [class*=__logo] { font-family: $font-logo; }
     @include header;
     @include footer;
-}
-@mixin mq-tab-medium
-{
-    @media #{$mq-tab-medium}
-    {
-        .section .rst
-        {
-            grid-template-columns: auto auto;
-            gap: 50px;
-            justify-content: space-around   ;
-    
-            &__title
-            {
-                grid-column: 1 / span 2;
-            }
-        }
-    }    
-}
-@mixin mq-lap-medium
-{
-    @media #{$mq-lap-medum}
-    {
-        .section .ftg
-        {
-            grid-template-areas: 
-            "title title title"
-            "choose compose eat";
-            column-gap: $gap-regular;
-            &__title
-            {
-                text-align: center;
-            }
-        }
-        .section .rst
-        {
-            text-align: center;
-
-            & .card__caption
-            {
-                text-align: left;
-            }
-
-        }
-    }
-}
-@mixin mq-lap-large
-{
-    @media #{$mq-lap-large}
-    {
-        .section
-        {
-            position: relative;
-        }
-        .vl
-        {
-            position: absolute;
-            border-left: $border-vh-lines;
-            height: $height-vl;
-            top: $top-vl;
-            left: $left-vl;
-        }
-        .hl
-        {
-            position: absolute;
-            border-top: $border-vh-lines;
-            width: $width-hl;
-            top: $top-hl;
-            left: $left-hl;
-        }
-    }
 }
 @mixin header
 {
@@ -199,14 +222,6 @@
         width: $width-rst-card;
         height: $height-rst-card;
     
-        &__link
-        {
-            display: inline-block;
-            text-decoration: none;
-            width: $widh-rst-card-link;
-            height: $height-rst-card-link;
-            border-radius: $radius-rectangular;
-        }
         &__img
         {
             object-fit: cover;
@@ -218,8 +233,14 @@
         {
             border-radius: $radius-rect-down;
             color: $color-black;
-            font-size: $font-size-rst-card-cpt;
             padding: $padding-rst-card-caption;
+            height: $height-rst-card-caption;
+            font-size: $font-size-rst-card-cpt;
+
+            strong
+            {
+                font-size: 110%;
+            }
         } 
     }    
 }
@@ -249,19 +270,6 @@
         {
             background-color: $color-white-dirty; 
             color: $color-black
-        }
-        &__sticker
-        {
-            display: inline-block;
-            text-align: center;
-            background-color: $color-secondary;
-            color: $color-white;
-            border-radius: $radius-circle;
-            padding: $padding-stkr-form;
-        }
-        &__icon
-        {
-            color: $color-black-gray;
         }
     }    
 }

@@ -2,6 +2,7 @@
 
 @import "mixin";
 
+@include mq-mob-medium;
 @include mq-tab-medium;
 @include mq-lap-medium;
 @include mq-lap-large;
@@ -86,11 +87,11 @@
     "choose"
     "compose"
     "eat"; 
+    position: relative;
     row-gap: $gap-regular;
     padding: $padding-base;
     padding-bottom: $padding-ftg;
     padding-top: $padding-ftg-top;
-    position: relative;
 
     &__title
     {
@@ -118,10 +119,16 @@
         }
         &__sticker
         {
+            display: inline-block;
+            text-align: center;
             position: absolute;
             left: $left-ftg-btn-stkr;
             top: $top-ftg-btn-stkr;
-            font-size: $font-size-btn-stkr;
+            background-color: $color-secondary;
+            color: $color-white;
+            border-radius: $radius-circle;
+            padding: $padding-stkr-form;
+            font-size: $font-size-ftg-btn-stkr;
         }
         &__icon
         {
@@ -129,7 +136,8 @@
             left: $left-ftg-btn-icn;
             top: $top-ftg-btn-icn;
             color: $color-gray;
-            font-size: $font-size-btn-icn;
+            font-size: $font-size-ftg-btn-icn;
+            color: $color-black-gray;
         }
     }
     .choose
@@ -160,8 +168,7 @@
     &__title
     {
         font-size: $font-size-title;
-    }
-        
+    }        
     @include card;
     .card
     {
@@ -169,13 +176,21 @@
         display: inline-block;
         margin: auto;
 
+        &__link
+        {
+            display: inline-block;
+            text-decoration: none;
+            width: $widh-rst-card-link;
+            height: $height-rst-card-link;
+            border-radius: $radius-rectangular;
+        }    
         &__icon
         {
-            font-size: $font-size-rst-card-icn;
             position: absolute;
             left: $left-rst-card-icn;
             top: $top-rst-card-icn;
             color: $color-secondary;
+            font-size: $font-size-rst-card-icn;
             &--hidden
             {
                 color: $color-transprent;
@@ -199,7 +214,6 @@
         }
     }
 } 
-
 
 
 

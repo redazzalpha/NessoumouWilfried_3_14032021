@@ -46,12 +46,12 @@ $font-size-title: 24px;
 $font-size-text: 16px; 
 $font-size-hdr_logo: 33px; 
 $font-size-ftr_logo: 16px; 
-$font-size-btn-stkr: 15px; 
-$font-size-btn-icn: 22px; 
+$font-size-ftg-btn-stkr: 15px; 
+$font-size-ftg-btn-icn: 100%; 
 $font-size-rst-card-cpt: 90%; 
-$font-size-ftr-list-item: 14px; 
 $font-size-rst-card-tag: 100%;
 $font-size-rst-card-icn: 160%;
+$font-size-ftr-list-item: 14px; 
 
 /* borders radius*/
 
@@ -109,6 +109,7 @@ $height-rst-card: 81%;
 $height-rst-card-link: 100%; 
 $height-rst-card-img: 70%;
 $height-srch-field: 50px; 
+$height-rst-card-caption: 28%; 
 $height-vl: 57%; 
 
 /* gaps */
@@ -118,9 +119,9 @@ $gap-regular: 25px;
 /* position */
 
 $left-ftg-btn-stkr: -3%; 
-$top-ftg-btn-stkr: 29%;  
+$top-ftg-btn-stkr: 32%;  
 $left-ftg-btn-icn: 9%;  
-$top-ftg-btn-icn: 23%;  
+$top-ftg-btn-icn: 30%;  
 $left-rst-card-icn: 75%;
 $top-rst-card-icn: 77%;
 $left-rst-card-tag: 61%;
