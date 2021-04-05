@@ -23,7 +23,7 @@ $mq-4K-xxlarge:  "(min-width: #{$bp-4K-xxlarge})";
 $color-primary: #FF79DA; 
 $color-secondary: #9356DC; 
 $color-tertiary: #99E2D0; 
-$color-gradient: linear-gradient($color-primary, $color-secondary); 
+$color-gradient: linear-gradient(to bottom right,  $color-primary, $color-secondary); 
 $color-white: #ffffff; 
 $color-white-dirty: #f6f6f6; 
 $color-black: #000000; 
