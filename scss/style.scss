@@ -9,6 +9,13 @@
 
 @include origin;
 
+.intro
+{
+    text-align: center;
+    font-size: $font-size-origin;
+    padding: $padding-base;
+    padding-top: unset;
+}
 .sctn
 {
     display: grid;

@@ -100,6 +100,10 @@
         {
             font-size: $font-size-origin*2;
         }
+        .wrapper .intro
+        {
+            font-size: $font-size-origin*2;
+        }
         .wrapper .srch
         {
             font-size: $font-size-origin*2;
@@ -133,24 +137,14 @@
 {
     .hdr
     {
-        display: grid;
-        grid-template-areas: 
-        "logo"
-        "intro"
-        "search";
         text-align: center;
         font-size: $font-size-origin;
         padding: $padding-base;
         
         &__logo
         {
-            grid-area: logo;
             font-weight: unset;
             font-size: $font-size-hdr_logo;
-        }
-        &__intro
-        {
-            grid-area: intro;
         }
     }    
 }
