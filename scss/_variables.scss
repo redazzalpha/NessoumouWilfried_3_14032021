@@ -45,20 +45,20 @@ $font-text: roboto, serif, sans-serif;
 $font-size-origin: 16px; 
 $font-size-title: 1.5em; 
 $font-size-text: 1em; 
-$font-size-hdr_logo: 2em; 
-$font-size-ftr_logo: 1em; 
+$font-size-hdr_logo: 2.2em; 
 $font-size-ftg-btn-stkr: 1.05em; 
 $font-size-ftg-btn-icn: 1.5em; 
 $font-size-rst-card-cpt: 1em; 
 $font-size-rst-card-cpt-strg: 1.1em; 
 $font-size-rst-card-tag: 0.9em;
 $font-size-rst-card-icn: 1.6em;
+$font-size-ftr_logo: 1em; 
 $font-size-ftr-list-item: 0.9em; 
 $font-size-ftr-list-icn: 1em;
 
 /* borders radius*/
 
-$radius-rounded: 40px; 
+$radius-rounded: 2.5em;  // base value  40px;   
 $radius-circle: 50px; 
 $radius-rectangular: 15px; 
 $radius-rect-up: 15px 15px 0 0; 
@@ -66,40 +66,42 @@ $radius-rect-down: 0 0 15px 15px;
 
 /* borders */
 
-$border-vh-lines: solid $color-gray-light 6px;
+$border-vh-lines: solid $color-gray-light 0.32em;
 
 /* paddings */
 
-$padding-base: 1em; 
-$padding-btn-expl-form: 1em; 
-$padding-stkr-form: 0.1em 0.5em; 
-$padding-rst: 3em; 
+$padding-base: 1.25em; 
+$padding-sctn-title: 1.1em; 
+$padding-bottom-sctn-title: 0.5em; 
+$padding-expl-title: 1.1em; 
+$padding-bottom-expl-title: 3.3em; 
 $padding-ftg: 3em; 
 $padding-ftg-top: 2.5em; 
-$padding-ftr-down: 2em;  
-$padding-right-ftr-list-icn: 0.6em;  
+$padding-stkr-form: 0.1em 0.5em; 
+$padding-rst: 3em; 
 $padding-rst-card-caption: 0.7em;
 $padding-rst-card-tag: 0.20em 0.95em;
+$padding-ftr-down: 2em;  
+$padding-right-ftr-list-icn: 0.6em;  
 
 /* margins */
 
-$margin-expl-btn: 2em;  
 $margin-bottom-ftr-logo: 1em; 
 
 /* shadows */
 
 $box-shadow-regular: 7px 7px 7px $color-shadow; 
 
-/* widths */
+/* widths */                    
 
+$width-expl-btn: 16em;                      // explore btn width
+$max-width-ftg-btn: 24em;                
 $width-rst: 100%; 
 $width-rst-card: 100%; 
 $widh-rst-card-link: 100%; 
 $widh-rst-card-img: 100%; 
-$max-width-rst-card: 500px; 
-$max-width-ftg-btn: 425px; 
-$width-expl-btn: 220px; 
-$width-hl:90%; 
+$max-width-rst-card: 31.3em; 
+$width-hl: 90%; 
 
 /* heights */
 
@@ -107,13 +109,16 @@ $height-rst: 100%;
 $height-rst-card: 81%; 
 $height-rst-card-link: 100%; 
 $height-rst-card-img: 70%;
-$height-srch-field: 50px; 
+$height-srch-field: 3.2em; 
 $height-rst-card-caption: 28%; 
-$height-vl: 57%; 
+$height-vl: 56em; 
 
 /* gaps */
 
-$gap-regular: 25px; 
+$gap-regular: 1em; 
+$gap-rst: 5em; 
+$gap-expl: 1.5em; 
+$gap-sctn-ftg: 2em; 
 
 /* position */
 
@@ -125,9 +130,9 @@ $left-rst-card-icn: 75%;
 $top-rst-card-icn: 77%;
 $left-rst-card-tag: 66%;
 $bottom-rst-card-tag: 83%;
-$top-vl: 45%;
+$top-vl: 39%;
 $left-vl: 50%;
-$top-hl: 74%;
+$top-hl: 67%;
 $left-hl: 5%;
 
 /* percent */

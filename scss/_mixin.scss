@@ -20,12 +20,12 @@
 {
     @media #{$mq-tab-medium}
     {
-        .section 
+        .sctn 
         {
             .rst
             {
                 grid-template-columns: auto auto;
-                gap: 50px;
+                gap: $gap-rst;
                 justify-content: space-around   ;
         
                 &__title
@@ -40,14 +40,14 @@
 {
     @media #{$mq-lap-medum}
     {
-        .section 
+        .sctn 
         {
             .ftg
             {
                 grid-template-areas: 
                 "title title title"
                 "choose compose eat";
-                column-gap: $gap-regular;
+                column-gap: $gap-sctn-ftg;
                 &__title
                 {
                     text-align: center;
@@ -69,7 +69,7 @@
 {
     @media #{$mq-lap-large}
     {
-        .section
+        .sctn
         {
             position: relative;
             
@@ -96,7 +96,23 @@
 {
     @media #{$mq-4K-xxlarge}
     {
+        .wrapper .hdr
+        {
+            font-size: $font-size-origin*2;
+        }
+        .wrapper .srch
+        {
+            font-size: $font-size-origin*2;
+        }
+        .wrapper .sctn
+        {
+            font-size: $font-size-origin*2;
+        }
+        .wrapper .ftr
+        {
+            font-size: $font-size-origin*2;
 
+        }
     }
 }
 @mixin origin
@@ -108,7 +124,6 @@
         padding: 0;
         box-sizing: border-box;
         font-family: $font-text;
-        font-size: $font-size-origin;
     }
     [class*=__logo] { font-family: $font-logo; }
     @include header;
@@ -124,6 +139,7 @@
         "intro"
         "search";
         text-align: center;
+        font-size: $font-size-origin;
         padding: $padding-base;
         
         &__logo
@@ -147,6 +163,7 @@
         "logo"
         "list";
         background-color: $color-black-gray;
+        font-size: $font-size-origin;
         padding: $padding-base;
         padding-bottom: $padding-ftr-down;
     
@@ -243,7 +260,8 @@
         text-align: center;
         text-decoration: none;
         box-shadow: $box-shadow-regular;    
-        padding: $padding-btn-expl-form;
+        padding: $padding-base;
+        width: $width-expl-btn;
     
         &--round 
         { 

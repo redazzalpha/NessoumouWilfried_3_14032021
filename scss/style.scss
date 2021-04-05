@@ -9,7 +9,7 @@
 
 @include origin;
 
-.section
+.sctn
 {
     display: grid;
     grid-template-areas: 
@@ -17,13 +17,16 @@
     "explore"
     "functioning"
     "restaurants";
+    font-size: $font-size-origin;
 
     &__title 
     {
         grid-area: title;
         text-align: center;
         background-color: $color-white-dirty;
-        padding: $padding-base;
+        padding: $padding-sctn-title;
+        padding-bottom: $padding-bottom-sctn-title; 
+
         font-size: $font-size-title;
     }   
 }
@@ -33,7 +36,8 @@
     background-color: $color-gray-light;
     border-top: solid rgba(128, 128, 128, 0.070) 3px;
     text-align: right;
-    
+    font-size: $font-size-origin;
+
     &__icon
     {
         color: $color-black-gray;
@@ -45,7 +49,7 @@
         border: none;
         width: $half-perct;
         height: $height-srch-field;
-        font-size: 16px;
+        font-size: $font-size-text;
     }    
 }
 .expl
@@ -55,22 +59,27 @@
     grid-template-areas: 
     "title"
     "button";
+    row-gap: $gap-expl;
     text-align: center;
     padding: $padding-base;
+    padding-top :unset;
+    padding-bottom : $padding-bottom-expl-title;
+
     background-color: $color-white-dirty;
-    
+
     &__title
     {
         grid-area: title;
         color: $color-gray;
         font-weight: unset;
+        font-size: $font-size-text;
     }
     @include button;
     .btn
     {
         grid-area: button;
+        font-weight: bold;
         margin: auto;
-        margin-top: $margin-expl-btn;
     }
 }
 .ftg
@@ -210,4 +219,8 @@
         }
     }
 } 
+
+
+
+
 
