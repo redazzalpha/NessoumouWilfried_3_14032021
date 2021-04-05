@@ -2,10 +2,10 @@
 
 @import "mixin";
 
-@include mq-mob-medium;
 @include mq-tab-medium;
 @include mq-lap-medium;
 @include mq-lap-large;
+@include mq-4K-xxlarge;
 
 @include origin;
 
@@ -24,7 +24,6 @@
         text-align: center;
         background-color: $color-white-dirty;
         padding: $padding-base;
-        padding-bottom: $padding-section-title-down;
         font-size: $font-size-title;
     }   
 }
@@ -58,7 +57,6 @@
     "button";
     text-align: center;
     padding: $padding-base;
-    padding-top: $padding-expl-top;
     background-color: $color-white-dirty;
     
     &__title
@@ -72,9 +70,7 @@
     {
         grid-area: button;
         margin: auto;
-        margin-top: $margin-btn-top;
-        margin-bottom: $margin-btn-down;    
-        width: $width-expl-btn;
+        margin-top: $margin-expl-btn;
     }
 }
 .ftg
@@ -214,6 +210,4 @@
         }
     }
 } 
-
-
 

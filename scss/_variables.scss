@@ -42,16 +42,19 @@ $font-text: roboto, serif, sans-serif;
 
 /* font sizes */
 
-$font-size-title: 24px; 
-$font-size-text: 16px; 
-$font-size-hdr_logo: 33px; 
-$font-size-ftr_logo: 16px; 
-$font-size-ftg-btn-stkr: 15px; 
-$font-size-ftg-btn-icn: 100%; 
-$font-size-rst-card-cpt: 90%; 
-$font-size-rst-card-tag: 100%;
-$font-size-rst-card-icn: 160%;
-$font-size-ftr-list-item: 14px; 
+$font-size-origin: 16px; 
+$font-size-title: 1.5em; 
+$font-size-text: 1em; 
+$font-size-hdr_logo: 2em; 
+$font-size-ftr_logo: 1em; 
+$font-size-ftg-btn-stkr: 1.05em; 
+$font-size-ftg-btn-icn: 1.5em; 
+$font-size-rst-card-cpt: 1em; 
+$font-size-rst-card-cpt-strg: 1.1em; 
+$font-size-rst-card-tag: 0.9em;
+$font-size-rst-card-icn: 1.6em;
+$font-size-ftr-list-item: 0.9em; 
+$font-size-ftr-list-icn: 1em;
 
 /* borders radius*/
 
@@ -67,25 +70,21 @@ $border-vh-lines: solid $color-gray-light 6px;
 
 /* paddings */
 
-$padding-base: 20px; 
-$padding-btn-form: 15px 15px 15px 15px; 
-$padding-stkr-form: 2px 8px; 
-$padding-btn: 50px;
-$padding-rst: 50px; 
-$padding-ftg: 50px; 
-$padding-ftg-top: 40px; 
-$padding-section-title-down: 10px; 
-$padding-expl-top: 10px; 
-$padding-ftr-down: 30px;  
-$padding-right-ftr-list-icn: 7px;  
-$padding-rst-card-caption: 10px;
-$padding-rst-card-tag: 1% 5%;
+$padding-base: 1em; 
+$padding-btn-expl-form: 1em; 
+$padding-stkr-form: 0.1em 0.5em; 
+$padding-rst: 3em; 
+$padding-ftg: 3em; 
+$padding-ftg-top: 2.5em; 
+$padding-ftr-down: 2em;  
+$padding-right-ftr-list-icn: 0.6em;  
+$padding-rst-card-caption: 0.7em;
+$padding-rst-card-tag: 0.20em 0.95em;
 
 /* margins */
 
-$margin-btn-top: 30px;  
-$margin-btn-down: 50px; 
-$margin-bottom-ftr-logo: 15px; 
+$margin-expl-btn: 2em;  
+$margin-bottom-ftr-logo: 1em; 
 
 /* shadows */
 
@@ -118,17 +117,17 @@ $gap-regular: 25px;
 
 /* position */
 
-$left-ftg-btn-stkr: -3%; 
-$top-ftg-btn-stkr: 32%;  
-$left-ftg-btn-icn: 9%;  
-$top-ftg-btn-icn: 30%;  
+$left-ftg-btn-stkr: -4%; 
+$top-ftg-btn-stkr: 28%;  
+$left-ftg-btn-icn: 10%;  
+$top-ftg-btn-icn: 18%;  
 $left-rst-card-icn: 75%;
 $top-rst-card-icn: 77%;
-$left-rst-card-tag: 61%;
+$left-rst-card-tag: 66%;
 $bottom-rst-card-tag: 83%;
-$top-vl: 39%;
+$top-vl: 45%;
 $left-vl: 50%;
-$top-hl: 68%;
+$top-hl: 74%;
 $left-hl: 5%;
 
 /* percent */

@@ -16,23 +16,6 @@
 {
     @each $font in $list { @include getFont($font); }
 }
-@mixin mq-mob-medium
-{
-    @media #{$mq-mob-medium}
-    {
-        .section 
-        {
-            .ftg .btn
-            {
-                &__icon
-                {
-                    font-size: 200%;
-                    top: 10%;
-                }
-            }
-        }
-    }    
-}
 @mixin mq-tab-medium
 {
     @media #{$mq-tab-medium}
@@ -109,6 +92,13 @@
         }
     }
 }
+@mixin mq-4K-xxlarge
+{
+    @media #{$mq-4K-xxlarge}
+    {
+
+    }
+}
 @mixin origin
 {
     @include getfonts($font-list);
@@ -118,7 +108,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: $font-text;
-        font-size: $font-size-text;
+        font-size: $font-size-origin;
     }
     [class*=__logo] { font-family: $font-logo; }
     @include header;
@@ -189,6 +179,7 @@
             &__icon
             {
                 padding-right: $padding-right-ftr-list-icn;
+                font-size: $font-size-ftr-list-icn;
             }
             .propose
             {
@@ -239,7 +230,7 @@
 
             strong
             {
-                font-size: 110%;
+                font-size: $font-size-rst-card-cpt-strg;
             }
         } 
     }    
@@ -252,7 +243,7 @@
         text-align: center;
         text-decoration: none;
         box-shadow: $box-shadow-regular;    
-        padding: $padding-btn-form;
+        padding: $padding-btn-expl-form;
     
         &--round 
         { 
