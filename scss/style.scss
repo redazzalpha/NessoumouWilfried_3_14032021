@@ -8,6 +8,8 @@
 @include mq-4K-xxlarge;
 
 @include origin;
+@include button;
+
 
 .intro
 {
@@ -90,7 +92,7 @@
     }
 }
 .ftg
-{
+{ 
 
     grid-area: functioning;
     display: grid;
@@ -110,7 +112,6 @@
         grid-area: title;
         font-size: $font-size-title;
     }
-    @include button;
     .btn
     {
         text-decoration: none;

@@ -141,11 +141,6 @@
         font-size: $font-size-origin;
         padding: $padding-base;
 
-        &__arrow
-        {
-            
-        }
-        
         &__logo
         {
             font-weight: unset;
@@ -277,7 +272,7 @@
         }
         &--white
         {
-            background-color: $color-white-dirty; 
+            background-color: $color-white; 
             color: $color-black
         }
     }    

@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@import "mixin";
+
+@include mq-tab-medium;
+@include mq-lap-medium;
+@include mq-lap-large;
+@include mq-4K-xxlarge;
+
+@include origin;
+@include button;
+
+.mn
+{
+    background-color: $color-white-dirty;
+}
+.hdr
+{
+    position: relative;
+    font-size: $font-size-origin;
+    &__arrow
+    {
+        position: absolute;
+        color: $color-black;
+        right: $right-hdr-arrow;
+        bottom: $bottom-hdr-arrow;
+        font-size: $font-size-text;
+    }
+}
+.intro
+{
+    width: $max-perct;
+    object-fit: cover;
+}
+.sctn
+{
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "starters"
+    "dishies"
+    "desserts"
+    "order";
+    grid-template-columns: $max-perct;
+    row-gap: $gap-sctn;
+    background-color: $color-white-dirty;
+    transform: translateY($translateY-sctn);
+    padding: 1em;
+    border-radius: $radius-bubble-up;
+    
+    .title-cntr
+    {
+        grid-area: title;
+        position: relative;
+        &__title
+        {
+            font-family: $font-logo;
+        }
+        &__icon
+        {
+            position: absolute;
+            left: $left-cntr-title-icn;
+            bottom: $bottom-cntr-title-icn;
+            font-size: $font-size-title-cntr-icn;
+        }
+    }
+    .menus
+    {
+        display: grid;
+        grid-template-columns: $max-perct; 
+        row-gap: $gap-menus;
+        width: $max-perct;
+    }
+    .strs
+    {
+        grid-area: starters;
+
+        .btn
+        {
+            width: $max-perct;
+        }
+    }
+    .dshs
+    {
+        grid-area: dishies;
+    }
+    .dssrs
+    {
+        grid-area: desserts;
+    }
+    .order
+    {
+        grid-area: order;
+    }
+}
+.btn
+{
+    font-size: 1em;
+    position: relative;
+
+    &__text
+    {
+    }
+    &__subtext
+    {
+        font-size: 0.85em;
+    }
+    &__price
+    {
+
+        position: absolute;
+        right: 2em;
+    }
+    i.btn__icon
+    {
+        display: none;
+    }
+    &--rect
+    {
+        width: $max-perct;
+        text-align: unset;
+    }
+    &--round
+    {
+        margin: auto;
+        width: $width-btn-round;
+        font-size: $font-size-btn-round;
+        padding-top: $padding-btn-round;
+    }
+}
+.hl
+{
+    border-bottom: $border-vh-menus;
+    width: $width-hl-menus;
+}
+
+

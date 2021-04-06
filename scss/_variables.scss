@@ -55,6 +55,8 @@ $font-size-rst-card-icn: 1.6em;
 $font-size-ftr_logo: 1em; 
 $font-size-ftr-list-item: 0.9em; 
 $font-size-ftr-list-icn: 1em;
+$font-size-title-cntr-icn: 2em;
+$font-size-btn-round: 0.9em;
 
 /* borders radius*/
 
@@ -63,10 +65,12 @@ $radius-circle: 50px;
 $radius-rectangular: 15px; 
 $radius-rect-up: 15px 15px 0 0; 
 $radius-rect-down: 0 0 15px 15px; 
+$radius-bubble-up: 30px 30px 0 0; 
 
 /* borders */
 
 $border-vh-lines: solid $color-gray-light 0.32em;
+$border-vh-menus: solid $color-tertiary 0.32em;
 
 /* paddings */
 
@@ -83,6 +87,7 @@ $padding-rst-card-caption: 0.7em;
 $padding-rst-card-tag: 0.20em 0.95em;
 $padding-ftr-down: 2em;  
 $padding-right-ftr-list-icn: 0.6em;  
+$padding-btn-round: 1em;  
 
 /* margins */
 
@@ -101,7 +106,9 @@ $width-rst-card: 100%;
 $widh-rst-card-link: 100%; 
 $widh-rst-card-img: 100%; 
 $max-width-rst-card: 31.3em; 
+$width-btn-round: 13em; 
 $width-hl: 90%; 
+$width-hl-menus: 3em; 
 
 /* heights */
 
@@ -119,9 +126,13 @@ $gap-regular: 1em;
 $gap-rst: 5em; 
 $gap-expl: 1.5em; 
 $gap-sctn-ftg: 2em; 
+$gap-sctn: 2em; 
+$gap-menus: 1em; 
 
 /* position */
 
+$right-hdr-arrow : 88%;
+$bottom-hdr-arrow : 40%;
 $left-ftg-btn-stkr: -4%; 
 $top-ftg-btn-stkr: 28%;  
 $left-ftg-btn-icn: 10%;  
@@ -130,6 +141,8 @@ $left-rst-card-icn: 75%;
 $top-rst-card-icn: 77%;
 $left-rst-card-tag: 66%;
 $bottom-rst-card-tag: 83%;
+$left-cntr-title-icn: 87%;
+$bottom-cntr-title-icn: 12%;
 $top-vl: 39%;
 $left-vl: 50%;
 $top-hl: 67%;
@@ -148,6 +161,9 @@ $transition-color: color 0.7s;
 
 $animation-vl: vl_animate  linear 2s;
 $animation-hl: hl_animate linear 2s;
+
+/* translations */
+$translateY-sctn: -15vmin;
 
 /* list */
 
