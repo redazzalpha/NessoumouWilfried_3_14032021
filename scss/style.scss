@@ -123,8 +123,6 @@
     {
         text-decoration: none;
         margin: auto;
-        position: relative;
-        padding: $padding-base;
         width: $max-perct;
         max-width: $max-width-ftg-btn;
         background-color: $color-white-dirty;
@@ -202,7 +200,7 @@
             text-decoration: none;
             width: $widh-rst-card-link;
             height: $height-rst-card-link;
-            border-radius: $radius-rectangular;
+            border-radius: $radius-rect;
         }    
         &__icon
         {

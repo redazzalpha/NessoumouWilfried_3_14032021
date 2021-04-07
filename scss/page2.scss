@@ -8,6 +8,7 @@
 @include mq-4K-xxlarge;
 
 @include hls-animate;
+@include checked-animate;
 @include origin;
 @include button;
 
@@ -109,6 +110,22 @@
 {
     font-size: 1em;
     position: relative;
+    overflow: hidden;
+
+    &:hover
+    {
+
+        .btn__icon
+        {
+            right: 0em;
+            animation: checked-animate linear 0.5s;
+        }
+        .checked-bg
+        {
+            right: 0em;
+            animation: checked-bg-animate linear 0.5s;
+        }
+    }
 
     &__subtext
     {
@@ -122,7 +139,24 @@
     }
     i.btn__icon
     {
-        display: none;
+        position: absolute;
+        font-size: 2em;
+        right: -3em;
+        bottom: 0em;
+        padding: 0.67em;
+        color: $color-white;
+        border-radius: $radius-rect-right; 
+        z-index: 2;
+    }
+    .checked-bg
+    {
+        background-color: $color-tertiary;
+        position: absolute;
+        right: -5em;
+        top: 0em;
+        width: 5em;
+        height: 5em;
+        z-index: 1;
     }
     &--rect
     {
@@ -142,5 +176,13 @@
     border-bottom: $border-hls;
     width: $width-hls;
 }
+
+
+
+
+
+
+
+
 
 

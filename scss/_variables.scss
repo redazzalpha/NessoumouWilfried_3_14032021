@@ -126,7 +126,8 @@ $border-hls: solid $color-tertiary 0.32em;
 
 $radius-rounded: 2.5em;
 $radius-circle: 50px; 
-$radius-rectangular: 15px; 
+$radius-rect: 15px; 
+$radius-rect-right: 0 15px 15px 0;
 $radius-rect-up: 15px 15px 0 0; 
 $radius-rect-down: 0 0 15px 15px; 
 $radius-bubble-up: 30px 30px 0 0; 
