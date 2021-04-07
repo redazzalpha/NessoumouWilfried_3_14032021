@@ -48,7 +48,7 @@
     grid-template-columns: $max-perct;
     row-gap: $gap-sctn;
     background-color: $color-white-dirty;
-    transform: translateY($translateY-sctn);
+    transform: $translateY-sctn;
     border-radius: $radius-bubble-up;
     padding: $padding-base;
     justify-items: center;  
@@ -110,9 +110,14 @@
     font-size: 1em;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 
     &:hover
-    {
+    {    
+        .btn__price
+        {
+            right: 6em;   
+        }
         .btn__icon
         {
             right: 0em;
@@ -133,6 +138,7 @@
     {
         position: absolute;
         right: 2em;
+        transition: $transition-btn-menus-price; 
     }
     i.btn__icon
     {
@@ -143,8 +149,8 @@
         padding: 0.67em;
         color: $color-white;
         border-radius: $radius-rect-right; 
-        z-index: 2;
-        transition: $transition-btn-menuu-checked;
+        z-index: 3;
+        transition: $transition-btn-menus-checked;
     }
     .checked-bg
     {
@@ -153,9 +159,9 @@
         right: -5em;
         top: 0em;
         width: 5em;
-        height: 5em;
-        z-index: 1;
-        transition: $transition-btn-menuu-checked-bg;
+        height: 4.6em;
+        z-index: 2;
+        transition: $transition-btn-menus-checked-bg;
     }
     &--rect
     {

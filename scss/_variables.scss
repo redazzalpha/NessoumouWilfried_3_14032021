@@ -165,12 +165,14 @@ $animation-hl: hl_animate linear 2s;
 /* transitions */ 
 
 $transition-color: color 0.7s;  
+$transition-btn-menus-price: right 0.7s;
+$transition-btn-menus-checked: right 0.7s, transform 0.7s;
+$transition-btn-menus-checked-bg: right 0.7s;
 
-/* translations */
+/* translation */
 
 $translateY-sctn: -15vmin;
-$transition-btn-menuu-checked: right 0.7s, transform 0.7s;
-$transition-btn-menuu-checked-bg: right 0.7s;
+$translateY-sctn: translateY($translateY-sctn);
 
 /* list */
 
