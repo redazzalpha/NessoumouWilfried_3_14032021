@@ -111,6 +111,8 @@
     overflow: hidden;
     z-index: 1;
 
+    text-overflow: ellipsis;
+
     &:hover
     {    
         .btn__price
@@ -160,7 +162,7 @@
         right: -5em;
         top: 0em;
         width: 5em;
-        height: 4.6em;
+        height: $max-perct;
         z-index: 2;
         transition: $transition-btn-menus-checked-bg;
     }
