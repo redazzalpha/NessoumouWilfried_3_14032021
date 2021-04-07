@@ -217,7 +217,7 @@
 {
     .card
     {
-        border-radius: $radius-rectangular;
+        border-radius: $radius-rect;
         box-shadow: $box-shadow-regular;
         max-width: $max-width-rst-card;
         width: $width-rst-card;
@@ -276,25 +276,6 @@
             color: $color-black
         }
     }    
-}
-@mixin checked-bg-animate
-{
-    @keyframes checked-bg-animate
-    {
-        0%{right: -5em;}
-        100%{right: 0em;}
-    }
-}
-@mixin checked-animate
-{
-    @keyframes checked-animate
-    {
-        0%{right: -3em; transform: rotate(0deg)}
-        100%{right: 0em; transform: rotate(720deg)}
-
-        
-    }
-    @include checked-bg-animate;
 }
 @mixin vh-line-animate($class, $property, $size)
 {

@@ -57,6 +57,7 @@ $font-size-ftr-list-item: 0.9em;
 $font-size-ftr-list-icn: 1em;
 $font-size-title-cntr-icn: 2em;
 $font-size-btn-round: 0.9em;
+$font-size-btn-round: 0.9em;
 
 /* paddings */
 
@@ -168,6 +169,8 @@ $transition-color: color 0.7s;
 /* translations */
 
 $translateY-sctn: -15vmin;
+$transition-btn-menuu-checked: right 0.7s, transform 0.7s;
+$transition-btn-menuu-checked-bg: right 0.7s;
 
 /* list */
 
