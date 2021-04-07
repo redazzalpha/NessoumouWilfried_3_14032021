@@ -10,6 +10,13 @@
 @include origin;
 @include button;
 
+@each $class, $property in $map-vh-line
+{
+    @each $property-name, $val in $property
+    {
+        @include vh-line-animate($class, $property-name, $val);
+    }
+}
 
 .intro
 {

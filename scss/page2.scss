@@ -7,9 +7,14 @@
 @include mq-lap-large;
 @include mq-4K-xxlarge;
 
+@include hls-animate;
 @include origin;
 @include button;
 
+[class*=title]
+{
+    font-weight: unset;
+}
 .mn
 {
     background-color: $color-white-dirty;
@@ -17,7 +22,6 @@
 .hdr
 {
     position: relative;
-    font-size: $font-size-origin;
     &__arrow
     {
         position: absolute;
@@ -45,13 +49,15 @@
     row-gap: $gap-sctn;
     background-color: $color-white-dirty;
     transform: translateY($translateY-sctn);
-    padding: 1em;
     border-radius: $radius-bubble-up;
-    
+    padding: $padding-base;
+    justify-items: center;  
+
     .title-cntr
     {
         grid-area: title;
         position: relative;
+        width: $max-perct;
         &__title
         {
             font-family: $font-logo;
@@ -70,6 +76,12 @@
         grid-template-columns: $max-perct; 
         row-gap: $gap-menus;
         width: $max-perct;
+        text-align: unset;
+
+        [class*=title]
+        {
+            color: $color-gray;
+        }
     }
     .strs
     {
@@ -98,16 +110,13 @@
     font-size: 1em;
     position: relative;
 
-    &__text
-    {
-    }
     &__subtext
     {
         font-size: 0.85em;
+        color: $color-gray;
     }
     &__price
     {
-
         position: absolute;
         right: 2em;
     }
@@ -122,16 +131,16 @@
     }
     &--round
     {
-        margin: auto;
         width: $width-btn-round;
         font-size: $font-size-btn-round;
         padding-top: $padding-btn-round;
+        margin-top: $margin-top-btn;
     }
 }
-.hl
+.hls
 {
-    border-bottom: $border-vh-menus;
-    width: $width-hl-menus;
+    border-bottom: $border-hls;
+    width: $width-hls;
 }
 
 

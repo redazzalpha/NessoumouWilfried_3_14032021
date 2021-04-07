@@ -115,7 +115,6 @@
         .wrapper .ftr
         {
             font-size: $font-size-origin*2;
-
         }
     }
 }
@@ -156,9 +155,9 @@
         grid-template-areas: 
         "logo"
         "list";
-        background-color: $color-black-gray;
         font-size: $font-size-origin;
         padding: $padding-base;
+        background-color: $color-black-gray;
         padding-bottom: $padding-ftr-down;
     
         &__logo
@@ -166,8 +165,8 @@
     
             grid-area: logo;
             color: $color-white;
-            margin-bottom: $margin-bottom-ftr-logo;
             font-size: $font-size-ftr_logo;
+            margin-bottom: $margin-bottom-ftr-logo;
             font-weight: unset;
         }
         .list
@@ -283,8 +282,8 @@
     {
         @keyframes #{$class}-animate
         {
-            0%{#{$property} : 0%;}
-            100%{#{$property}: $size;}
+            0%{ #{$property} : 0%; }
+            100%{ #{$property}: $size; }
         }
         .#{$class}
         {
@@ -292,11 +291,19 @@
         }
     }
 }
-
-@each $class, $property in $map-vh-line
+@mixin hls-animate
 {
-    @each $property-name, $val in $property
+    @keyframes hls-animate
     {
-        @include vh-line-animate($class, $property-name, $val);
+        0%{ width : 0%; }
+        100%{ width: $width-hls;}
+    }
+    .hls
+    {
+        animation: hls-animate linear 2s;
     }
 }
+
+
+
+

@@ -58,23 +58,9 @@ $font-size-ftr-list-icn: 1em;
 $font-size-title-cntr-icn: 2em;
 $font-size-btn-round: 0.9em;
 
-/* borders radius*/
-
-$radius-rounded: 2.5em;  // base value  40px;   
-$radius-circle: 50px; 
-$radius-rectangular: 15px; 
-$radius-rect-up: 15px 15px 0 0; 
-$radius-rect-down: 0 0 15px 15px; 
-$radius-bubble-up: 30px 30px 0 0; 
-
-/* borders */
-
-$border-vh-lines: solid $color-gray-light 0.32em;
-$border-vh-menus: solid $color-tertiary 0.32em;
-
 /* paddings */
 
-$padding-base: 1.25em; 
+$padding-base: 1em;  // base value  1.25em
 $padding-sctn-title: 1.1em; 
 $padding-bottom-sctn-title: 0.5em; 
 $padding-expl-title: 1.1em; 
@@ -92,14 +78,25 @@ $padding-btn-round: 1em;
 /* margins */
 
 $margin-bottom-ftr-logo: 1em; 
+$margin-top-btn: 2.5em; 
 
-/* shadows */
+/* gaps */
 
-$box-shadow-regular: 7px 7px 7px $color-shadow; 
+$gap-regular: 1em; 
+$gap-rst: 5em; 
+$gap-expl: 1.5em; 
+$gap-sctn-ftg: 2em; 
+$gap-sctn: 2em; 
+$gap-menus: 1em; 
+
+/* percent */
+
+$max-perct: 100%; 
+$half-perct: $max-perct / 2;  
 
 /* widths */                    
 
-$width-expl-btn: 16em;                      // explore btn width
+$width-expl-btn: 16em;
 $max-width-ftg-btn: 24em;                
 $width-rst: 100%; 
 $width-rst-card: 100%; 
@@ -108,7 +105,7 @@ $widh-rst-card-img: 100%;
 $max-width-rst-card: 31.3em; 
 $width-btn-round: 13em; 
 $width-hl: 90%; 
-$width-hl-menus: 3em; 
+$width-hls: 3em; 
 
 /* heights */
 
@@ -120,14 +117,23 @@ $height-srch-field: 3.2em;
 $height-rst-card-caption: 28%; 
 $height-vl: 56em; 
 
-/* gaps */
+/* borders */
 
-$gap-regular: 1em; 
-$gap-rst: 5em; 
-$gap-expl: 1.5em; 
-$gap-sctn-ftg: 2em; 
-$gap-sctn: 2em; 
-$gap-menus: 1em; 
+$border-vh-lines: solid $color-gray-light 0.32em;
+$border-hls: solid $color-tertiary 0.32em;
+
+/* borders radius*/
+
+$radius-rounded: 2.5em;
+$radius-circle: 50px; 
+$radius-rectangular: 15px; 
+$radius-rect-up: 15px 15px 0 0; 
+$radius-rect-down: 0 0 15px 15px; 
+$radius-bubble-up: 30px 30px 0 0; 
+
+/* shadows */
+
+$box-shadow-regular: 7px 7px 7px $color-shadow; 
 
 /* position */
 
@@ -148,21 +154,18 @@ $left-vl: 50%;
 $top-hl: 67%;
 $left-hl: 5%;
 
-/* percent */
+/* animations */
 
-$max-perct: 100%; 
-$half-perct: $max-perct / 2;  
+$animation-vl: vl_animate  linear 2s;
+$animation-hl: hl_animate linear 2s;
+$animation-hl: hl_animate linear 2s;
 
 /* transitions */ 
 
 $transition-color: color 0.7s;  
 
-/* animations */
-
-$animation-vl: vl_animate  linear 2s;
-$animation-hl: hl_animate linear 2s;
-
 /* translations */
+
 $translateY-sctn: -15vmin;
 
 /* list */
