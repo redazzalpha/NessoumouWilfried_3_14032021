@@ -245,7 +245,26 @@
         } 
     }    
 }
-@mixin button
+@mixin icon-heart
+{
+    .icon-heart
+    {
+        position: absolute;
+        color: $color-secondary;
+        font-size: $font-size-icn-heart;
+        &--hidden
+        {
+            color: $color-transprent;
+
+            &:hover
+            {
+                color: $color-secondary;
+                transition: $transition-color;
+            }
+        }
+    }
+}
+@mixin btn
 {
     .btn
     {

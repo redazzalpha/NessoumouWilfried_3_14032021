@@ -8,7 +8,10 @@
 @include mq-4K-xxlarge;
 
 @include origin;
-@include button;
+@include btn;
+@include card;
+@include icon-heart;
+
 
 @each $class, $property in $map-vh-line
 {
@@ -90,7 +93,6 @@
         font-weight: unset;
         font-size: $font-size-text;
     }
-    @include button;
     .btn
     {
         grid-area: button;
@@ -187,7 +189,6 @@
     {
         font-size: $font-size-title;
     }        
-    @include card;
     .card
     {
         position: relative;
@@ -202,23 +203,10 @@
             height: $height-rst-card-link;
             border-radius: $radius-rect;
         }    
-        &__icon
+        .icon-heart
         {
-            position: absolute;
             left: $left-rst-card-icn;
             top: $top-rst-card-icn;
-            color: $color-secondary;
-            font-size: $font-size-rst-card-icn;
-            &--hidden
-            {
-                color: $color-transprent;
-
-                &:hover
-                {
-                    color: $color-secondary;
-                    transition: $transition-color;
-                }
-            }
         }
         &__tag
         {

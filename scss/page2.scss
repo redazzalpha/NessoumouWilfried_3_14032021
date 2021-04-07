@@ -9,7 +9,8 @@
 
 @include hls-animate;
 @include origin;
-@include button;
+@include btn;
+@include icon-heart;
 
 [class*=title]
 {
@@ -62,12 +63,10 @@
         {
             font-family: $font-logo;
         }
-        &__icon
+        .icon-heart
         {
-            position: absolute;
-            left: $left-cntr-title-icn;
-            bottom: $bottom-cntr-title-icn;
-            font-size: $font-size-title-cntr-icn;
+            left: $left-icn-heart;
+            bottom: $bottom-icn-heart;
         }
     }
     .menus
@@ -139,6 +138,8 @@
         position: absolute;
         right: 2em;
         transition: $transition-btn-menus-price; 
+        background-color : $color-white;
+        
     }
     i.btn__icon
     {

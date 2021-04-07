@@ -51,11 +51,11 @@ $font-size-ftg-btn-icn: 1.5em;
 $font-size-rst-card-cpt: 1em; 
 $font-size-rst-card-cpt-strg: 1.1em; 
 $font-size-rst-card-tag: 0.9em;
-$font-size-rst-card-icn: 1.6em;
+$font-size-icn-heart: 1.6em;
 $font-size-ftr_logo: 1em; 
 $font-size-ftr-list-item: 0.9em; 
 $font-size-ftr-list-icn: 1em;
-$font-size-title-cntr-icn: 2em;
+$font-size-icn-heart: 2em;
 $font-size-btn-round: 0.9em;
 $font-size-btn-round: 0.9em;
 
@@ -149,8 +149,8 @@ $left-rst-card-icn: 75%;
 $top-rst-card-icn: 77%;
 $left-rst-card-tag: 66%;
 $bottom-rst-card-tag: 83%;
-$left-cntr-title-icn: 87%;
-$bottom-cntr-title-icn: 12%;
+$left-icn-heart: 87%;
+$bottom-icn-heart: 12%;
 $top-vl: 39%;
 $left-vl: 50%;
 $top-hl: 67%;
@@ -164,10 +164,10 @@ $animation-hl: hl_animate linear 2s;
 
 /* transitions */ 
 
-$transition-color: color 0.7s;  
-$transition-btn-menus-price: right 0.7s;
-$transition-btn-menus-checked: right 0.7s, transform 0.7s;
-$transition-btn-menus-checked-bg: right 0.7s;
+$transition-color: color 0.6s;  
+$transition-btn-menus-price: right 0.6s;
+$transition-btn-menus-checked: right 0.6s, transform 0.6s;
+$transition-btn-menus-checked-bg: right 0.6s;
 
 /* translation */
 
