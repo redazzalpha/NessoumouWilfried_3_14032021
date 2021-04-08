@@ -329,12 +329,13 @@
     @keyframes hls-animate
     {
         0%{ width : 0%; }
+        50%{ width : 0%; }
         100%{ width: $width-hls;}
     }
     .hls
     {
-        animation: hls-animate linear 2s;
-    }
+        animation: hls-animate linear 1.5s;
+    }    
 }
 @mixin btn-menus-animate
 {
@@ -361,7 +362,7 @@
         $tmr1: 0.7;
         @for $i  from 2 through 5
         {
-            :nth-child(#{$i}):not(.btn__price)
+            :nth-child(#{$i}):not(.btn__price):not(.hls)
             {
                 animation: menus-animate #{$tmr}s, btn-menus-animate linear #{$tmr1}s;
                 $tmr : $tmr +0.5;
