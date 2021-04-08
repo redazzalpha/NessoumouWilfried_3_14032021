@@ -117,26 +117,59 @@
 @mixin mq-4K-xxlarge
 {
     @media #{$mq-4K-xxlarge}
-    {
-        .wrapper .hdr
+    {   
+       
+        .wrapper.index
         {
-            font-size: $font-size-origin * $font-size-multp;
+            .intro
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .hdr
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .srch
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .sctn.index
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .ftr
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+
         }
-        .wrapper .intro
+        .wrapper.pages
         {
-            font-size: $font-size-origin * $font-size-multp;
-        }
-        .wrapper .srch
-        {
-            font-size: $font-size-origin*2;
-        }
-        .wrapper .sctn
-        {
-            font-size: $font-size-origin*2;
-        }
-        .wrapper .ftr
-        {
-            font-size: $font-size-origin*2;
+            .intro
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .hdr
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .main
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
+            .sctn.pages
+            {
+                font-size: $font-size-origin * $font-size-multp;
+
+                .menus
+                {
+                    font-size: $font-size-origin * $font-size-multp;
+                }    
+            }
+            .ftr
+            {
+                font-size: $font-size-origin * $font-size-multp;
+            }
         }
     }
 }
@@ -272,7 +305,6 @@
     {
         position: absolute;
         color: $color-secondary;
-        font-size: $font-size-icn-heart;
         &--hidden
         {
             color: $color-transprent;

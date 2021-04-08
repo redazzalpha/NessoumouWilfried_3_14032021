@@ -17,9 +17,9 @@
 {
     font-weight: unset;
 }
-.mn
+.wrapper.pages
 {
-    background-color: $color-white-dirty;
+    font-size: $font-size-origin;
 }
 .hdr
 {
@@ -30,7 +30,7 @@
         color: $color-black;
         right: $right-hdr-arrow;
         bottom: $bottom-hdr-arrow;
-        font-size: $font-size-text;
+        font-size: $font-size-origin;
     }
 }
 .intro
@@ -38,7 +38,11 @@
     object-fit: cover;
     width: $max-perct;
 }
-.sctn
+.main
+{
+    background-color: $color-white-dirty;
+}
+.sctn.pages
 {
     display: grid;
     grid-template-areas: 
@@ -53,6 +57,7 @@
     transform: $translateY-sctn;
     border-radius: $radius-bubble-up;
     padding: $padding-base;
+    font-size: $font-size-origin;
     justify-items: center;  
 
     .title-cntr
@@ -60,14 +65,17 @@
         grid-area: title;
         position: relative;
         width: $max-perct;
+        font-size: 1em;
         &__title
         {
             font-family: $font-logo;
+            font-size: 1em;
         }
         .icon-heart
         {
             left: $left-icn-heart;
             bottom: $bottom-icn-heart;
+            font-size: $font-size-icn-heart;
         }
     }
     .menus
@@ -77,20 +85,17 @@
         row-gap: $gap-menus;
         width: $max-perct;
         text-align: unset;
+        font-size: $font-size-origin;
 
         [class*=title]
         {
             color: $color-gray;
+            font-size: $font-size-title;
         }
     }
     .strs
     {
         grid-area: starters;
-
-        .btn
-        {
-            width: $max-perct;
-        }
     }
     .dshs
     {
@@ -105,6 +110,7 @@
         grid-area: order;
     }
 }
+
 .btn
 {
     font-size: 1em;
@@ -147,6 +153,7 @@
         white-space: nowrap;    
         width: $width-btn-text;
         transition: $transition-btn-text;
+        font-size: $font-size-text;;
     }
     &__subtext
     {
