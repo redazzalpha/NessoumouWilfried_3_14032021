@@ -112,11 +112,11 @@
     {
         .wrapper .hdr
         {
-            font-size: $font-size-origin*2;
+            font-size: $font-size-origin * $font-size-multp;
         }
         .wrapper .intro
         {
-            font-size: $font-size-origin*2;
+            font-size: $font-size-origin * $font-size-multp;
         }
         .wrapper .srch
         {
@@ -157,7 +157,7 @@
         &__logo
         {
             font-weight: unset;
-            font-size: $font-size-hdr_logo;
+            font-size: $font-size-hdr-logo;
         }
     }    
 }
@@ -179,7 +179,7 @@
     
             grid-area: logo;
             color: $color-white;
-            font-size: $font-size-ftr_logo;
+            font-size: $font-size-ftr-logo;
             margin-bottom: $margin-bottom-ftr-logo;
             font-weight: unset;
         }
@@ -311,7 +311,7 @@
 }
 @mixin vh-line-animate($class, $property, $size)
 {
-    @media (min-width: 1440px)
+    @media #{$mq-lap-large}
     {
         @keyframes #{$class}-animate
         {
@@ -329,44 +329,33 @@
     @keyframes hls-animate
     {
         0%{ width : 0%; }
-        50%{ width : 0%; }
+        30%{ width : 0%; }
         100%{ width: $width-hls;}
     }
     .hls
     {
-        animation: hls-animate linear 1.5s;
+        animation: $animation-hls;
     }    
 }
-@mixin btn-menus-animate
-{
-    @keyframes btn-menus-animate
-    {
-        0%{top: 30%}
-        50%{top: 30%}
-        100%{top: 0%}
-    }
-}
-@mixin menus-animate
+@mixin menus-animate($class) // $class most havve: "position: [relative | absolute]"
 {
     @include hls-animate;
-    @include btn-menus-animate;
-    @keyframes menus-animate
+
+    @keyframes #{$class}-animate
     {
-        0%{opacity: 0}
-        50%{opacity: 0}
-        100%{opacity: 1}
+        0%{opacity: 0; top: 30%}
+        50%{opacity: 0; top: 30%}
+        100%{opacity: 1; top: 0% }
     }
-    .menus
+    .#{$class}
     {
-        $tmr: 0.7;
-        $tmr1: 0.7;
+        $duration: $duration-menus-animate;
         @for $i  from 2 through 5
         {
             :nth-child(#{$i}):not(.btn__price):not(.hls)
             {
-                animation: menus-animate #{$tmr}s, btn-menus-animate linear #{$tmr1}s;
-                $tmr : $tmr +0.5;
-                $tmr1 : $tmr1 +0.3;
+                animation: #{$class}-animate #{$duration}s;
+                $duration : $duration + $offset-menus-animate;
             }
         }
     }

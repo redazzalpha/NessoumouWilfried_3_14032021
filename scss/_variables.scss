@@ -1,4 +1,4 @@
-/* break points */
+/* break points sizes */
 
 $bp-mob-small: 320px; 
 $bp-mob-medium: 375px; 
@@ -8,7 +8,7 @@ $bp-lap-medium: 1024px;
 $bp-lap-large: 1440px; 
 $bp-4K-xxlarge: 2560px; 
 
-/* media query sizes */
+/* media queries */
 
 $mq-mob-small:  "(min-width: #{$bp-mob-small})";  
 $mq-mob-medium:  "(min-width: #{$bp-mob-medium})"; 
@@ -45,19 +45,25 @@ $font-text: roboto, serif, sans-serif;
 $font-size-origin: 16px; 
 $font-size-title: 1.5em; 
 $font-size-text: 1em; 
-$font-size-hdr_logo: 2.2em; 
+$font-size-hdr-logo: 2.2em; 
 $font-size-ftg-btn-stkr: 1.05em; 
 $font-size-ftg-btn-icn: 1.5em; 
 $font-size-rst-card-cpt: 1em; 
 $font-size-rst-card-cpt-strg: 1.1em; 
-$font-size-rst-card-tag: 0.9em;
 $font-size-icn-heart: 1.6em;
-$font-size-ftr_logo: 1em; 
+$font-size-rst-card-tag: 0.9em;
+$font-size-ftr-logo: 1em; 
 $font-size-ftr-list-item: 0.9em; 
 $font-size-ftr-list-icn: 1em;
 $font-size-icn-heart: 2em;
 $font-size-btn-round: 0.9em;
 $font-size-btn-round: 0.9em;
+$font-size-btn-icn-chk: 2em;
+$font-size-btn-subtext: 0.85em;
+
+/* fonts multiplicators */
+
+$font-size-multp: 2;
 
 /* paddings */
 
@@ -75,6 +81,7 @@ $padding-rst-card-tag: 0.20em 0.95em;
 $padding-ftr-down: 2em;  
 $padding-right-ftr-list-icn: 0.6em;  
 $padding-btn-round: 1em;  
+$padding-btn-icn-chk: 0.67em;  
 
 /* margins */
 
@@ -105,6 +112,7 @@ $widh-rst-card-link: 100%;
 $widh-rst-card-img: 100%; 
 $max-width-rst-card: 31.3em; 
 $width-btn-round: 13em; 
+$width-btn-bg-chk: 5em; 
 $width-hl: 90%; 
 $width-hls: 3em; 
 
@@ -151,6 +159,14 @@ $left-rst-card-tag: 66%;
 $bottom-rst-card-tag: 83%;
 $left-icn-heart: 87%;
 $bottom-icn-heart: 12%;
+$right-btn-icn-chk: -3em;
+$bottom-btn-icn-chk: 0em;
+$right-btn-bg-chk: -5em;
+$top-btn-bg-chk: 0em;
+$right-btn-price: 2em;
+$right-btn-icn-chk-hover: 0em;
+$right-btn-bg-chk-hover: 0em;
+$right-btn-price-hover: 6em;
 $top-vl: 39%;
 $left-vl: 50%;
 $top-hl: 67%;
@@ -165,23 +181,35 @@ $animation-hl: hl_animate linear 2s;
 /* transitions */ 
 
 $transition-color: color 0.6s;  
-$transition-btn-menus-price: right 0.6s;
-$transition-btn-menus-checked: right 0.6s, transform 0.6s;
-$transition-btn-menus-checked-bg: right 0.6s;
+$transition-btn-price: right 0.6s;
+$transition-btn-icn-chk: right 0.6s, transform 0.6s;
+$transition-btn-bg-chk: right 0.6s;
 
 /* translation */
 
 $translateY-sctn: -15vmin;
 $translateY-sctn: translateY($translateY-sctn);
 
+/* rotations */
+
+$rotate-btn-icn-chk-hover: rotate(720deg);
+
 /* list */
 
 $map-vh-line: (vl :(height: $height-vl), hl :(width: $width-hl));
 
+/* animation durations */
 
+$duration-menus-animate: 0.7;
+$duration-hls-animate: 2.2s;
 
+/* animations */
 
+$animation-hls: hls-animate linear $duration-hls-animate;
 
+/* animation offsets */
+
+$offset-menus-animate: 0.5;
 
 
 

@@ -7,7 +7,7 @@
 @include mq-lap-large;
 @include mq-4K-xxlarge;
 
-@include menus-animate;
+@include menus-animate(menus);
 @include origin;
 @include btn;
 @include icon-heart;
@@ -119,54 +119,54 @@
     {    
         .btn__price
         {
-            right: 6em;   
+            right: $right-btn-price-hover;   
         }
-        .btn__icon
+        .btn__icon-chk
         {
-            right: 0em;
-            transform: rotate(720deg);
+            right: $right-btn-icn-chk-hover;
+            transform: $rotate-btn-icn-chk-hover;
         }
-        .checked-bg
+        .btn__bg-chk
         {
-            right: 0em;
+            right: $right-btn-bg-chk-hover;
         }
     }
 
     &__subtext
     {
-        font-size: 0.85em;
+        font-size: $font-size-btn-subtext;
         color: $color-gray;
     }
     &__price
     {
         position: absolute;
-        right: 2em;
-        transition: $transition-btn-menus-price; 
         background-color : $color-white;
+        right: $right-btn-price;
+        transition: $transition-btn-price; 
         
     }
-    i.btn__icon
+    i.btn__icon-chk
     {
         position: absolute;
-        font-size: 2em;
-        right: -3em;
-        bottom: 0em;
-        padding: 0.67em;
         color: $color-white;
+        font-size: $font-size-btn-icn-chk;
+        right: $right-btn-icn-chk;
+        bottom: $bottom-btn-icn-chk;
+        padding: $padding-btn-icn-chk;
         border-radius: $radius-rect-right; 
+        transition: $transition-btn-icn-chk;
         z-index: 3;
-        transition: $transition-btn-menus-checked;
     }
-    .checked-bg
+    .btn__bg-chk
     {
-        background-color: $color-tertiary;
         position: absolute;
-        right: -5em;
-        top: 0em;
-        width: 5em;
+        background-color: $color-tertiary;
+        right: $right-btn-bg-chk;
+        top: $top-btn-bg-chk;
+        width: $width-btn-bg-chk;
         height: $max-perct;
+        transition: $transition-btn-bg-chk;
         z-index: 2;
-        transition: $transition-btn-menus-checked-bg;
     }
     &--rect
     {
