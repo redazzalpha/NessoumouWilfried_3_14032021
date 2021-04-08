@@ -30,7 +30,7 @@
         color: $color-black;
         right: $right-hdr-arrow;
         bottom: $bottom-hdr-arrow;
-        font-size: $font-size-origin;
+        font-size: $font-size-hdr-arrow;
     }
 }
 .intro
@@ -65,11 +65,10 @@
         grid-area: title;
         position: relative;
         width: $max-perct;
-        font-size: 1em;
         &__title
         {
             font-family: $font-logo;
-            font-size: 1em;
+            font-size: $font-size-title;
         }
         .icon-heart
         {
@@ -85,12 +84,11 @@
         row-gap: $gap-menus;
         width: $max-perct;
         text-align: unset;
-        font-size: $font-size-origin;
 
         [class*=title]
         {
             color: $color-gray;
-            font-size: $font-size-title;
+            font-size: $font-size-menus-subtitle;
         }
     }
     .strs
