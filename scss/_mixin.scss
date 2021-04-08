@@ -65,13 +65,15 @@
         }
         .sctn.pages
         {
-            display: grid;
+            //grid-template-columns: auto auto auto;
+            //grid-template-areas: unset;
+            
             grid-template-areas: 
             "title title title"
             "starters dishies desserts"
             "order order order"; 
             grid-template-columns: auto;
-            column-gap: 2em;
+            column-gap: 2em;            
         }
     }
 }
