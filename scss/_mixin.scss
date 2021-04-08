@@ -72,6 +72,11 @@
             grid-template-columns: auto;
             column-gap: 2em;            
         }
+        .intro.pages
+        {
+            width: 75%;
+            margin: 0 15%;
+        }
     }
 }
 @mixin mq-lap-large
@@ -329,6 +334,27 @@
     .hls
     {
         animation: hls-animate linear 2s;
+    }
+}
+@mixin menus-animate
+{
+    @keyframes menus-animate
+    {
+        0%{opacity: 0}
+        50%{opacity: 0}
+        100%{opacity: 1}
+    }
+    .menus
+    {
+        $tmr: 0.7;
+        @for $i  from 2 through 5
+        {
+            :nth-child(#{$i})
+            {
+                animation: menus-animate #{$tmr}s;
+                $tmr : $tmr +0.5;
+            }
+        }
     }
 }
 
