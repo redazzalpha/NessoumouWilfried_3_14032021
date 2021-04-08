@@ -40,42 +40,50 @@
 {
     @media #{$mq-lap-medum}
     {
-        .sctn.index
+        .wrapper.index
         {
-            .ftg
+            .sctn.index
+            {
+                .ftg
+                {
+                    grid-template-areas: 
+                    "title title title"
+                    "choose compose eat";
+                    column-gap: $gap-sctn-ftg;
+                    &__title
+                    {
+                        text-align: center;
+                    }
+                }
+                .rst
+                {
+                    text-align: center;
+        
+                    & .card__caption
+                    {
+                        text-align: left;
+                    }
+                }
+            }    
+        }
+        .wrapper.pages
+        {
+            .intro.pages
+            {
+                display: block;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sctn.pages
             {
                 grid-template-areas: 
                 "title title title"
-                "choose compose eat";
-                column-gap: $gap-sctn-ftg;
-                &__title
-                {
-                    text-align: center;
-                }
+                "starters dishies desserts"
+                "order order order"; 
+                grid-template-columns: auto;
+                column-gap: 2em;        
             }
-            .rst
-            {
-                text-align: center;
-    
-                & .card__caption
-                {
-                    text-align: left;
-                }
-            }
-        }
-        .sctn.pages
-        {
-            grid-template-areas: 
-            "title title title"
-            "starters dishies desserts"
-            "order order order"; 
-            grid-template-columns: auto;
-            column-gap: 2em;            
-        }
-        .intro.pages
-        {
-            //width: 75%;
-            //margin: 0 15%;
         }
     }
 }
