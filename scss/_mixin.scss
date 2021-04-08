@@ -336,8 +336,19 @@
         animation: hls-animate linear 2s;
     }
 }
+@mixin btn-menus-animate
+{
+    @keyframes btn-menus-animate
+    {
+        0%{top: 30%}
+        50%{top: 30%}
+        100%{top: 0%}
+    }
+}
 @mixin menus-animate
 {
+    @include hls-animate;
+    @include btn-menus-animate;
     @keyframes menus-animate
     {
         0%{opacity: 0}
@@ -347,17 +358,18 @@
     .menus
     {
         $tmr: 0.7;
+        $tmr1: 0.7;
         @for $i  from 2 through 5
         {
-            :nth-child(#{$i})
+            :nth-child(#{$i}):not(.btn__price)
             {
-                animation: menus-animate #{$tmr}s;
+                animation: menus-animate #{$tmr}s, btn-menus-animate linear #{$tmr1}s;
                 $tmr : $tmr +0.5;
+                $tmr1 : $tmr1 +0.3;
             }
         }
     }
 }
-
 
 
 

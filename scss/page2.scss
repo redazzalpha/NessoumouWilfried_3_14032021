@@ -7,11 +7,11 @@
 @include mq-lap-large;
 @include mq-4K-xxlarge;
 
-@include hls-animate;
 @include menus-animate;
 @include origin;
 @include btn;
 @include icon-heart;
+
 
 [class*=title]
 {
@@ -78,6 +78,7 @@
         width: $max-perct;
         text-align: unset;
 
+
         [class*=title]
         {
             color: $color-gray;
@@ -110,11 +111,9 @@
     font-size: 1em;
     position: relative;
     overflow: hidden;
-
+    text-overflow: ellipsis;
     white-space: nowrap;
     z-index: 1;
-
-    text-overflow: ellipsis;
 
     &:hover
     {    
