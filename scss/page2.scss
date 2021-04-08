@@ -78,7 +78,6 @@
         width: $max-perct;
         text-align: unset;
 
-
         [class*=title]
         {
             color: $color-gray;
@@ -116,7 +115,15 @@
     z-index: 1;
 
     &:hover
-    {    
+    {
+        .btn__text
+        {
+            width: $width-btn-text-hover;
+        }
+        .btn__subtext
+        {
+            width: $width-btn-subtex-hover;
+        }
         .btn__price
         {
             right: $right-btn-price-hover;   
@@ -132,10 +139,25 @@
         }
     }
 
+    &__text
+    {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;    
+        width: $width-btn-text;
+        transition: $transition-btn-text;
+    }
     &__subtext
     {
-        font-size: $font-size-btn-subtext;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;    
+        font-size: $font-size-btn-subtex;
         color: $color-gray;
+        width: $width-btn-subtex;
+        transition: $transition-btn-subtext;
     }
     &__price
     {
@@ -143,7 +165,6 @@
         background-color : $color-white;
         right: $right-btn-price;
         transition: $transition-btn-price; 
-        
     }
     i.btn__icon-chk
     {

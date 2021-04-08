@@ -162,8 +162,7 @@
     }    
 }
 @mixin footer
-{
-    .ftr
+{.ftr
     {
         display: grid;
         grid-template-areas: 
@@ -349,7 +348,7 @@
     }
     .#{$class}
     {
-        $duration: $duration-menus-animate;
+        $duration: $duration-menus;
         @for $i  from 2 through 5
         {
             :nth-child(#{$i}):not(.btn__price):not(.hls)
@@ -360,6 +359,7 @@
         }
     }
 }
+
 
 
 

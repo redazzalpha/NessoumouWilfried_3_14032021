@@ -59,7 +59,7 @@ $font-size-icn-heart: 2em;
 $font-size-btn-round: 0.9em;
 $font-size-btn-round: 0.9em;
 $font-size-btn-icn-chk: 2em;
-$font-size-btn-subtext: 0.85em;
+$font-size-btn-subtex: 0.85em;
 
 /* fonts multiplicators */
 
@@ -112,7 +112,11 @@ $widh-rst-card-link: 100%;
 $widh-rst-card-img: 100%; 
 $max-width-rst-card: 31.3em; 
 $width-btn-round: 13em; 
+$width-btn-text: 95%; 
+$width-btn-subtex: 79%; 
 $width-btn-bg-chk: 5em; 
+$width-btn-text-hover: calc(100% - 70px); 
+$width-btn-subtex-hover: calc(100% - 120px); 
 $width-hl: 90%; 
 $width-hls: 3em; 
 
@@ -181,6 +185,8 @@ $animation-hl: hl_animate linear 2s;
 /* transitions */ 
 
 $transition-color: color 0.6s;  
+$transition-btn-text: width 0.6s;
+$transition-btn-subtext: width 0.6s;
 $transition-btn-price: right 0.6s;
 $transition-btn-icn-chk: right 0.6s, transform 0.6s;
 $transition-btn-bg-chk: right 0.6s;
@@ -200,7 +206,7 @@ $map-vh-line: (vl :(height: $height-vl), hl :(width: $width-hl));
 
 /* animation durations */
 
-$duration-menus-animate: 0.7;
+$duration-menus: 0.7;
 $duration-hls-animate: 2.2s;
 
 /* animations */
