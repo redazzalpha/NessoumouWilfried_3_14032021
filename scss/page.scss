@@ -132,7 +132,7 @@
 
             &--white
             {
-                transition: background-color linear #{$duration-menus}s, box-shadow linear #{$duration-menus}s;
+                transition: $transition-btn-white;
 
             }
             &__text
