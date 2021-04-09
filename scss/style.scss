@@ -12,15 +12,6 @@
 @include card;
 @include icon-heart;
 
-
-@each $class, $property in $map-vh-line
-{
-    @each $property-name, $val in $property
-    {
-        @include vh-line-animate($class, $property-name, $val);
-    }
-}
-
 .intro.index
 {
     text-align: center;

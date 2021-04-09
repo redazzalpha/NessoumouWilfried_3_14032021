@@ -65,7 +65,8 @@ $font-size-btn-subtex: 0.85em;
 
 /* fonts multiplicators */
 
-$font-size-multp: 2;
+$font-size-4k-multp: 2;
+$font-size-lap-large-multp: 1.2;
 
 /* paddings */
 
@@ -119,7 +120,6 @@ $width-btn-subtex: 79%;
 $width-btn-bg-chk: 5em; 
 $width-btn-text-hover: calc(100% - 70px); 
 $width-btn-subtex-hover: calc(100% - 120px); 
-$width-hl: 90%; 
 $width-hls: 3em; 
 
 /* heights */
@@ -130,7 +130,6 @@ $height-rst-card-link: 100%;
 $height-rst-card-img: 70%;
 $height-srch-field: 3.2em; 
 $height-rst-card-caption: 28%; 
-$height-vl: 56em; 
 
 /* borders */
 
@@ -173,10 +172,6 @@ $right-btn-price: 2em;
 $right-btn-icn-chk-hover: 0em;
 $right-btn-bg-chk-hover: 0em;
 $right-btn-price-hover: 6em;
-$top-vl: 39%;
-$left-vl: 50%;
-$top-hl: 67%;
-$left-hl: 5%;
 
 /* animations */
 
@@ -202,9 +197,6 @@ $translateY-sctn: translateY($translateY-sctn);
 
 $rotate-btn-icn-chk-hover: rotate(720deg);
 
-/* list */
-
-$map-vh-line: (vl :(height: $height-vl), hl :(width: $width-hl));
 
 /* animation durations */
 

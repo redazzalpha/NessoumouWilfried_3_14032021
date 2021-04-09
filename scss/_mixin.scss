@@ -91,25 +91,49 @@
 {
     @media #{$mq-lap-large}
     {
-        .sctn.index
+        .wrapper.index
         {
-            position: relative;
-            
-            .vl
+            font-size: $font-size-origin * $font-size-lap-large-multp;
+            .hdr
             {
-                position: absolute;
-                border-left: $border-vh-lines;
-                height: $height-vl;
-                top: $top-vl;
-                left: $left-vl;
+                font-size: $font-size-origin * $font-size-lap-large-multp;
             }
-            .hl
+            .intro
             {
-                position: absolute;
-                border-top: $border-vh-lines;
-                width: $width-hl;
-                top: $top-hl;
-                left: $left-hl;
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+            .srch
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+            .sctn.index
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+            .ftr
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+
+        }
+        .wrapper.pages
+        {
+            .hdr
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+            .intro
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+            }
+            .sctn
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
+                position: relative;
+            }
+            .ftr
+            {
+                font-size: $font-size-origin * $font-size-lap-large-multp;
             }
         }
     }
@@ -118,29 +142,28 @@
 {
     @media #{$mq-4K-xxlarge}
     {   
-       
         .wrapper.index
         {
-            font-size: $font-size-origin * $font-size-multp;
+            font-size: $font-size-origin * $font-size-4k-multp;
             .hdr
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .intro
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .srch
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .sctn.index
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .ftr
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
 
         }
@@ -148,19 +171,19 @@
         {
             .hdr
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .intro
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .sctn
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
             .ftr
             {
-                font-size: $font-size-origin * $font-size-multp;
+                font-size: $font-size-origin * $font-size-4k-multp;
             }
         }
     }
