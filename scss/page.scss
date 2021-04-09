@@ -84,6 +84,7 @@
         row-gap: $gap-menus;
         width: $max-perct;
         text-align: unset;
+        align-items: center;
 
         [class*=title]
         {
@@ -183,8 +184,7 @@
         .hls
         {
             border-bottom: $border-hls;
-            width: $width-hls;
-            
+            width: $width-hls; 
         }
     }
     .strs
