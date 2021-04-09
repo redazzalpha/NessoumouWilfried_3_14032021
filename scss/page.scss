@@ -86,6 +86,7 @@
         text-align: unset;
         align-items: center;
 
+
         [class*=title]
         {
             color: $color-gray;
@@ -100,8 +101,12 @@
             white-space: nowrap;
             z-index: 1;
 
+
             &:hover
             {
+                background-color: opacify($color-white-dirty, 0.5);
+                box-shadow: $box-shadow-strong;
+
                 .btn__text
                 {
                     width: $width-btn-text-hover;
@@ -123,6 +128,12 @@
                 {
                     right: $right-btn-bg-chk-hover;
                 }
+            }
+
+            &--white
+            {
+                transition: background-color linear #{$duration-menus}s, box-shadow linear #{$duration-menus}s;
+
             }
             &__text
             {

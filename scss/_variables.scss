@@ -28,6 +28,7 @@ $color-white: #ffffff;
 $color-white-dirty: #f6f6f6; 
 $color-black: #000000; 
 $color-shadow: rgba(128, 128, 128, 0.352); 
+$color-shadow-strong: rgba(30, 30, 30, 0.352); 
 $color-gray: #7f7f7f; 
 $color-gray-light: #dddddd; 
 $color-black-light: lighten(#000000, 50%);
@@ -149,6 +150,8 @@ $radius-bubble-up: 30px 30px 0 0;
 /* shadows */
 
 $box-shadow-regular: 7px 7px 7px $color-shadow; 
+$box-shadow-strong: 10px 10px 10px $color-shadow-strong; 
+$box-shadow-black: 10px 10px 10px $color-black; 
 
 /* position */
 
