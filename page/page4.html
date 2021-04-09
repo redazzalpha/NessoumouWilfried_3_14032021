@@ -5,20 +5,120 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/min/page3.min.css">
-        <link rel="stylesheet" href="font/css/all.min.css">
+        <link rel="stylesheet" href="../css/min/page.min.css">
+        <link rel="stylesheet" href="../font/css/all.min.css">
         <title>ohmyfood website</title>
     </head>
 
     <body>
-
-        <div class="wrapper">
-        <!-- header -->
-            <header class="hdr">
+        <div class="wrapper pages">
+            <!-- header -->
+            <header class="hdr pages">
                 <h1 class="hdr__logo">ohmyfood</h1>
+                <a href="../index.html" title="Vers accueil"><i class=" hdr__arrow fas fa-arrow-left"></i></a>
             </header>
-        
 
+            <!-- intro -->
+            <img class="intro pages" src="../img/restaurants/aLaFrancaise.jpg"  alt="la palette du goût restaurant's plate" />
+
+            <!-- main -->
+            <main class="mn">
+
+                <!-- section -->
+                <section class="sctn pages">
+
+                    <!-- section title -->
+                    <div class="title-cntr">
+                        <h2 class="title-cntr__title">&Agrave; la Française</h2>
+                        <i class="icon-heart far fa-heart"></i>
+                        <i class="icon-heart icon-heart--hidden fas fa-heart"></i>
+                    </div>
+
+                    <!-- starters -->
+                    <div class="menus strs">
+                        <h3 class="strs__title">ENTR&Eacute;ES</h3>
+                        <div class="hls"></div>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Tartare de poulpe acidulé</strong><br />
+                            <span class="btn__subtext">Aux zestes d'orange</span>
+                            <strong class="btn__price">25&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Velouté de légumes d'antan</strong><br />
+                            <span class="btn__subtext">Carotte, panais, topinambour</span>
+                            <strong class="btn__price">35&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Soupe à l'oignon</strong><br />
+                            <span class="btn__subtext">Revisitée</span>
+                            <strong class="btn__price">20&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                    </div>
+
+                    <!-- dishies -->
+                    <div class="menus dshs">
+                        <h3 class="dshs__title"> PLATS</h3>
+                        <div class="hls"></div>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Coquilles Saint-Jacques</strong><br />
+                            <span class="btn__subtext">Accompagnées d'une purée de panais</span>
+                            <strong class="btn__price">40&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Magret de canard</strong><br />
+                            <span class="btn__subtext">Et parmentier de pommes de terre</span>
+                            <strong class="btn__price">35&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Pigeonneau d’Ille-et-Vilaine</strong><br />
+                            <span class="btn__subtext">Sur son lit de gnocchis aux légumes</span>
+                            <strong class="btn__price">44&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                    </div>
+
+                    <!-- desserts -->
+                    <div class="menus  dssrs">
+                        <h3 class="dssrs__title">D&Eacute;SSERTS</h3>
+                        <div class="hls"></div>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Pétales de violettes glacés</strong><br />
+                            <span class="btn__subtext">Et purée de noisettes</span>
+                            <strong class="btn__price">18&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Fondant au chocolat</strong><br />
+                            <span class="btn__subtext">Revisité</span>
+                            <strong class="btn__price">22&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                        <a class="btn btn--rect btn--white" href="#">
+                            <strong class="btn__text">Millefeuille croustillant</strong><br />
+                            <span class="btn__subtext">Myrtilles et pâte d’amande</span>
+                            <strong class="btn__price">23&euro;</strong> 
+                            <i class="btn__icon-chk fas fa-check-circle"></i>
+                            <div class="btn__bg-chk"></div>
+                        </a>
+                    </div>
+
+                    <!-- order -->
+                    <h3 class="order"><a class="button btn btn--round btn--grad" href="#">Commander</a></h3>
+                </section>
+            </main>
 
             <!-- footer -->
             <footer class="ftr">
@@ -32,6 +132,6 @@
             </footer>
         </div>
 
-        <script src="js/app.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>
