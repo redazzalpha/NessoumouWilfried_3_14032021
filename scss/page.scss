@@ -123,7 +123,6 @@
                     right: $right-btn-bg-chk-hover;
                 }
             }
-
             &__text
             {
                 display: inline-block;
@@ -180,18 +179,12 @@
                 width: $max-perct;
                 text-align: unset;
             }
-            &--round
-            {
-                width: $width-btn-round;
-                font-size: $font-size-btn-round;
-                padding-top: $padding-btn-round;
-                margin-top: $margin-top-btn;
-            }
         }
         .hls
         {
             border-bottom: $border-hls;
             width: $width-hls;
+            
         }
     }
     .strs
@@ -210,6 +203,14 @@
     {
         grid-area: order;
     }
+    .btn--round
+    {
+        width: $width-btn-round;
+        font-size: $font-size-btn-round;
+        padding-top: $padding-btn-round;
+        margin-top: $margin-top-btn;
+    }
+
 }
 
 
