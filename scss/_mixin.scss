@@ -20,7 +20,7 @@
 {
     @media #{$mq-tab-medium}
     {
-        .sctn 
+        .sctn.index
         {
             .rst
             {
@@ -68,14 +68,14 @@
         }
         .wrapper.pages
         {
-            .intro.pages
+            .intro
             {
                 display: block;
                 width: 50%;
                 margin-left: auto;
                 margin-right: auto;
             }
-            .sctn.pages
+            .sctn
             {
                 grid-template-areas: 
                 "title title title"
@@ -91,7 +91,7 @@
 {
     @media #{$mq-lap-large}
     {
-        .sctn
+        .sctn.index
         {
             position: relative;
             
@@ -114,18 +114,19 @@
         }
     }
 }
-@mixin mq-4K-xxlarge
+@mixin mq-4K-xxlarge    
 {
     @media #{$mq-4K-xxlarge}
     {   
        
         .wrapper.index
         {
-            .intro
+            font-size: $font-size-origin * $font-size-multp;
+            .hdr
             {
                 font-size: $font-size-origin * $font-size-multp;
             }
-            .hdr
+            .intro
             {
                 font-size: $font-size-origin * $font-size-multp;
             }
@@ -145,26 +146,17 @@
         }
         .wrapper.pages
         {
-            .intro
-            {
-                font-size: $font-size-origin * $font-size-multp;
-            }
             .hdr
             {
                 font-size: $font-size-origin * $font-size-multp;
             }
-            .main
+            .intro
             {
                 font-size: $font-size-origin * $font-size-multp;
             }
-            .sctn.pages
+            .sctn
             {
                 font-size: $font-size-origin * $font-size-multp;
-
-                .menus
-                {
-                    font-size: $font-size-origin * $font-size-multp;
-                }    
             }
             .ftr
             {

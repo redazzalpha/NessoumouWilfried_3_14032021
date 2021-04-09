@@ -21,14 +21,14 @@
     }
 }
 
-.intro
+.intro.index
 {
     text-align: center;
     font-size: $font-size-origin;
     padding: $padding-base;
     padding-top: unset;
 }
-.sctn
+.sctn.index
 {
     display: grid;
     grid-template-areas: 
@@ -38,14 +38,13 @@
     "restaurants";
     font-size: $font-size-origin;
 
-    &__title 
+    .sctn__title 
     {
         grid-area: title;
         text-align: center;
         background-color: $color-white-dirty;
         padding: $padding-sctn-title;
         padding-bottom: $padding-bottom-sctn-title; 
-
         font-size: $font-size-title;
     }   
 }

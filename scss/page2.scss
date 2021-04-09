@@ -21,10 +21,10 @@
 {
     font-size: $font-size-origin;
 }
-.hdr
+.hdr.pages
 {
     position: relative;
-    &__arrow
+    .hdr__arrow
     {
         position: absolute;
         color: $color-black;
@@ -90,6 +90,109 @@
             color: $color-gray;
             font-size: $font-size-menus-subtitle;
         }
+        .btn
+        {
+            font-size: 1em;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            z-index: 1;
+
+            &:hover
+            {
+                .btn__text
+                {
+                    width: $width-btn-text-hover;
+                }
+                .btn__subtext
+                {
+                    width: $width-btn-subtex-hover;
+                }
+                .btn__price
+                {
+                    right: $right-btn-price-hover;   
+                }
+                .btn__icon-chk
+                {
+                    right: $right-btn-icn-chk-hover;
+                    transform: $rotate-btn-icn-chk-hover;
+                }
+                .btn__bg-chk
+                {
+                    right: $right-btn-bg-chk-hover;
+                }
+            }
+
+            &__text
+            {
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;    
+                width: $width-btn-text;
+                transition: $transition-btn-text;
+                font-size: $font-size-text;;
+            }
+            &__subtext
+            {
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;    
+                font-size: $font-size-btn-subtex;
+                color: $color-gray;
+                width: $width-btn-subtex;
+                transition: $transition-btn-subtext;
+            }
+            &__price
+            {
+                position: absolute;
+                background-color : $color-white;
+                right: $right-btn-price;
+                transition: $transition-btn-price; 
+            }
+            i.btn__icon-chk
+            {
+                position: absolute;
+                color: $color-white;
+                font-size: $font-size-btn-icn-chk;
+                right: $right-btn-icn-chk;
+                bottom: $bottom-btn-icn-chk;
+                padding: $padding-btn-icn-chk;
+                border-radius: $radius-rect-right; 
+                transition: $transition-btn-icn-chk;
+                z-index: 3;
+            }
+            .btn__bg-chk
+            {
+                position: absolute;
+                background-color: $color-tertiary;
+                right: $right-btn-bg-chk;
+                top: $top-btn-bg-chk;
+                width: $width-btn-bg-chk;
+                height: $max-perct;
+                transition: $transition-btn-bg-chk;
+                z-index: 2;
+            }
+            &--rect
+            {
+                width: $max-perct;
+                text-align: unset;
+            }
+            &--round
+            {
+                width: $width-btn-round;
+                font-size: $font-size-btn-round;
+                padding-top: $padding-btn-round;
+                margin-top: $margin-top-btn;
+            }
+        }
+        .hls
+        {
+            border-bottom: $border-hls;
+            width: $width-hls;
+        }
     }
     .strs
     {
@@ -109,109 +212,6 @@
     }
 }
 
-.btn
-{
-    font-size: 1em;
-    position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    z-index: 1;
-
-    &:hover
-    {
-        .btn__text
-        {
-            width: $width-btn-text-hover;
-        }
-        .btn__subtext
-        {
-            width: $width-btn-subtex-hover;
-        }
-        .btn__price
-        {
-            right: $right-btn-price-hover;   
-        }
-        .btn__icon-chk
-        {
-            right: $right-btn-icn-chk-hover;
-            transform: $rotate-btn-icn-chk-hover;
-        }
-        .btn__bg-chk
-        {
-            right: $right-btn-bg-chk-hover;
-        }
-    }
-
-    &__text
-    {
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;    
-        width: $width-btn-text;
-        transition: $transition-btn-text;
-        font-size: $font-size-text;;
-    }
-    &__subtext
-    {
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;    
-        font-size: $font-size-btn-subtex;
-        color: $color-gray;
-        width: $width-btn-subtex;
-        transition: $transition-btn-subtext;
-    }
-    &__price
-    {
-        position: absolute;
-        background-color : $color-white;
-        right: $right-btn-price;
-        transition: $transition-btn-price; 
-    }
-    i.btn__icon-chk
-    {
-        position: absolute;
-        color: $color-white;
-        font-size: $font-size-btn-icn-chk;
-        right: $right-btn-icn-chk;
-        bottom: $bottom-btn-icn-chk;
-        padding: $padding-btn-icn-chk;
-        border-radius: $radius-rect-right; 
-        transition: $transition-btn-icn-chk;
-        z-index: 3;
-    }
-    .btn__bg-chk
-    {
-        position: absolute;
-        background-color: $color-tertiary;
-        right: $right-btn-bg-chk;
-        top: $top-btn-bg-chk;
-        width: $width-btn-bg-chk;
-        height: $max-perct;
-        transition: $transition-btn-bg-chk;
-        z-index: 2;
-    }
-    &--rect
-    {
-        width: $max-perct;
-        text-align: unset;
-    }
-    &--round
-    {
-        width: $width-btn-round;
-        font-size: $font-size-btn-round;
-        padding-top: $padding-btn-round;
-        margin-top: $margin-top-btn;
-    }
-}
-.hls
-{
-    border-bottom: $border-hls;
-    width: $width-hls;
-}
 
 
 
