@@ -66,8 +66,8 @@ $font-size-btn-subtex: 0.85em;
 
 /* fonts multiplicators */
 
-$font-size-4k-multp: 2;
-$font-size-lap-large-multp: 1.2;
+$multp-lap-large: 1.2;
+$multp-4k: 2;
 
 /* paddings */
 
@@ -182,25 +182,6 @@ $animation-vl: vl_animate  linear 2s;
 $animation-hl: hl_animate linear 2s;
 $animation-hl: hl_animate linear 2s;
 
-/* transitions */ 
-
-$transition-color: color 0.6s;  
-$transition-btn-text: width 0.6s;
-$transition-btn-subtext: width 0.6s;
-$transition-btn-price: right 0.6s;
-$transition-btn-icn-chk: right 0.6s, transform 0.6s;
-$transition-btn-bg-chk: right 0.6s;
-
-/* translation */
-
-$translateY-sctn: -15vmin;
-$translateY-sctn: translateY($translateY-sctn);
-
-/* rotations */
-
-$rotate-btn-icn-chk-hover: rotate(720deg);
-
-
 /* animation durations */
 
 $duration-menus: 0.7;
@@ -213,6 +194,25 @@ $animation-hls: hls-animate linear $duration-hls-animate;
 /* animation offsets */
 
 $offset-menus-animate: 0.5;
+
+/* transitions */ 
+
+$transition-color: color 0.6s;  
+$transition-btn-text: width 0.6s;
+$transition-btn-subtext: width 0.6s;
+$transition-btn-price: right 0.6s;
+$transition-btn-icn-chk: right 0.6s, transform 0.6s;
+$transition-btn-bg-chk: right 0.6s;
+$transition-btn-white: background-color linear #{$duration-menus}s, box-shadow linear #{$duration-menus}s;
+
+/* translation */
+
+$translateY-sctn: -15vmin;
+$translateY-sctn: translateY($translateY-sctn);
+
+/* rotations */
+
+$rotate-btn-icn-chk-hover: rotate(720deg);
 
 
 

@@ -16,6 +16,54 @@
 {
     @each $font in $list { @include getFont($font); }
 }
+@mixin font-size-query($font-size, $multp)
+{
+    .wrapper.index
+    {
+        font-size: $font-size * $multp;
+
+        .hdr
+        {
+            font-size: $font-size * $multp;
+        }
+        .intro
+        {
+            font-size: $font-size * $multp;
+        }
+        .srch
+        {
+            font-size: $font-size * $multp;
+        }
+        .sctn.index
+        {
+            font-size: $font-size * $multp;
+        }
+        .ftr
+        {
+            font-size: $font-size * $multp;
+        }
+
+    }
+    .wrapper.pages
+    {
+        .hdr
+        {
+            font-size: $font-size * $multp;
+        }
+        .intro
+        {
+            font-size: $font-size * $multp;
+        }
+        .sctn
+        {
+            font-size: $font-size * $multp;
+        }
+        .ftr
+        {
+            font-size: $font-size * $multp;
+        }
+    }
+}
 @mixin mq-tab-medium
 {
     @media #{$mq-tab-medium}
@@ -91,101 +139,14 @@
 {
     @media #{$mq-lap-large}
     {
-        .wrapper.index
-        {
-            font-size: $font-size-origin * $font-size-lap-large-multp;
-            .hdr
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .intro
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .srch
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .sctn.index
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .ftr
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-
-        }
-        .wrapper.pages
-        {
-            .hdr
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .intro
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-            .sctn
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-                position: relative;
-            }
-            .ftr
-            {
-                font-size: $font-size-origin * $font-size-lap-large-multp;
-            }
-        }
+        @include font-size-query($font-size-origin, $multp-lap-large);
     }
 }
 @mixin mq-4K-xxlarge    
 {
     @media #{$mq-4K-xxlarge}
     {   
-        .wrapper.index
-        {
-            font-size: $font-size-origin * $font-size-4k-multp;
-            .hdr
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .intro
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .srch
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .sctn.index
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .ftr
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-
-        }
-        .wrapper.pages
-        {
-            .hdr
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .intro
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .sctn
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-            .ftr
-            {
-                font-size: $font-size-origin * $font-size-4k-multp;
-            }
-        }
+        @include font-size-query($font-size-origin, $multp-4k);
     }
 }
 @mixin origin
