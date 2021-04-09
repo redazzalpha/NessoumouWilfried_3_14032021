@@ -382,7 +382,7 @@
     .#{$class}
     {
         $duration: $duration-menus;
-        @for $i  from 2 through 5
+        @for $i  from 2 through 6
         {
             :nth-child(#{$i}):not(.btn__price):not(.hls)
             {
