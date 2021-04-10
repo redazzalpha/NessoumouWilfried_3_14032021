@@ -33,6 +33,17 @@
         z-index: 3;
         opacity: 0;
     }
+    &__text
+    {
+        font-size: $font-size-loader-text;   
+        font-family: $font-logo;
+        margin-top: $margin-loader-text;
+        color: $color-gray;
+    }
+    &__dots
+    {
+
+    }
     &__left
     {
         position: fixed;
