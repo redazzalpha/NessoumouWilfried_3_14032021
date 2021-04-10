@@ -7,18 +7,18 @@
 @include mq-lap-large;
 @include mq-4K-xxlarge;
 
-@include loader-animate;
+//@include loader-animate;
+@include loader-elemnts-animate($list-drpr-amnimate);
 @include origin;
 @include btn;
 @include card;
 @include icon-heart;
 
-
 .loader
 {
     position: fixed;
-    width: 100%;
-    height:  100%;
+    width: 0%;
+    height: 0%;
     top: -999px;
     background-color: $color-secondary;
     text-align: center;
@@ -27,7 +27,6 @@
 
      &__icon
     {
-
         margin-top: 1.3em;
         font-size: 0;
         color: $color-gray;
@@ -45,7 +44,6 @@
     }
     &__right
     {
-
         position: fixed;
         top: 0%;
         right: -200%;
@@ -53,12 +51,7 @@
         height: 0%;
         background-color: inherit;
     }
-
 }
-
-
-
-
 .intro.index
 {
     text-align: center;

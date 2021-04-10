@@ -329,15 +329,15 @@
         }
     }
 }
-@mixin loader-animate
+@mixin loader-elemnts-animate($list-drpr)
 {
     @keyframes loader-bg-animate
     {
-        0%{background-color: $color-tertiary; top: 0%}
-        25%{background-color: $color-secondary; top: 0%} 
-        75%{background-color: $color-secondary; top: 0%} 
-        79%{top: 0%;}
-        100%{background-color: $color-tertiary; top: -600%}
+        0%{background-color: $color-tertiary; top: 0%; width: 100%; height: 100%;}
+        25%{background-color: $color-secondary; top: 0%; width: 100%; height: 100%;} 
+        75%{background-color: $color-secondary; top: 0%; width: 100%; height: 100%;} 
+        79%{top: 0%; width: 100%; height: 100%;}
+        100%{background-color: $color-tertiary; top: -600%; width: 0%; height: 0%;}
     }
     @keyframes loader-icon-animate
     {
@@ -350,35 +350,25 @@
         90%{opacity: 1;}
         99%{font-size: 12em;}
         100%{opacity: 0; font-size: 0;}
-
     }
-    @keyframes loader-left-animate
+
+    @each $lr, $pr in  $list-drpr
     {
-        0%{left: 0%; width: 50%; height: 100%;} 
-        70%{left: 0%;}
-        99%{width: 50%; height: 100%;}
-        100%{left: -200%; width: 0%; height: 0%;}
-
-        0%{background-color: $color-transprent;}
-        65%{background-color: $color-transprent;}
-        66%{background-color: inherit;}
-        100%{background-color: inherit;}
-
-    }
-    @keyframes loader-right-animate
-    {
-        0%{right: 0%; width: 50%; height: 100%;}
-        70%{right: 0%;}
-        99%{width: 50%; height: 100%;}
-        100%{right: -200%; width: 0%; height: 0%}
-
-        0%{background-color: $color-transprent;}
-        65%{background-color: $color-transprent;}
-        66%{background-color: inherit;}
-        100%{background-color: inherit;}
+        @keyframes loader-#{$lr}-animate
+        {
+            0%{#{$lr}: 0%; width: 50%; height: 100%;} 
+            70%{#{$lr}: 0%;}
+            99%{width: 50%; height: 100%;}
+            100%{#{$lr}: -200%; width: 0%; height: 0%;}
+    
+            0%{background-color: $color-transprent;}
+            65%{background-color: $color-transprent;}
+            66%{background-color: inherit;}
+            100%{background-color: inherit;}
+        }
     }
     .loader
-    {   
+    {
         animation: loader-bg-animate linear 5s;
 
         &__icon
@@ -386,13 +376,12 @@
             animation: loader-icon-animate linear 3s,
             loader-icon-hide-animate linear 4s;
         }
-        &__left
+        @each $lr in  $list-drpr
         {
-            animation: loader-left-animate 6s;
-        }
-        &__right
-        {
-            animation: loader-right-animate 6s;
+            &__#{$lr}
+            {
+                animation: loader-#{$lr}-animate 6s;
+            }
         }
     }
 }
@@ -432,6 +421,7 @@
         }
     }
 }
+
 
 
 
