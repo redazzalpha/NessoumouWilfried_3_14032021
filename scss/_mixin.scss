@@ -153,6 +153,16 @@
         @include font-size-query($font-size-origin, $multp-4k);
     }
 }
+@mixin mq-landscape    
+{
+    @media #{$mq-landscape}
+    { 
+        i.loader__icon
+        {
+            margin-top: 2rem; 
+        }
+    }
+}
 @mixin origin
 {
     @include getfonts($font-list);
@@ -343,6 +353,7 @@
     {
         0%{transform: rotate(0deg);}
         100%{transform: rotate(360deg);}
+        
     }
     @keyframes loader-icon-hide-animate
     {

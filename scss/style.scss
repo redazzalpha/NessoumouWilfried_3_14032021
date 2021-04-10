@@ -6,8 +6,8 @@
 @include mq-lap-medium;
 @include mq-lap-large;
 @include mq-4K-xxlarge;
+@include mq-landscape;   
 
-//@include loader-animate;
 @include loader-elemnts-animate($list-drpr-amnimate);
 @include origin;
 @include btn;
@@ -21,13 +21,13 @@
     height: 0%;
     top: -999px;
     background-color: $color-secondary;
-    text-align: center;
     font-size: $font-size-origin;
+    text-align: center;
     z-index: 2;
 
-     &__icon
+    &__icon
     {
-        margin-top: 1.3em;
+        margin-top: 12rem;  // original value 1.3em
         font-size: 0;
         color: $color-gray;
         z-index: 3;
