@@ -6,7 +6,6 @@
 @include mq-lap-medium;
 @include mq-lap-large;
 @include mq-4K-xxlarge;
-@include mq-landscape;   
 
 @include loader-elemnts-animate($list-drpr-amnimate);
 @include origin;
@@ -15,23 +14,25 @@
 @include icon-heart;
 
 .loader
-{
+{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     position: fixed;
     width: 0%;
     height: 0%;
-    top: -999px;
+    top: $infinite-val-reverse;
     background-color: $color-secondary;
     font-size: $font-size-origin;
-    text-align: center;
     z-index: 2;
 
     &__icon
     {
-        margin-top: 25vh;  // original value 1.3em
         font-size: 0;
         color: $color-gray;
-        z-index: 3;
         opacity: 0;
+        z-index: 3;
     }
     &__text
     {
@@ -39,15 +40,12 @@
         font-family: $font-logo;
         margin-top: $margin-loader-text;
         color: $color-gray;
-    }
-    &__dots
-    {
-
+        top: $infinite-val-reverse;
     }
     &__left
     {
         position: fixed;
-        left: -200%;
+        left: $pos-loader-lr;
         top: 0%;
         width: 0%;
         height: 0%;
@@ -56,8 +54,8 @@
     &__right
     {
         position: fixed;
+        right: $pos-loader-lr;
         top: 0%;
-        right: -200%;
         width: 0%;
         height: 0%;
         background-color: inherit;

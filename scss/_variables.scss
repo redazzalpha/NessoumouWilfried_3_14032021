@@ -17,7 +17,6 @@ $mq-tab-medium:  "(min-width: #{$bp-tab-medium})";
 $mq-lap-medum:  "(min-width: #{$bp-lap-medium})"; 
 $mq-lap-large:  "(min-width: #{$bp-lap-large})"; 
 $mq-4K-xxlarge:  "(min-width: #{$bp-4K-xxlarge})"; 
-$mq-landscape:  "(max-width: 767px) and (orientation: landscape)"; 
 
 /* colors */
 
@@ -71,6 +70,7 @@ $font-size-btn-round: 0.9em;
 $font-size-btn-round: 0.9em;
 $font-size-btn-icn-chk: 2em;
 $font-size-btn-subtex: 0.85em;
+$font-size-loader-icon: 12em;
 $font-size-loader-text: 1.5em;
 
 /* fonts multiplicators */
@@ -115,6 +115,8 @@ $gap-menus: 1em;
 
 $max-perct: 100%; 
 $half-perct: $max-perct / 2;  
+$infinite-val: 9999%; 
+$infinite-val-reverse: -9999%; 
 
 /* widths */                    
 
@@ -185,6 +187,8 @@ $right-btn-price: 2em;
 $right-btn-icn-chk-hover: 0em;
 $right-btn-bg-chk-hover: 0em;
 $right-btn-price-hover: 6em;
+$pos-loader-lr: -200%;
+
 
 /* animations */
 

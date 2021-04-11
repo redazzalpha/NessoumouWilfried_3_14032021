@@ -153,20 +153,6 @@
         @include font-size-query($font-size-origin, $multp-4k);
     }
 }
-@mixin mq-landscape    
-{
-    @media #{$mq-landscape}
-    { 
-        i.loader__icon
-        {
-            margin-top: 12vh; 
-        }
-        div.loader__text
-        {
-            margin-top: 11vh;
-        }
-    }
-}
 @mixin origin
 {
     @include getfonts($font-list);
@@ -347,10 +333,10 @@
 {
     @keyframes loader-bg-animate
     {
-        0%{background-color: $color-tertiary; top: 0%; width: 100%; height: 100%;}
-        25%{background-color: $color-secondary; top: 0%; width: 100%; height: 100%;} 
-        75%{background-color: $color-secondary; top: 0%; width: 100%; height: 100%;} 
-        79%{top: 0%; width: 100%; height: 100%;}
+        0%{background-color: $color-tertiary; top: 0%; width: $max-perct; height: $max-perct;}
+        25%{background-color: $color-secondary; top: 0%; width: $max-perct; height: $max-perct;} 
+        75%{background-color: $color-secondary; top: 0%; width: $max-perct; height: $max-perct;} 
+        79%{top: 0%; width: $max-perct; height: $max-perct;}
         100%{background-color: $color-tertiary; top: -600%; width: 0%; height: 0%;}
     }
     @keyframes loader-icon-animate
@@ -361,9 +347,9 @@
     }
     @keyframes loader-icon-hide-animate
     {
-        0%{opacity: 1; font-size: 12em;}
+        0%{opacity: 1; font-size: $font-size-loader-icon;}
         90%{opacity: 1;}
-        99%{font-size: 12em;}
+        99%{font-size: $font-size-loader-icon;}
         100%{opacity: 0; font-size: 0;}
     }
 
@@ -371,9 +357,9 @@
     {
         @keyframes loader-#{$lr}-animate
         {
-            0%{#{$lr}: 0%; width: 50%; height: 100%;} 
+            0%{#{$lr}: 0%; width: 50%; height: $max-perct;} 
             70%{#{$lr}: 0%;}
-            99%{width: 50%; height: 100%;}
+            99%{width: 50%; height: $max-perct;}
             100%{#{$lr}: -200%; width: 0%; height: 0%;}
     
             0%{background-color: $color-transprent;}
