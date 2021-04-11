@@ -329,7 +329,7 @@
         }
     }
 }
-@mixin loader-elemnts-animate($list-drpr)
+@mixin loader-elemnts-animate
 {
     @keyframes loader-bg-animate
     {
@@ -342,25 +342,26 @@
     @keyframes loader-icon-animate
     {
         0%{transform: rotate(0deg);}
-        100%{transform: rotate(360deg);}
-        
+        100%{transform: rotate(360deg);}   
     }
-    @keyframes loader-icon-hide-animate
+    @each $class, $fsize in  $map-fsize
     {
-        0%{opacity: 1; font-size: $font-size-loader-icon;}
-        90%{opacity: 1;}
-        99%{font-size: $font-size-loader-icon;}
-        100%{opacity: 0; font-size: 0;}
+        @keyframes loader-#{$class}-hide-animate
+        {   
+            0%{opacity: 1; font-size: $fsize;}
+            90%{opacity: 1;}
+            99%{font-size: $fsize;}
+            100%{opacity: 0; font-size: 0;}
+        }    
     }
-
-    @each $lr, $pr in  $list-drpr
+    @each $lr in  $list-drpr
     {
         @keyframes loader-#{$lr}-animate
         {
-            0%{#{$lr}: 0%; width: 50%; height: $max-perct;} 
+            0%{#{$lr}: 0%; width: $half-perct; height: $max-perct;} 
             70%{#{$lr}: 0%;}
-            99%{width: 50%; height: $max-perct;}
-            100%{#{$lr}: -200%; width: 0%; height: 0%;}
+            99%{width: $half-perct; height: $max-perct;}
+            100%{#{$lr}: $pos-loader-lr; width: 0%; height: 0%;}
     
             0%{background-color: $color-transprent;}
             65%{background-color: $color-transprent;}
@@ -372,10 +373,15 @@
     {
         animation: loader-bg-animate linear 5s;
 
-        &__icon
+        @each $class, $key in $map-fsize
         {
-            animation: loader-icon-animate linear 3s,
-            loader-icon-hide-animate linear 4s;
+            &__#{$class}
+            {
+                @if($class == icon)
+                { animation: loader-#{$class}-hide-animate linear 4s, loader-icon-animate linear 3s; }
+                @else
+                { animation: loader-#{$class}-hide-animate linear 4s; } 
+            }
         }
         @each $lr in  $list-drpr
         {

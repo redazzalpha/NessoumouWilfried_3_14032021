@@ -35,14 +35,6 @@ $color-black-light: lighten(#000000, 50%);
 $color-transprent: #00000000;  
 $color-black-gray: #353535; 
 
-
-/* maps */
-$list-drpr-amnimate: left right;
-
-/* lists */
-
-$font-list: "shrikhand" "roboto"; 
-
 /* fonts */
 
 $font-logo: shrikhand, serif, sans-serif; 
@@ -188,6 +180,14 @@ $right-btn-icn-chk-hover: 0em;
 $right-btn-bg-chk-hover: 0em;
 $right-btn-price-hover: 6em;
 $pos-loader-lr: -200%;
+
+/* maps */
+$map-fsize: (icon: $font-size-loader-icon, text: $font-size-loader-text);
+
+/* lists */
+
+$font-list: "shrikhand" "roboto"; 
+$list-drpr: left right;
 
 
 /* animations */
