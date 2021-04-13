@@ -96,6 +96,10 @@
     text-align: right;
     font-size: $font-size-origin;
 
+    display: grid;
+    grid-template-areas:  "label field";
+    grid-template-columns: 50% 50%;
+
     &__icon
     {
         color: $color-black-gray;
@@ -105,10 +109,19 @@
         background-color: $color-gray-light;
         outline: none;
         border: none;
-        width: $half-perct;
+        width: 85%;
         height: $height-srch-field;
         font-size: $font-size-text;
-    }    
+    }  
+    .block_label
+    {
+        grid-area: label;
+    }
+    .block_field
+    {
+        grid-area: field;
+        text-align: left;
+    }  
 }
 .expl
 {
@@ -264,4 +277,13 @@
 
 
 
+
+form
+{
+
+
+
+}
+
+    
 
