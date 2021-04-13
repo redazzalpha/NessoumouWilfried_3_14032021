@@ -342,7 +342,7 @@
     @keyframes loader-icon-animate
     {
         0%{transform: rotate(0deg);}
-        100%{transform: rotate($rotate-loader-icn);}   
+        100%{transform: $rotate-loader-icn-animate;}   
     }
     @each $class, $fsize in  $map-fsize
     {
@@ -378,7 +378,7 @@
             &__#{$class}
             {
                 @if($class == icon)
-                { animation: loader-#{$class}-hide-animate linear 4s, loader-icon-animate linear 3s; }
+                { animation: loader-#{$class}-hide-animate linear 4s, loader-#{$class}-animate linear 3s; }
                 @else
                 { animation: loader-#{$class}-hide-animate linear 4s; } 
             }

@@ -647,7 +647,7 @@
 }
 
 .loader__text {
-  font-size: 1.5em;
+  font-size: 0;
   font-family: shrikhand, serif, sans-serif;
   margin-top: 2.5em;
   color: #7f7f7f;
