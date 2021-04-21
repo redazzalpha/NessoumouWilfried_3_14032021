@@ -68,6 +68,20 @@
         }
     }
 }
+@mixin mq-mob-large
+{
+    @media #{$mq-mob-large}
+    {
+        .wrapper.index
+        {
+            .srch
+            {
+                grid-template-columns: 36% 64%;
+
+            }
+        }
+    }    
+}
 @mixin mq-tab-medium
 {
     @media #{$mq-tab-medium}
