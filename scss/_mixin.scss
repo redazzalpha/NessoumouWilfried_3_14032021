@@ -68,30 +68,39 @@
         }
     }
 }
+@mixin srch-center($perct, $perct1)
+{
+    .wrapper.index
+    {
+        .srch
+        {
+            grid-template-columns: $perct $perct1;
+    
+        }
+    }
+}
+@mixin mq-mob-medium
+{
+    @media #{$mq-mob-medium}
+    {
+        @include srch-center(36%, 64%);
+    }    
+}
 @mixin mq-mob-large
 {
     @media #{$mq-mob-large}
     {
-        .wrapper.index
-        {
-            .srch
-            {
-                grid-template-columns: 36% 64%;
-
-            }
-        }
+        @include srch-center(36%, 64%);
     }    
 }
 @mixin mq-tab-medium
 {
     @media #{$mq-tab-medium}
     {
+        @include srch-center(42%, 58%);
+
         .wrapper.index
         {
-            .srch
-            {
-                grid-template-columns: 42% 58%;
-            }
             .sctn.index
             {
                 .rst
@@ -113,6 +122,7 @@
 {
     @media #{$mq-lap-medum}
     {
+        @include srch-center(45%, 55%);
         .wrapper.index
         {
             .sctn.index

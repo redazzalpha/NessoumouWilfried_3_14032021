@@ -43,6 +43,10 @@
 }
 
 @media (min-width: 1024px) {
+  .wrapper.index .srch {
+    -ms-grid-columns: 45% 55%;
+        grid-template-columns: 45% 55%;
+  }
   .wrapper.index .sctn.index .ftg {
         grid-template-areas: "title title title" "choose compose eat";
     -webkit-column-gap: 2em;

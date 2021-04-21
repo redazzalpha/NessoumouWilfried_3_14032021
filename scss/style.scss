@@ -2,6 +2,7 @@
 
 @import "mixin";
 
+@include mq-mob-medium;
 @include mq-mob-large;
 @include mq-tab-medium;
 @include mq-lap-medium;
