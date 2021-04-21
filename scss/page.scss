@@ -159,7 +159,6 @@
             &__price
             {
                 position: absolute;
-                background-color : $color-white;
                 right: $right-btn-price;
                 transition: $transition-btn-price; 
             }
@@ -221,7 +220,6 @@
         padding-top: $padding-btn-round;
         margin-top: $margin-top-btn;
     }
-
 }
 
 
