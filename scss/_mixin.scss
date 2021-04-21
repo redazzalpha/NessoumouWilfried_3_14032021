@@ -321,14 +321,14 @@
         text-decoration: none;
         box-shadow: $box-shadow-regular;    
         padding: $padding-base;
-        transition: box-shadow 0.5s linear, background linear 0.5s;
+        transition: box-shadow 0.5s linear;
     
         &--round 
         { 
             border-radius: $radius-rounded; 
             &:hover
             {
-                box-shadow: $box-shadow-strong;
+                box-shadow: 10px 10px 10px black;
                 background: $color-gradient-opacify;
             }
         }

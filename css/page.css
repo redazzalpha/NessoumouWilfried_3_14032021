@@ -338,10 +338,10 @@
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   padding: 1em;
-  -webkit-transition: background linear 0.5s, -webkit-box-shadow 0.5s linear;
-  transition: background linear 0.5s, -webkit-box-shadow 0.5s linear;
-  transition: box-shadow 0.5s linear, background linear 0.5s;
-  transition: box-shadow 0.5s linear, background linear 0.5s, -webkit-box-shadow 0.5s linear;
+  -webkit-transition: -webkit-box-shadow 0.5s linear;
+  transition: -webkit-box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
 }
 
 .btn--round {
@@ -349,8 +349,8 @@
 }
 
 .btn--round:hover {
-  -webkit-box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
-          box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
   background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
 }
