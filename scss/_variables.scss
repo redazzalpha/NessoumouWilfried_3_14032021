@@ -24,6 +24,7 @@ $color-primary: #FF79DA;
 $color-secondary: #9356DC; 
 $color-tertiary: #99E2D0; 
 $color-gradient: linear-gradient(to bottom right,  $color-primary, $color-secondary); 
+$color-gradient-opacify: linear-gradient(to bottom right, #ff79d9ab, #9256dcad); 
 $color-white: #ffffff; 
 $color-white-dirty: #f6f6f6; 
 $color-black: #000000; 
@@ -218,7 +219,7 @@ $transition-btn-subtext: width 0.6s;
 $transition-btn-price: right 0.6s;
 $transition-btn-icn-chk: right 0.6s, transform 0.6s;
 $transition-btn-bg-chk: right 0.6s;
-$transition-btn-white: background-color linear #{$duration-menus}s, box-shadow linear #{$duration-menus}s;
+$transition-btn-white: box-shadow linear #{$duration-menus}s;
 
 /* translation */
 

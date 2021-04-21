@@ -100,10 +100,9 @@
             white-space: nowrap;
             z-index: 1;
 
-
             &:hover
             {
-                background-color: opacify($color-white-dirty, 0.5);
+                //background-color: opacify($color-white-dirty, 0.5);
                 box-shadow: $box-shadow-strong;
 
                 .btn__text

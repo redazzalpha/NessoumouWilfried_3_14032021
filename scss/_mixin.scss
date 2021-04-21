@@ -313,6 +313,14 @@
 }
 @mixin btn
 {
+
+
+    @keyframes bg-color
+    {
+        0%{background: $color-gradient;}
+        100%{background: $color-gradient-opacify;}
+    }
+
     .btn
     {
         display: inline-block;
@@ -321,10 +329,17 @@
         text-decoration: none;
         box-shadow: $box-shadow-regular;    
         padding: $padding-base;
+        transition: box-shadow 0.5s linear, background linear 0.5s;
     
         &--round 
         { 
             border-radius: $radius-rounded; 
+            &:hover
+            {
+                box-shadow: $box-shadow-strong;
+                background: $color-gradient-opacify;
+
+            }
         }
         &--rect
         { 

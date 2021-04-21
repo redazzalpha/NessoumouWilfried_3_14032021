@@ -330,6 +330,28 @@
   grid-area: contact;
 }
 
+@-webkit-keyframes bg-color {
+  0% {
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
+    background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
+    background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
+  }
+}
+
 .btn {
   display: inline-block;
   position: relative;
@@ -338,10 +360,21 @@
   -webkit-box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
           box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.352);
   padding: 1em;
+  -webkit-transition: background linear 0.5s, -webkit-box-shadow 0.5s linear;
+  transition: background linear 0.5s, -webkit-box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear, background linear 0.5s;
+  transition: box-shadow 0.5s linear, background linear 0.5s, -webkit-box-shadow 0.5s linear;
 }
 
 .btn--round {
   border-radius: 2.5em;
+}
+
+.btn--round:hover {
+  -webkit-box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
+          box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
+  background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
 }
 
 .btn--rect {
@@ -467,7 +500,6 @@
 }
 
 .sctn.pages .menus .btn:hover {
-  background-color: #f6f6f6;
   -webkit-box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
           box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.352);
 }
@@ -495,10 +527,10 @@
 }
 
 .sctn.pages .menus .btn--white {
-  -webkit-transition: background-color linear 0.7s, -webkit-box-shadow linear 0.7s;
-  transition: background-color linear 0.7s, -webkit-box-shadow linear 0.7s;
-  transition: background-color linear 0.7s, box-shadow linear 0.7s;
-  transition: background-color linear 0.7s, box-shadow linear 0.7s, -webkit-box-shadow linear 0.7s;
+  -webkit-transition: -webkit-box-shadow linear 0.7s;
+  transition: -webkit-box-shadow linear 0.7s;
+  transition: box-shadow linear 0.7s;
+  transition: box-shadow linear 0.7s, -webkit-box-shadow linear 0.7s;
 }
 
 .sctn.pages .menus .btn__text {
