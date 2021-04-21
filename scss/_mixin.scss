@@ -72,19 +72,26 @@
 {
     @media #{$mq-tab-medium}
     {
-        .sctn.index
+        .wrapper.index
         {
-            .rst
+            .srch
             {
-                grid-template-columns: auto auto;
-                gap: $gap-rst;
-                justify-content: space-around   ;
-        
-                &__title
-                {
-                    grid-column: 1 / span 2;
-                }
+                grid-template-columns: 42% 58%;
             }
+            .sctn.index
+            {
+                .rst
+                {
+                    grid-template-columns: auto auto;
+                    gap: $gap-rst;
+                    justify-content: space-around;
+            
+                    &__title
+                    {
+                        grid-column: 1 / span 2;
+                    }
+                }
+            }    
         }
     }    
 }

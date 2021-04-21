@@ -24,14 +24,18 @@
 /* translation */
 /* rotations */
 @media (min-width: 768px) {
-  .sctn.index .rst {
+  .wrapper.index .srch {
+    -ms-grid-columns: 42% 58%;
+        grid-template-columns: 42% 58%;
+  }
+  .wrapper.index .sctn.index .rst {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     gap: 5em;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .sctn.index .rst__title {
+  .wrapper.index .sctn.index .rst__title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
@@ -518,7 +522,6 @@
 
 .sctn.pages .menus .btn__price {
   position: absolute;
-  background-color: #ffffff;
   right: 2em;
   -webkit-transition: right 0.6s;
   transition: right 0.6s;

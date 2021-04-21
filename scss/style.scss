@@ -98,7 +98,7 @@
 
     display: grid;
     grid-template-areas:  "label field";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
 
     &__icon
     {
@@ -121,6 +121,7 @@
     {
         grid-area: field;
         text-align: left;
+
     }  
 }
 .expl
@@ -273,17 +274,3 @@
         }
     }
 } 
-
-
-
-
-
-form
-{
-
-
-
-}
-
-    
-
