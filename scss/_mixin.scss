@@ -313,14 +313,6 @@
 }
 @mixin btn
 {
-
-
-    @keyframes bg-color
-    {
-        0%{background: $color-gradient;}
-        100%{background: $color-gradient-opacify;}
-    }
-
     .btn
     {
         display: inline-block;
@@ -338,7 +330,6 @@
             {
                 box-shadow: $box-shadow-strong;
                 background: $color-gradient-opacify;
-
             }
         }
         &--rect

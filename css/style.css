@@ -567,28 +567,6 @@
   grid-area: contact;
 }
 
-@-webkit-keyframes bg-color {
-  0% {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  }
-  100% {
-    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
-    background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
-  }
-}
-
-@keyframes bg-color {
-  0% {
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  }
-  100% {
-    background: -webkit-gradient(linear, left top, right bottom, from(#ff79d9ab), to(#9256dcad));
-    background: linear-gradient(to bottom right, #ff79d9ab, #9256dcad);
-  }
-}
-
 .btn {
   display: inline-block;
   position: relative;
